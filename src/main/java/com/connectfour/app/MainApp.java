@@ -10,7 +10,7 @@ public final class MainApp {
     public void perform() {
         // Create classes
         Board board = new Board();
-        board.checkIfWin();
+        
         // Call presentation
     }
 
