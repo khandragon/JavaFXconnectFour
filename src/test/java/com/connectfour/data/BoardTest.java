@@ -17,7 +17,6 @@ public class BoardTest {
     
     @Test
     public void checkValidVerticalWin(){
-        System.out.println(1);
         // - - - - - - -
         // - - - - - - -
         // x - - - - - -
@@ -29,6 +28,7 @@ public class BoardTest {
         board.addMove(0, 'x');
         board.addMove(0, 'x');
         
+        // Assert
         Assert.assertTrue(board.checkIfWin());
     }
     
@@ -40,7 +40,6 @@ public class BoardTest {
         // o - o - o - -
         // x x o x o o -
         // o o x x x o o 
-        System.out.println(2);
         board.addMove(0, 'o');
         board.addMove(0, 'x');
         board.addMove(0, 'o');
@@ -67,6 +66,8 @@ public class BoardTest {
         board.addMove(5, 'o');
         
         board.addMove(6, 'o');
+        
+        // Assert
         Assert.assertTrue(board.checkIfWin());
     }
     
@@ -78,7 +79,6 @@ public class BoardTest {
         // x o o o x x o
         // x x o x o o o
         // x o x x o o o
-        System.out.println(3);
         board.addMove(0, 'x');
         board.addMove(0, 'x');
         board.addMove(0, 'x');
@@ -128,6 +128,7 @@ public class BoardTest {
         board.addMove(6, 'o');
         board.addMove(6, 'o');
         
+        // Assert
         Assert.assertFalse(board.checkIfWin());
         Assert.assertTrue(board.isComplete());
     }
@@ -140,7 +141,6 @@ public class BoardTest {
         // x o o o x o o
         // x x x o x o x
         // x o x x x o x
-        System.out.println(4);
         board.addMove(0, 'x');
         board.addMove(0, 'x');
         board.addMove(0, 'x');
@@ -187,6 +187,7 @@ public class BoardTest {
         board.addMove(6, 'o');
         board.addMove(6, 'o');
         
+        // Assert
         Assert.assertTrue(board.checkIfWin());
         Assert.assertFalse(board.isComplete());
     }
@@ -200,7 +201,6 @@ public class BoardTest {
         // - - x x o o - /
         // - x x o x x - /
         // / / / /
-        System.out.println(5);
         board.addMove(1, 'x');
         
         board.addMove(2, 'x');
@@ -225,6 +225,7 @@ public class BoardTest {
         board.addMove(5, 'o');
         board.addMove(5, 'x');
         
+        // Assert
         Assert.assertTrue(board.checkIfWin());
     }
     
@@ -237,7 +238,6 @@ public class BoardTest {
         // - - x x o o -
         // - x x o x x o
         // / / / /    
-        System.out.println(6);
         board.addMove(1, 'x');
         
         board.addMove(2, 'x');
@@ -267,6 +267,7 @@ public class BoardTest {
         
         board.addMove(6, 'o');
         
+        // Assert
         Assert.assertTrue(board.checkIfWin());
     }
 }

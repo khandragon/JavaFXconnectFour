@@ -1,19 +1,18 @@
 package com.connectfour.data;
 
 import java.util.Arrays;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author Seb
  */
 public class Board {
+    private final static Logger LOG = LoggerFactory.getLogger(Board.class);
+    
     private char[][] board = new char[6][7];
     public Board(){}
-    //TODO:
-    //logs
-    //make methods private/remove if not needed
-    //make more selon request~
-    
-    
+       
     /**
      * Return a deep copy of the board
      * 
@@ -43,8 +42,7 @@ public class Board {
      * @return true if valid connect four
      */
     public boolean checkIfWin(){ 
-        // Horizontal
-        System.out.println("--- Testing Horizontal ---");
+        LOG.debug("--- Testing Horizontal ---");
         char player;
         int counter;
         for(int i=0; i<board.length; i++){
@@ -54,7 +52,7 @@ public class Board {
                 if(board[i][j] == player && player != '\0'){
                     counter++;
                     if (counter == 4){
-                        System.out.println();
+                        LOG.info("Found a horizontal win");
                         return true;
                     }
                 } else {
@@ -64,8 +62,7 @@ public class Board {
             }
         }
         
-        // Vertical
-        System.out.println("--- Testing Vertical ---");
+        LOG.debug("--- Testing Vertical ---");
         for(int j=0; j<board[1].length; j++){
             player = board[0][j];
             counter = 0;
@@ -73,8 +70,7 @@ public class Board {
                 if(board[i][j] == player && player != '\0'){
                    counter++;
                    if (counter == 4){
-                       System.out.println();
-        
+                       LOG.info("Found a vertical win");
                        return true;
                    }
                 } else {
@@ -84,36 +80,31 @@ public class Board {
             }
         }
         
-        // Diagonal Up
-        System.out.println("--- Testing diagonal up ---");
+        LOG.debug("--- Testing Diagonal Up ---");
         for(int i=0; i<3; i++){
             for(int j=0; j<4; j++){
                 player = board[i][j];
                 if(player == board[i+1][j+1]
                         && player == board[i+2][j+2]
                         && player == board[i+3][j+3]){
-                    System.out.println();
-        
+                   LOG.info("Found a diagonal win");
                    return true;
                 }
             }
         }
         
-        // Diagonal Down
-        System.out.println("--- Testing diagonal down ---");
+        LOG.debug("--- Testing Diagonal Down ---");
         for(int i=5; i>2; i--){
             for(int j=0; j<4; j++){
                 player = board[i][j];
                 if(player == board[i-1][j+1]
                         && player == board[i-2][j+2]
                         && player == board[i-3][j+3]){
-                    System.out.println();
-        
+                    LOG.info("Found a diagonal win");
                     return true;
                 }
             }
         }
-        System.out.println();
         return false;
     }
     
@@ -179,10 +170,8 @@ public class Board {
     private void printBoard(){
         for(int i = board.length-1; i>=0; i--){
             for(int j = 0; j<board[1].length; j++){
-                System.out.print(board[i][j] + "-");
+                LOG.info(board[i][j] + "-");
             }
-            System.out.println();
         }
-        System.out.println();
     }
 }
