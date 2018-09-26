@@ -1,53 +1,42 @@
-2018-09-25 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:67) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:67) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:87) - --- Testing diagonal up ---
-2018-09-25 DEBUG [main] (Board.java:100) - --- Testing diagonal down ---
-2018-09-25 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:67) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:87) - --- Testing diagonal up ---
-2018-09-25 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:67) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:67) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:87) - --- Testing diagonal up ---
-2018-09-25 DEBUG [main] (Board.java:100) - --- Testing diagonal down ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:64) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:64) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:81) - --- Testing Diagonal Up ---
-2018-09-25 DEBUG [main] (Board.java:93) - --- Testing Diagonal Down ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:64) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:81) - --- Testing Diagonal Up ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:64) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:64) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:81) - --- Testing Diagonal Up ---
-2018-09-25 DEBUG [main] (Board.java:93) - --- Testing Diagonal Down ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:65) - --- Testing Vertical ---
-2018-09-25  INFO [main] (Board.java:73) - Found a vertical win
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25  INFO [main] (Board.java:55) - Found a horizontal win
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:65) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:83) - --- Testing Diagonal Up ---
-2018-09-25 DEBUG [main] (Board.java:96) - --- Testing Diagonal Down ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:65) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:83) - --- Testing Diagonal Up ---
-2018-09-25  INFO [main] (Board.java:90) - Found a diagonal win
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:65) - --- Testing Vertical ---
-2018-09-25  INFO [main] (Board.java:73) - Found a vertical win
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:65) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:83) - --- Testing Diagonal Up ---
-2018-09-25 DEBUG [main] (Board.java:96) - --- Testing Diagonal Down ---
-2018-09-25  INFO [main] (Board.java:103) - Found a diagonal win
+2018-09-26 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
+2018-09-26 DEBUG [main] (Board.java:66) - --- Testing Vertical ---
+2018-09-26  INFO [main] (Board.java:74) - Found a vertical win
+2018-09-26 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
+2018-09-26  INFO [main] (Board.java:56) - Found a horizontal win
+2018-09-26 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
+2018-09-26 DEBUG [main] (Board.java:66) - --- Testing Vertical ---
+2018-09-26 DEBUG [main] (Board.java:84) - --- Testing Diagonal Up ---
+2018-09-26 DEBUG [main] (Board.java:97) - --- Testing Diagonal Down ---
+2018-09-26 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
+2018-09-26 DEBUG [main] (Board.java:66) - --- Testing Vertical ---
+2018-09-26 DEBUG [main] (Board.java:84) - --- Testing Diagonal Up ---
+2018-09-26  INFO [main] (Board.java:91) - Found a diagonal win
+2018-09-26 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
+2018-09-26 DEBUG [main] (Board.java:66) - --- Testing Vertical ---
+2018-09-26  INFO [main] (Board.java:74) - Found a vertical win
+2018-09-26 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
+2018-09-26 DEBUG [main] (Board.java:66) - --- Testing Vertical ---
+2018-09-26 DEBUG [main] (Board.java:84) - --- Testing Diagonal Up ---
+2018-09-26 DEBUG [main] (Board.java:97) - --- Testing Diagonal Down ---
+2018-09-26  INFO [main] (Board.java:104) - Found a diagonal win
+2018-09-26 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
+2018-09-26 DEBUG [main] (Board.java:66) - --- Testing Vertical ---
+2018-09-26  INFO [main] (Board.java:74) - Found a vertical win
+2018-09-26 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
+2018-09-26  INFO [main] (Board.java:56) - Found a horizontal win
+2018-09-26 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
+2018-09-26 DEBUG [main] (Board.java:66) - --- Testing Vertical ---
+2018-09-26 DEBUG [main] (Board.java:84) - --- Testing Diagonal Up ---
+2018-09-26 DEBUG [main] (Board.java:97) - --- Testing Diagonal Down ---
+2018-09-26 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
+2018-09-26 DEBUG [main] (Board.java:66) - --- Testing Vertical ---
+2018-09-26 DEBUG [main] (Board.java:84) - --- Testing Diagonal Up ---
+2018-09-26  INFO [main] (Board.java:91) - Found a diagonal win
+2018-09-26 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
+2018-09-26 DEBUG [main] (Board.java:66) - --- Testing Vertical ---
+2018-09-26  INFO [main] (Board.java:74) - Found a vertical win
+2018-09-26 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
+2018-09-26 DEBUG [main] (Board.java:66) - --- Testing Vertical ---
+2018-09-26 DEBUG [main] (Board.java:84) - --- Testing Diagonal Up ---
+2018-09-26 DEBUG [main] (Board.java:97) - --- Testing Diagonal Down ---
+2018-09-26  INFO [main] (Board.java:104) - Found a diagonal win
