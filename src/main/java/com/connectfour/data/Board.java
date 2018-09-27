@@ -8,7 +8,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author Seb
+ * This class will deal with the game logic of connect four.
+ * 
+ * @author Seb and Anthony Whitebean
  */
 public class Board {
     private final static Logger LOG = LoggerFactory.getLogger(Board.class);
@@ -231,8 +233,139 @@ public class Board {
      * 
      * @return a boolean representing if it is possible to win or not.
      */
-    private boolean checkIfPossibleWin(int line) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    private boolean checkIfPossibleWin(int line, char player) {
+        int YAxis = getAvailableYAxis(line);
+        
+        /**
+         * The first possibility is that the piece is the final piece of the      
+         * connect, so this part will deal with finishing lines. 
+         * */
+        if (line <= 3)
+        {
+            if (board[YAxis][line + 1] == player
+                    && board[YAxis][line + 2] == player
+                    && board[YAxis][line + 3] == player)
+            {
+                return true;
+            }
+        }
+        if (line >= 3)
+        {
+            if (board[YAxis][line - 1] == player
+                    && board[YAxis][line - 2] == player
+                    && board[YAxis][line - 3] == player)
+            {
+                return true;
+            }
+        }
+        if (YAxis >= 3)
+        {
+            if (board[YAxis - 1][line] == player
+                    && board[YAxis - 2][line] == player
+                    && board[YAxis - 3][line] == player)
+            {
+                return true;
+            }
+            if (line <= 3)
+            {
+                if (board[YAxis - 1][line + 1] == player
+                        && board[YAxis - 2][line + 2] == player
+                        && board[YAxis - 3][line + 3] == player)
+                {
+                    return true;
+                }
+            }
+            if (line >= 3)
+            {
+                if (board[YAxis - 1][line - 1] == player
+                        && board[YAxis - 2][line - 2] == player
+                        && board[YAxis - 3][line - 3] == player)
+                {
+                    return true;
+                }
+            }
+        }
+        if (YAxis <= 2)
+        {
+            if (line <= 3)
+            {
+                if (board[YAxis + 1][line + 1] == player
+                        && board[YAxis + 2][line + 2] == player
+                        && board[YAxis + 3][line + 3] == player)
+                {
+                    return true;
+                }
+            }
+            if (line >= 3)
+            {
+                if (board[YAxis + 1][line - 1] == player
+                        && board[YAxis + 2][line - 2] == player
+                        && board[YAxis + 3][line - 3] == player)
+                {
+                    return true;
+                }
+            }
+        }
+        
+        /**
+         * This second portion deals with the case that the piece falls in
+         * between to be a line.
+         */
+        if (line >= 1 && line <= 4)
+        {
+            if (board[YAxis][line - 1] == player
+                    && board[YAxis][line + 1] == player
+                    && board[YAxis][line + 2] == player)
+            {
+                return true;
+            }
+            if (YAxis >= 1 && YAxis <= 3)
+            {
+                if (board[YAxis - 1][line - 1] == player
+                    && board[YAxis + 1][line + 1] == player
+                    && board[YAxis + 2][line + 2] == player)
+            {
+                return true;
+            }
+            }
+            if (YAxis <= 4 && YAxis >= 2)
+            {
+                if (board[YAxis + 1][line - 1] == player
+                    && board[YAxis - 1][line + 1] == player
+                    && board[YAxis - 2][line + 2] == player)
+            {
+                return true;
+            }
+            }
+        }
+        if (line <= 5 && line >= 2)
+        {
+            if (board[YAxis][line + 1] == player
+                    && board[YAxis][line - 1] == player
+                    && board[YAxis][line - 2] == player)
+            {
+                return true;
+            }
+            if (YAxis >= 1 && YAxis <= 3)
+            {
+                if (board[YAxis - 1][line + 1] == player
+                    && board[YAxis + 1][line - 1] == player
+                    && board[YAxis + 2][line - 2] == player)
+            {
+                return true;
+            }
+            }
+            if (YAxis <= 4 && YAxis >= 2)
+            {
+                if (board[YAxis + 1][line + 1] == player
+                    && board[YAxis - 1][line - 1] == player
+                    && board[YAxis - 2][line - 2] == player)
+            {
+                return true;
+            }
+            }
+        }
+        return false;
     }
 
     /**
@@ -241,8 +374,12 @@ public class Board {
      * @param line representing if it is possible to block an opponent or not
      * @return a boolean representing if it is possible to block or not.
      */
-    private boolean checkIfPossibleBlock(int line) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    private boolean checkIfPossibleBlock(int line, char opponent) { 
+        /**
+         * By checking if the opponent can win, we can easily save time
+         * by blocking that possibility.
+         */
+        return (checkIfPossibleWin(line, opponent));
     }
 
     /**
@@ -252,19 +389,59 @@ public class Board {
      * @return an int representing how many points a line has
      */
     private int evaluatePoints(int line) {
+        /**
+         * C is a place holder for computer until resolved later.
+         * P is a place holder for player until resolved later
+         */
         if (!(checkIfPossibleMove(line)))
         {
             return -1;
         }
-        if (checkIfPossibleWin(line))
+        if (checkIfPossibleWin(line,'C'))
         {
             return 100;
         }
-        if (checkIfPossibleBlock(line))
+        if (checkIfPossibleBlock(line,'P'))
         {
             return 50;                
         }
+        int YAxis = getAvailableYAxis(line);
         
+        if (YAxis = -1)
+        {
+            throw new IllegalArgumentException("Somehow a line that was said to"
+                    + " be able to have an available space does not have an"
+                    + "available space");
+        }
+        
+        int points = 0;
+        
+        for ()
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
+    /**
+     * This will check to see what is the next empty Y axis of a given line is
+     * 
+     * @param line representing the X axis to check
+     * @return an int representing the line to chose.
+     */
+    private int getAvailableYAxis(int line)
+    {
+        int YAxis = 0;
+        while (true)
+        {
+            if (board[YAxis][line] == '')
+            {
+                break;
+            }
+            YAxis++;
+            if (YAxis >= 6)
+            {
+                YAxis = -1;
+                break;
+            }
+        }
+        return YAxis;
     }
 }
