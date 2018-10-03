@@ -1,4 +1,4 @@
-package com.dataComm.java;
+package com.connectfour.app;
 
 public class Controller {
 }
