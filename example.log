@@ -1,53 +1,102 @@
-2018-09-25 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:67) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:67) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:87) - --- Testing diagonal up ---
-2018-09-25 DEBUG [main] (Board.java:100) - --- Testing diagonal down ---
-2018-09-25 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:67) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:87) - --- Testing diagonal up ---
-2018-09-25 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:67) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:46) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:67) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:87) - --- Testing diagonal up ---
-2018-09-25 DEBUG [main] (Board.java:100) - --- Testing diagonal down ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:64) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:64) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:81) - --- Testing Diagonal Up ---
-2018-09-25 DEBUG [main] (Board.java:93) - --- Testing Diagonal Down ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:64) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:81) - --- Testing Diagonal Up ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:64) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:64) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:81) - --- Testing Diagonal Up ---
-2018-09-25 DEBUG [main] (Board.java:93) - --- Testing Diagonal Down ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:65) - --- Testing Vertical ---
-2018-09-25  INFO [main] (Board.java:73) - Found a vertical win
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25  INFO [main] (Board.java:55) - Found a horizontal win
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:65) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:83) - --- Testing Diagonal Up ---
-2018-09-25 DEBUG [main] (Board.java:96) - --- Testing Diagonal Down ---
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:65) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:83) - --- Testing Diagonal Up ---
-2018-09-25  INFO [main] (Board.java:90) - Found a diagonal win
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:65) - --- Testing Vertical ---
-2018-09-25  INFO [main] (Board.java:73) - Found a vertical win
-2018-09-25 DEBUG [main] (Board.java:45) - --- Testing Horizontal ---
-2018-09-25 DEBUG [main] (Board.java:65) - --- Testing Vertical ---
-2018-09-25 DEBUG [main] (Board.java:83) - --- Testing Diagonal Up ---
-2018-09-25 DEBUG [main] (Board.java:96) - --- Testing Diagonal Down ---
-2018-09-25  INFO [main] (Board.java:103) - Found a diagonal win
+2018-10-03  INFO [main] (Board.java:432) - Evaluating points for a move put on 0
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 1
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player o at line 0
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:421) - Check if possible block by checking opponent piece x at line 0
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 1
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player x at line 0
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 1
+2018-10-03  INFO [main] (Board.java:560) - Calculated points = 2
+2018-10-03  INFO [main] (Board.java:179) - 0 has received a point score of 2
+2018-10-03  INFO [main] (Board.java:432) - Evaluating points for a move put on 1
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 1
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player o at line 1
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:421) - Check if possible block by checking opponent piece x at line 1
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 1
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player x at line 1
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 1
+2018-10-03  INFO [main] (Board.java:560) - Calculated points = 2
+2018-10-03  INFO [main] (Board.java:179) - 1 has received a point score of 2
+2018-10-03  INFO [main] (Board.java:432) - Evaluating points for a move put on 2
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 0
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player o at line 2
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:421) - Check if possible block by checking opponent piece x at line 2
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 0
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player x at line 2
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 0
+2018-10-03  INFO [main] (Board.java:560) - Calculated points = 3
+2018-10-03  INFO [main] (Board.java:179) - 2 has received a point score of 3
+2018-10-03  INFO [main] (Board.java:432) - Evaluating points for a move put on 3
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 1
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player o at line 3
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:421) - Check if possible block by checking opponent piece x at line 3
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 1
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player x at line 3
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 1
+2018-10-03  INFO [main] (Board.java:560) - Calculated points = 1
+2018-10-03  INFO [main] (Board.java:179) - 3 has received a point score of 1
+2018-10-03  INFO [main] (Board.java:432) - Evaluating points for a move put on 4
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 0
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player o at line 4
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:421) - Check if possible block by checking opponent piece x at line 4
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 0
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player x at line 4
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 0
+2018-10-03  INFO [main] (Board.java:560) - Calculated points = 2
+2018-10-03  INFO [main] (Board.java:179) - 4 has received a point score of 2
+2018-10-03  INFO [main] (Board.java:432) - Evaluating points for a move put on 5
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 1
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player o at line 5
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:421) - Check if possible block by checking opponent piece x at line 5
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 1
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player x at line 5
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 1
+2018-10-03  INFO [main] (Board.java:560) - Calculated points = 1
+2018-10-03  INFO [main] (Board.java:179) - 5 has received a point score of 1
+2018-10-03  INFO [main] (Board.java:432) - Evaluating points for a move put on 6
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 0
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player o at line 6
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:421) - Check if possible block by checking opponent piece x at line 6
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 0
+2018-10-03  INFO [main] (Board.java:263) - Checking if move is an available win for player x at line 6
+2018-10-03  INFO [main] (Board.java:406) - Available win returned false.
+2018-10-03  INFO [main] (Board.java:572) - Checking available YAxis
+2018-10-03  INFO [main] (Board.java:587) - Found available YAxis = 0
+2018-10-03  INFO [main] (Board.java:560) - Calculated points = 1
+2018-10-03  INFO [main] (Board.java:179) - 6 has received a point score of 1
+2018-10-03  INFO [main] (Board.java:204) - Adding first available choice.
+2018-10-03  INFO [main] (Board.java:194) - 0 with points 2 was beaten by 1 with points 2
+2018-10-03  INFO [main] (Board.java:194) - 0 with points 2 was beaten by 2 with points 3
+2018-10-03  INFO [main] (Board.java:224) - Chosen line = 2

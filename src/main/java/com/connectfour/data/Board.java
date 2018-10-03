@@ -16,8 +16,16 @@ public class Board {
     private final static Logger LOG = LoggerFactory.getLogger(Board.class);
     
     private char[][] board = new char[6][7];
+    private char playerPiece = '-';
+    private char computerPiece = '-';
+    
     public Board(){}
        
+    public Board(char playerPiece, char computerPiece)
+    {
+        this.playerPiece = playerPiece;
+        this.computerPiece = computerPiece;
+    }
     /**
      * Return a deep copy of the board
      * 
@@ -161,27 +169,42 @@ public class Board {
      * @return an int representing what would be the best move for it.
      */
     public int computerMove(){
+        LOG.info("Checking computer move");
         int[] points = new int[7];
         int line = 0;
         
         while (line < 7)
         {
             points[line] = evaluatePoints(line);
+            LOG.info(line + " has received a point score of " + points[line]);
             line++;
         }
         
         List<Integer> choice = new ArrayList<>();
-        choice.add(0);
-        line = 1;
+        choice.add(-1);
+        line = 0;
         while (line < 7)
         {
-            if (points[choice.get(0)] <= points[line])
+            if (points[line] != -1)
             {
-                if (points[choice.get(0)] < points[line])
+                if (choice.get(0) != -1)
                 {
-                    choice.clear();
+                    if (points[choice.get(0)] <= points[line])
+                    {
+                        LOG.info(choice.get(0) + " with points " + points[choice.get(0)] + " was beaten by " + line + " with points " + points[line]);
+                        if (points[choice.get(0)] < points[line])
+                        {
+                            choice.clear();
+                        }
+                        choice.add(line);
+                    }
                 }
-                choice.add(line);
+                else
+                {
+                    LOG.info("Adding first available choice.");
+                    choice.clear();
+                    choice.add(line);
+                }
             }
             line++;
         }
@@ -197,6 +220,8 @@ public class Board {
             best = choice.get(rand.nextInt(choice.size() - 1));
         }
         
+        
+        LOG.info("Chosen line = " + best);
         return best;
     }
     
@@ -235,7 +260,7 @@ public class Board {
      */
     private boolean checkIfPossibleWin(int line, char player) {
         int YAxis = getAvailableYAxis(line);
-        
+        LOG.info("Checking if move is an available win for player " + player + " at line " + line);
         /**
          * The first possibility is that the piece is the final piece of the      
          * connect, so this part will deal with finishing lines. 
@@ -246,6 +271,7 @@ public class Board {
                     && board[YAxis][line + 2] == player
                     && board[YAxis][line + 3] == player)
             {
+                LOG.info("Available win returned true.");
                 return true;
             }
         }
@@ -255,6 +281,7 @@ public class Board {
                     && board[YAxis][line - 2] == player
                     && board[YAxis][line - 3] == player)
             {
+                LOG.info("Available win returned true.");
                 return true;
             }
         }
@@ -264,6 +291,7 @@ public class Board {
                     && board[YAxis - 2][line] == player
                     && board[YAxis - 3][line] == player)
             {
+                LOG.info("Available win returned true.");
                 return true;
             }
             if (line <= 3)
@@ -272,6 +300,7 @@ public class Board {
                         && board[YAxis - 2][line + 2] == player
                         && board[YAxis - 3][line + 3] == player)
                 {
+                    LOG.info("Available win returned true.");
                     return true;
                 }
             }
@@ -281,6 +310,7 @@ public class Board {
                         && board[YAxis - 2][line - 2] == player
                         && board[YAxis - 3][line - 3] == player)
                 {
+                    LOG.info("Available win returned true.");
                     return true;
                 }
             }
@@ -293,6 +323,7 @@ public class Board {
                         && board[YAxis + 2][line + 2] == player
                         && board[YAxis + 3][line + 3] == player)
                 {
+                    LOG.info("Available win returned true.");
                     return true;
                 }
             }
@@ -302,6 +333,7 @@ public class Board {
                         && board[YAxis + 2][line - 2] == player
                         && board[YAxis + 3][line - 3] == player)
                 {
+                    LOG.info("Available win returned true.");
                     return true;
                 }
             }
@@ -317,6 +349,7 @@ public class Board {
                     && board[YAxis][line + 1] == player
                     && board[YAxis][line + 2] == player)
             {
+                LOG.info("Available win returned true.");
                 return true;
             }
             if (YAxis >= 1 && YAxis <= 3)
@@ -325,6 +358,7 @@ public class Board {
                     && board[YAxis + 1][line + 1] == player
                     && board[YAxis + 2][line + 2] == player)
             {
+                LOG.info("Available win returned true.");
                 return true;
             }
             }
@@ -334,6 +368,7 @@ public class Board {
                     && board[YAxis - 1][line + 1] == player
                     && board[YAxis - 2][line + 2] == player)
             {
+                LOG.info("Available win returned true.");
                 return true;
             }
             }
@@ -344,6 +379,7 @@ public class Board {
                     && board[YAxis][line - 1] == player
                     && board[YAxis][line - 2] == player)
             {
+                LOG.info("Available win returned true.");
                 return true;
             }
             if (YAxis >= 1 && YAxis <= 3)
@@ -352,6 +388,7 @@ public class Board {
                     && board[YAxis + 1][line - 1] == player
                     && board[YAxis + 2][line - 2] == player)
             {
+                LOG.info("Available win returned true.");
                 return true;
             }
             }
@@ -361,10 +398,12 @@ public class Board {
                     && board[YAxis - 1][line - 1] == player
                     && board[YAxis - 2][line - 2] == player)
             {
+                LOG.info("Available win returned true.");
                 return true;
             }
             }
         }
+        LOG.info("Available win returned false.");
         return false;
     }
 
@@ -379,6 +418,7 @@ public class Board {
          * By checking if the opponent can win, we can easily save time
          * by blocking that possibility.
          */
+        LOG.info("Check if possible block by checking opponent piece " + opponent + " at line " + line);
         return (checkIfPossibleWin(line, opponent));
     }
 
@@ -389,25 +429,25 @@ public class Board {
      * @return an int representing how many points a line has
      */
     private int evaluatePoints(int line) {
-        /**
-         * C is a place holder for computer until resolved later.
-         * P is a place holder for player until resolved later
-         */
+        LOG.info("Evaluating points for a move put on " + line);
         if (!(checkIfPossibleMove(line)))
         {
+            LOG.info("Unavailable move for line.");
             return -1;
         }
-        if (checkIfPossibleWin(line,'C'))
+        if (checkIfPossibleWin(line,computerPiece))
         {
+            LOG.info("Move is a win.");
             return 100;
         }
-        if (checkIfPossibleBlock(line,'P'))
+        if (checkIfPossibleBlock(line,playerPiece))
         {
+            LOG.info("Move blocks a win.");
             return 50;                
         }
         int YAxis = getAvailableYAxis(line);
         
-        if (YAxis = -1)
+        if (YAxis == -1)
         {
             throw new IllegalArgumentException("Somehow a line that was said to"
                     + " be able to have an available space does not have an"
@@ -416,8 +456,109 @@ public class Board {
         
         int points = 0;
         
-        for ()
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        if (YAxis > 0)
+        {
+            if (board[YAxis - 1][line] == playerPiece || board[YAxis - 1][line] == computerPiece)
+            {
+                points++;
+            }
+            if (YAxis > 1)
+            {
+                if (board[YAxis - 2][line] == playerPiece || board[YAxis - 2][line] == computerPiece)
+                {
+                    points++;
+                }
+            }
+        }
+        //Checking the right side
+        if (line < 6)
+        {
+            if (board[YAxis][line + 1] == playerPiece || board[YAxis][line + 1] == computerPiece)
+            {
+                points++;
+            }
+            if (line < 5)
+            {
+                if (board[YAxis][line + 2] == playerPiece || board[YAxis][line + 2] == computerPiece)
+                {   
+                    points++;
+                }
+            }
+            if (YAxis > 0)
+            {
+                if (board[YAxis - 1][line + 1] == playerPiece || board[YAxis - 1][line + 1] == computerPiece)
+                {
+                    points++;
+                }
+                if (YAxis > 1 && line < 5)
+                {
+                    if (board[YAxis - 2][line + 2] == playerPiece || board[YAxis - 2][line + 2] == computerPiece)
+                    {
+                        points++;
+                    }
+                }
+            }           
+            if (YAxis < 5)
+            {
+                if (board[YAxis + 1][line + 1] == playerPiece || board[YAxis + 1][line + 1] == computerPiece)
+                {
+                    points++;
+                }
+                if (YAxis < 4 && line < 5)
+                {
+                    if (board[YAxis + 2][line + 2] == playerPiece || board[YAxis + 2][line + 2] == computerPiece)
+                    {
+                        points++;
+                    }
+                }
+            }
+        }
+        
+        //Checking left side
+        if (line > 0)
+        {
+            if (board[YAxis][line - 1] == playerPiece || board[YAxis][line - 1] == computerPiece)
+            {
+                points++;
+            }
+            if (line > 1)
+            {
+                if (board[YAxis][line - 2] == playerPiece || board[YAxis][line - 2] == computerPiece)
+                {   
+                    points++;
+                }
+            }
+            if (YAxis > 0)
+            {
+                if (board[YAxis - 1][line - 1] == playerPiece || board[YAxis - 1][line - 1] == computerPiece)
+                {
+                    points++;
+                }
+                if (YAxis > 1 && line > 1)
+                {
+                    if (board[YAxis - 2][line - 2] == playerPiece || board[YAxis - 2][line - 2] == computerPiece)
+                    {
+                        points++;
+                    }
+                }
+            }           
+            if (YAxis < 5)
+            {
+                if (board[YAxis + 1][line - 1] == playerPiece || board[YAxis + 1][line - 1] == computerPiece)
+                {
+                    points++;
+                }
+                if (YAxis < 4 && line > 1)
+                {
+                    if (board[YAxis + 2][line - 2] == playerPiece || board[YAxis + 2][line - 2] == computerPiece)
+                    {
+                        points++;
+                    }
+                }
+            }
+        }
+        LOG.info("Calculated points = " + points);
+        return points;
     }
     
     /**
@@ -428,10 +569,11 @@ public class Board {
      */
     private int getAvailableYAxis(int line)
     {
+        LOG.info("Checking available YAxis");
         int YAxis = 0;
         while (true)
         {
-            if (board[YAxis][line] == '')
+            if (board[YAxis][line] == '\u0000')
             {
                 break;
             }
@@ -442,6 +584,7 @@ public class Board {
                 break;
             }
         }
+        LOG.info("Found available YAxis = " + YAxis);
         return YAxis;
     }
 }

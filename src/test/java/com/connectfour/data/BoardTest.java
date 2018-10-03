@@ -12,7 +12,7 @@ public class BoardTest {
     
     @Before
     public void init(){
-        board = new Board();
+        board = new Board('x','o');
     }
     
     @Test
@@ -269,5 +269,138 @@ public class BoardTest {
         
         // Assert
         Assert.assertTrue(board.checkIfWin());
+    }
+    
+    @Test
+    public void checkFullBoardComputerMove()
+    {
+        // x o o o o o o
+        // x x x o x x o
+        // o o x x o x x
+        // x o o o x o o
+        // x x x o x o x
+        // x o x x x o x
+        board.addMove(0, 'x');
+        board.addMove(0, 'x');
+        board.addMove(0, 'x');
+        board.addMove(0, 'o');
+        board.addMove(0, 'x');
+        board.addMove(0, 'x');
+        
+        
+        board.addMove(1, 'o');
+        board.addMove(1, 'x');
+        board.addMove(1, 'o');
+        board.addMove(1, 'o');
+        board.addMove(1, 'x');
+        board.addMove(1, 'o');
+        
+        board.addMove(2, 'x');
+        board.addMove(2, 'x');
+        board.addMove(2, 'o');
+        board.addMove(2, 'x');
+        board.addMove(2, 'x');
+        board.addMove(2, 'o');
+        
+        board.addMove(3, 'x');
+        board.addMove(3, 'o');
+        board.addMove(3, 'o');
+        board.addMove(3, 'x');
+        board.addMove(3, 'o');
+        board.addMove(3, 'o');
+        
+        board.addMove(4, 'x');
+        board.addMove(4, 'x');
+        board.addMove(4, 'x');
+        board.addMove(4, 'o');
+        board.addMove(4, 'x');
+        board.addMove(4, 'o');
+        
+        board.addMove(5, 'o');
+        board.addMove(5, 'o');
+        board.addMove(5, 'o');
+        board.addMove(5, 'x');
+        board.addMove(5, 'x');
+        board.addMove(5, 'o');
+        
+        board.addMove(6, 'x');
+        board.addMove(6, 'x');
+        board.addMove(6, 'o');
+        board.addMove(6, 'x');
+        board.addMove(6, 'o');
+        board.addMove(6, 'o');
+        
+        int number = board.computerMove();
+        
+        Assert.assertEquals(-1, number);
+    }
+    
+    @Test
+    public void pickWin()
+    {
+        // - - - - - - -
+        // - - - - - - -
+        // - - - - - - -
+        // x - - - - - -
+        // x - - - - - -
+        // x o o o - - -
+        board.addMove(0, 'x');
+        board.addMove(0, 'x');
+        board.addMove(0, 'x');
+        
+        board.addMove(1, 'o');
+        board.addMove(2, 'o');
+        board.addMove(3, 'o');
+        
+        int number = board.computerMove();
+        
+        Assert.assertEquals(4, number);
+    }
+    
+    @Test
+    public void pickBlock()
+    {
+        // - - - - - - -
+        // - - - - - - -
+        // - - - - - - -
+        // x - - - - - x
+        // x - - o - x o
+        // x - - x - o o
+        board.addMove(0, 'x');
+        board.addMove(0, 'x');
+        board.addMove(0, 'x');
+        
+        board.addMove(3, 'x');
+        board.addMove(3, 'o');
+        
+        board.addMove(5, 'o');
+        board.addMove(5, 'x');
+        
+        board.addMove(5, 'o');
+        board.addMove(5, 'o');
+        board.addMove(5, 'x');
+        
+        int number = board.computerMove();
+        
+        Assert.assertEquals(0, number);
+    }
+    
+    @Test
+    public void pickBestChoice()
+    {
+        // - - - - - - -
+        // - - - - - - -
+        // - - - - - - -
+        // - - - - - - -
+        // - - - - - - -
+        // x x - o - x -
+        board.addMove(0, 'x');
+        board.addMove(1, 'x');
+        board.addMove(3, 'o');
+        board.addMove(5, 'x');
+        
+        int number = board.computerMove();
+        
+        Assert.assertEquals(2, number);
     }
 }
