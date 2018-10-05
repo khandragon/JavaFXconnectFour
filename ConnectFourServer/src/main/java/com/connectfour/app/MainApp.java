@@ -1,21 +1,25 @@
 package main.java.com.connectfour.app;
 
-/**
- * @author Seb
- */
-public final class MainApp {
+import java.io.IOException;
 
-    public void perform() {
+import javafx.application.Application;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
+public class MainApp extends Application {
+
+    public static void main(String[] args) {
+        launch(args);
     }
 
-    /**
-     * Begin Execution
-     *
-     * @param args
-     */
-    public static void main(String[] args) {
-        MainApp m = new MainApp();
-        m.perform();
-        System.exit(0);
+    @Override
+    public void start(Stage primaryStage) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        primaryStage.setTitle("Connect Four Server");
+        primaryStage.setScene(new Scene(root, 500, 475));
+        primaryStage.show();
     }
 }
