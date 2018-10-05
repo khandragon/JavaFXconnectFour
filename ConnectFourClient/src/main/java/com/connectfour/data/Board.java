@@ -407,7 +407,7 @@ public class Board {
         }
         int YAxis = getAvailableYAxis(line);
         
-        if (YAxis = -1)
+        if (YAxis == -1)
         {
             throw new IllegalArgumentException("Somehow a line that was said to"
                     + " be able to have an available space does not have an"
@@ -416,8 +416,10 @@ public class Board {
         
         int points = 0;
         
-        for ()
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //for ()
+        //throw new UnsupportedOperationException("Not supported yet.");
+        // To change body of generated methods, choose Tools | Templates.
+        return YAxis;
     }
     
     /**
@@ -431,7 +433,7 @@ public class Board {
         int YAxis = 0;
         while (true)
         {
-            if (board[YAxis][line] == '')
+            if (board[YAxis][line] == ' ')
             {
                 break;
             }
