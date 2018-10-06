@@ -12,20 +12,45 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/connectfour/app/MainApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="208">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/connectfour/data/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11076">
-              <caret line="435" column="40" selection-start-line="435" selection-start-column="40" selection-end-line="435" selection-end-column="40" />
+            <state relative-caret-position="909">
+              <caret line="235" selection-start-line="235" selection-end-line="235" />
+              <folding>
+                <element signature="docComment;method#getBoard#0;class#Board#0" />
+                <element signature="docComment;method#isComplete#0;class#Board#0" />
+                <element signature="method#isComplete#0;class#Board#0" />
+                <element signature="docComment;method#checkIfWin#0;class#Board#0" />
+                <element signature="method#checkIfWin#0;class#Board#0" />
+                <element signature="docComment;method#checkIfTie#0;class#Board#0" />
+                <element signature="method#checkIfTie#0;class#Board#0" />
+                <element signature="docComment;method#checkIfPossibleMove#0;class#Board#0" />
+                <element signature="docComment;method#addMove#0;class#Board#0" />
+                <element signature="method#addMove#0;class#Board#0" />
+                <element signature="docComment;method#computerMove#0;class#Board#0" />
+                <element signature="method#computerMove#0;class#Board#0" />
+                <element signature="docComment;method#deepCopy2D#0;class#Board#0" />
+                <element signature="method#deepCopy2D#0;class#Board#0" />
+                <element signature="method#printBoard#0;class#Board#0" />
+                <element signature="docComment;method#checkIfPossibleWin#0;class#Board#0" />
+                <element signature="method#checkIfPossibleWin#0;class#Board#0" />
+                <element signature="docComment;method#checkIfPossibleBlock#0;class#Board#0" />
+                <element signature="method#checkIfPossibleBlock#0;class#Board#0" />
+                <element signature="docComment;method#evaluatePoints#0;class#Board#0" />
+                <element signature="method#evaluatePoints#0;class#Board#0" />
+                <element signature="docComment;method#getAvailableYAxis#0;class#Board#0" />
+                <element signature="method#getAvailableYAxis#0;class#Board#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -154,6 +179,14 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ConnectFour" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConnectFourClient" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -243,16 +276,15 @@
       <workItem from="1538708883457" duration="648000" />
       <workItem from="1538711348156" duration="3107000" />
       <workItem from="1538762407762" duration="112000" />
-      <workItem from="1538762881728" duration="1769000" />
+      <workItem from="1538762881728" duration="2489000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5854000" />
+    <option name="totallyTimeSpent" value="6574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -267,7 +299,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.10021322" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18230277" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -289,6 +321,11 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/com/connectfour/app/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -301,6 +338,31 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11310">
           <caret line="435" column="40" selection-start-line="435" selection-start-column="40" selection-end-line="435" selection-end-column="40" />
+          <folding>
+            <element signature="docComment;method#getBoard#0;class#Board#0" />
+            <element signature="docComment;method#isComplete#0;class#Board#0" />
+            <element signature="method#isComplete#0;class#Board#0" />
+            <element signature="docComment;method#checkIfWin#0;class#Board#0" />
+            <element signature="method#checkIfWin#0;class#Board#0" />
+            <element signature="docComment;method#checkIfTie#0;class#Board#0" />
+            <element signature="method#checkIfTie#0;class#Board#0" />
+            <element signature="docComment;method#checkIfPossibleMove#0;class#Board#0" />
+            <element signature="docComment;method#addMove#0;class#Board#0" />
+            <element signature="method#addMove#0;class#Board#0" />
+            <element signature="docComment;method#computerMove#0;class#Board#0" />
+            <element signature="method#computerMove#0;class#Board#0" />
+            <element signature="docComment;method#deepCopy2D#0;class#Board#0" />
+            <element signature="method#deepCopy2D#0;class#Board#0" />
+            <element signature="method#printBoard#0;class#Board#0" />
+            <element signature="docComment;method#checkIfPossibleWin#0;class#Board#0" />
+            <element signature="method#checkIfPossibleWin#0;class#Board#0" />
+            <element signature="docComment;method#checkIfPossibleBlock#0;class#Board#0" />
+            <element signature="method#checkIfPossibleBlock#0;class#Board#0" />
+            <element signature="docComment;method#evaluatePoints#0;class#Board#0" />
+            <element signature="method#evaluatePoints#0;class#Board#0" />
+            <element signature="docComment;method#getAvailableYAxis#0;class#Board#0" />
+            <element signature="method#getAvailableYAxis#0;class#Board#0" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -360,13 +422,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectfour/data/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11076">
-          <caret line="435" column="40" selection-start-line="435" selection-start-column="40" selection-end-line="435" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/connectfour/connect/serverConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -376,8 +431,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/connectfour/app/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="130">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+        <state relative-caret-position="208">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/connectfour/data/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="909">
+          <caret line="235" selection-start-line="235" selection-end-line="235" />
+          <folding>
+            <element signature="docComment;method#getBoard#0;class#Board#0" />
+            <element signature="docComment;method#isComplete#0;class#Board#0" />
+            <element signature="method#isComplete#0;class#Board#0" />
+            <element signature="docComment;method#checkIfWin#0;class#Board#0" />
+            <element signature="method#checkIfWin#0;class#Board#0" />
+            <element signature="docComment;method#checkIfTie#0;class#Board#0" />
+            <element signature="method#checkIfTie#0;class#Board#0" />
+            <element signature="docComment;method#checkIfPossibleMove#0;class#Board#0" />
+            <element signature="docComment;method#addMove#0;class#Board#0" />
+            <element signature="method#addMove#0;class#Board#0" />
+            <element signature="docComment;method#computerMove#0;class#Board#0" />
+            <element signature="method#computerMove#0;class#Board#0" />
+            <element signature="docComment;method#deepCopy2D#0;class#Board#0" />
+            <element signature="method#deepCopy2D#0;class#Board#0" />
+            <element signature="method#printBoard#0;class#Board#0" />
+            <element signature="docComment;method#checkIfPossibleWin#0;class#Board#0" />
+            <element signature="method#checkIfPossibleWin#0;class#Board#0" />
+            <element signature="docComment;method#checkIfPossibleBlock#0;class#Board#0" />
+            <element signature="method#checkIfPossibleBlock#0;class#Board#0" />
+            <element signature="docComment;method#evaluatePoints#0;class#Board#0" />
+            <element signature="method#evaluatePoints#0;class#Board#0" />
+            <element signature="docComment;method#getAvailableYAxis#0;class#Board#0" />
+            <element signature="method#getAvailableYAxis#0;class#Board#0" />
+          </folding>
         </state>
       </provider>
     </entry>

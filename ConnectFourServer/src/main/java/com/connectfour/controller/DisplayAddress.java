@@ -1,8 +1,11 @@
 package main.java.com.connectfour.controller;
 
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.net.InetAddress;
 import java.net.ServerSocket;
+import java.net.Socket;
 import java.net.UnknownHostException;
 
 import javafx.event.ActionEvent;
@@ -19,29 +22,35 @@ public class DisplayAddress {
     private Label port;
     @FXML
     private Button closeButton;
+    @FXML
+    private Button connectButton;
 
 
     public void initialize() {
-        //192.168.10.1
         address.setText("IP Address: " + getIPAddress());
-        port.setText("Port#: "+ getPortNumber());
-        beginConnectionSearch();
+        port.setText("Port#: " + getPortNumber());
     }
 
+    @FXML
     private void beginConnectionSearch() {
         try {
             int servPort = Integer.parseInt(getPortNumber());
             ServerSocket servSock = new ServerSocket(servPort);
 
             int recvMsgSize;
-            char[] charBuffer = new char[1];
-            while (true){
+            byte[] byteBuffer = new byte[32];
+            while (true) {
+                Socket socket = servSock.accept();
                 System.out.println("waiting for connection...");
-                
+
+                InputStream in = socket.getInputStream();
+                OutputStream out = socket.getOutputStream();
+
+                while ((recvMsgSize = in.read(byteBuffer)) != -1) {
+                    out.write(byteBuffer, 0, recvMsgSize);
+                }
+                socket.close();
             }
-
-
-
         } catch (IOException e) {
             e.printStackTrace();
         }
