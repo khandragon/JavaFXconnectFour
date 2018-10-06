@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/../ConnectFourClient/ConnectFour.iml" filepath="$PROJECT_DIR$/../ConnectFourClient/ConnectFour.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ConnectFourServer.iml" filepath="$PROJECT_DIR$/ConnectFourServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/connectFourServer.iml" filepath="$PROJECT_DIR$/connectFourServer.iml" />
     </modules>
   </component>
 </project>
