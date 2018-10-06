@@ -1,8 +1,0 @@
-#surefire
-#Tue Sep 25 12:03:22 EDT 2018
-maven.ext.class.path=C\:\\Program Files (x86)\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar
-user.dir=C\:\\Users\\Seb\\Documents\\NetBeansProjects\\ConnectFour
-file.encoding=UTF-8
-localRepository=C\:\\Users\\Seb\\.m2\\repository
-basedir=C\:\\Users\\Seb\\Documents\\NetBeansProjects\\ConnectFour
-test=com.connectfour.data.BoardTest

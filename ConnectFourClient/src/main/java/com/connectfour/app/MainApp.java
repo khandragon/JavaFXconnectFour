@@ -1,27 +1,29 @@
 package com.connectfour.app;
 
-import com.connectfour.data.Board;
+import sun.applet.Main;
 
-/**
- * @author Seb
- */
-public final class MainApp {
+import java.io.IOException;
 
-    public void perform() {
-        // Create classes
-        Board board = new Board();
-        
-        // Call presentation
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
+
+public class MainApp extends Application {
+
+    public static void main(String[] args) {
+        launch(args);
     }
 
-    /**
-     * Begin Execution
-     *
-     * @param args
-     */
-    public static void main(String[] args) {
-        MainApp m = new MainApp();
-        m.perform();
-        System.exit(0);
+    @Override
+    public void start(Stage primaryStage) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("../../mains.fxml"));
+        Scene scene = new Scene(root);
+        primaryStage.setScene(scene);
+        primaryStage.setTitle("Connect Four Server");
+        primaryStage.show();
     }
 }

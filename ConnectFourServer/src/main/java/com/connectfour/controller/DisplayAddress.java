@@ -33,24 +33,25 @@ public class DisplayAddress {
 
     @FXML
     private void beginConnectionSearch() {
+        connectButton.setDisable(true);
         try {
             int servPort = Integer.parseInt(getPortNumber());
             ServerSocket servSock = new ServerSocket(servPort);
 
             int recvMsgSize;
             byte[] byteBuffer = new byte[32];
-            while (true) {
-                Socket socket = servSock.accept();
+            //while (true) {
+                Socket player1 = servSock.accept();
                 System.out.println("waiting for connection...");
 
-                InputStream in = socket.getInputStream();
-                OutputStream out = socket.getOutputStream();
+                InputStream in = player1.getInputStream();
+                OutputStream out = player1.getOutputStream();
 
-                while ((recvMsgSize = in.read(byteBuffer)) != -1) {
-                    out.write(byteBuffer, 0, recvMsgSize);
-                }
-                socket.close();
-            }
+               // while ((recvMsgSize = in.read(byteBuffer)) != -1) {
+                    //out.write(byteBuffer, 0, recvMsgSize);
+                //}
+                player1.close();
+            //}
         } catch (IOException e) {
             e.printStackTrace();
         }
