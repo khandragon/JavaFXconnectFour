@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="200.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.connectfour.controller.DisplayAddress">
+    <children>
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="21.0" layoutY="14.0" prefHeight="51.0" prefWidth="265.0" text="Scrabble Server Connector">
+            <font>
+                <Font name="Comic Sans MS" size="20.0" />
+            </font>
+        </Label>
+        <Label fx:id="address" layoutX="21.0" layoutY="85.0" prefHeight="31.0" prefWidth="90.0" text="IP Address: " />
+        <Button fx:id="closeButton" layoutX="91.0" layoutY="149.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="21.0" prefWidth="118.0" text="Quit" />
+      <Label fx:id="port" layoutX="21.0" layoutY="116.0" prefHeight="31.0" prefWidth="90.0" text="Port #:" />
+    </children>
+</AnchorPane>
