@@ -23,7 +23,7 @@ public class MainApp extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("../../../../resources/fxml/main.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Connect Four Server");
+        primaryStage.setTitle("Connect Four Client");
         primaryStage.show();
     }
 }

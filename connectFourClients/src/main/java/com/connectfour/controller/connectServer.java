@@ -1,5 +1,8 @@
 package main.java.com.connectfour.controller;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.DataInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -20,8 +23,13 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
 import javafx.stage.WindowEvent;
+import main.java.com.connectfour.data.Board;
+import main.java.com.connectfour.data.Connect4Connector;
+import main.java.com.connectfour.data.PacketInfo;
 
 public class connectServer {
+
+    private final static Logger LOG = LoggerFactory.getLogger(Board.class);
 
     @FXML
     private TextField inputAddress;
@@ -40,33 +48,15 @@ public class connectServer {
     }
 
     private void connectToServer(String server, String servPort) {
-        final Socket socket;
-        final DataInputStream in;
-        final OutputStream out;
-
+        Connect4Connector connection = new Connect4Connector(server, Integer.parseInt(servPort));
         try {
-            // Create socket and fetch I/O streams
-            socket = new Socket(server, Integer.parseInt(servPort));
-
-            in = new DataInputStream(socket.getInputStream());
-            out = socket.getOutputStream();
-
-            Stage stage = (Stage) closeButton.getScene().getWindow();
-
-            stage.setOnCloseRequest(new EventHandler<WindowEvent>() {
-                @Override
-                public void handle(WindowEvent t) {
-                    try {
-                        socket.close();
-                    } catch (Exception exception) {
-                    }
-                    System.exit(0);
-                }
-            });
-
-        } catch (SocketException e) {
+        byte[] data = connection.receiveData();
+            System.out.println(data[2]);
+            connection.sendData(PacketInfo.MOVE, PacketInfo.PLAYER_ONE, (byte) 2);
         } catch (IOException e) {
+            e.printStackTrace();
         }
+
     }
 
     private boolean validInput(String address, String port) {

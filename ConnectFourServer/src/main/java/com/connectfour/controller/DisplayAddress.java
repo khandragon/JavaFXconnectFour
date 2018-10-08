@@ -13,6 +13,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.fxml.FXML;
 import javafx.stage.Stage;
+import main.java.com.connectfour.data.GameSession;
 
 public class DisplayAddress {
 
@@ -39,19 +40,21 @@ public class DisplayAddress {
             ServerSocket servSock = new ServerSocket(servPort);
 
             int recvMsgSize;
-            byte[] byteBuffer = new byte[32];
-            //while (true) {
+            byte[] byteBuffer = new byte[3];
+            while (true) {
                 Socket player1 = servSock.accept();
-                System.out.println("waiting for connection...");
+                System.out.println("player found...");
 
-                InputStream in = player1.getInputStream();
-                OutputStream out = player1.getOutputStream();
+                GameSession gs = new GameSession(player1);
+                //InputStream in = player1.getInputStream();
+                //OutputStream out = player1.getOutputStream();
 
                // while ((recvMsgSize = in.read(byteBuffer)) != -1) {
                     //out.write(byteBuffer, 0, recvMsgSize);
                 //}
                 player1.close();
-            //}
+                break;
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -66,8 +69,7 @@ public class DisplayAddress {
     //192.168.10.1
     private String getIPAddress() {
         try {
-            String hi = InetAddress.getLocalHost().getHostAddress();
-            return hi;
+            return InetAddress.getLocalHost().getHostAddress();
         } catch (UnknownHostException e) {
             e.printStackTrace();
             return "falure to get address";
