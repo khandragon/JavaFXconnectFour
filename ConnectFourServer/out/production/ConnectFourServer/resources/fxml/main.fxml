@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.java.com.connectfour.controller.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.connectfour.controller.MainController">
     <children>
         <Button fx:id="startServer" layoutX="78.0" layoutY="244.0" mnemonicParsing="false" onAction="#displayServer" prefHeight="47.0" prefWidth="199.0" text="Start Server" />
         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="120.0" layoutY="49.0" prefHeight="108.0" prefWidth="361.0" text="Connect Four Server">

@@ -66,11 +66,31 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="312">
-                  <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+                <state relative-caret-position="260">
+                  <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="displayAddress.fxml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/displayAddress.fxml">
+              <provider editor-type-id="JavaFX-Scene-Builder" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="182">
+                  <caret line="7" column="141" selection-start-line="7" selection-start-column="141" selection-end-line="7" selection-end-column="141" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="main.fxml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main.fxml">
+              <provider editor-type-id="JavaFX-Scene-Builder" />
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="182">
+                  <caret line="7" column="221" selection-start-line="7" selection-start-column="221" selection-end-line="7" selection-end-column="221" />
                 </state>
               </provider>
             </entry>
@@ -138,7 +158,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/PacketInfo.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="26">
-                  <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+                  <caret line="1" selection-start-line="1" selection-end-line="1" />
                 </state>
               </provider>
             </entry>
@@ -185,15 +205,15 @@
         <option value="$PROJECT_DIR$/src/main/java/com/connectfour/view/displayAddress.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectfour/app/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectfour/controller/Controller.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectfour/controller/MainController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/fxml/displayAddress.fxml" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectfour/data/Board.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectfour/controller/DisplayAddress.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectfour/data/PacketInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectfour/data/Connect4Connector.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/connectfour/data/GameSession.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/displayAddress.fxml" />
+        <option value="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" />
       </list>
     </option>
   </component>
@@ -231,6 +251,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -300,7 +321,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -498,14 +518,16 @@
       <workItem from="1539179766661" duration="1447000" />
       <workItem from="1539278339243" duration="412000" />
       <workItem from="1539709895980" duration="1120000" />
+      <workItem from="1539715164981" duration="249000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51151000" />
+    <option name="totallyTimeSpent" value="51400000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -517,11 +539,11 @@
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.18176973" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3216885" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32051283" />
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5704918" visible="true" weight="0.16912752" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.5704918" visible="true" weight="0.17114094" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" sideWeight="0.4295082" side_tool="true" weight="0.15671642" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -570,20 +592,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/PacketInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -882,14 +890,30 @@
     <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/PacketInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="260">
+          <caret line="21" column="64" selection-start-line="21" selection-start-column="64" selection-end-line="21" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/displayAddress.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="141" selection-start-line="7" selection-start-column="141" selection-end-line="7" selection-end-column="141" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/main.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="221" selection-start-line="7" selection-start-column="221" selection-end-line="7" selection-end-column="221" />
         </state>
       </provider>
     </entry>
@@ -910,7 +934,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>No facets are configured</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -958,7 +982,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: junit:junit:4.12</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
