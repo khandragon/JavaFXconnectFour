@@ -1,4 +1,7 @@
-main\java\com\connectfour\controller\DisplayAddress.class
-main\java\com\connectfour\data\Board.class
-main\java\com\connectfour\app\MainApp.class
-main\java\com\connectfour\controller\MainController.class
+com\connectfour\data\Board.class
+com\connectfour\data\PacketInfo.class
+com\connectfour\controller\DisplayAddress.class
+com\connectfour\data\GameSession.class
+com\connectfour\data\Connect4Connector.class
+com\connectfour\app\MainApp.class
+com\connectfour\controller\MainController.class
