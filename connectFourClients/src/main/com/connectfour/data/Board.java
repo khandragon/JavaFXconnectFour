@@ -1,4 +1,4 @@
-package main.java.com.connectfour.data;
+package com.connectfour.data;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

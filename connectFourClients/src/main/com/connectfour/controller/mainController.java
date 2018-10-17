@@ -1,4 +1,4 @@
-package main.java.com.connectfour.controller;
+package com.connectfour.controller;
 
 import java.io.IOException;
 
@@ -21,7 +21,7 @@ public class mainController {
     }
 
     public void displayConnector(ActionEvent actionEvent) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../../../../resources/fxml/connectServer.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/connectServer.fxml"));
         Scene scene = new Scene(root);
         Stage addressDisplayStage = new Stage();
         addressDisplayStage.setTitle("Connect Four Server: Connector");

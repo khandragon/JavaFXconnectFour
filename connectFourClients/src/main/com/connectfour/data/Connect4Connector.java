@@ -1,4 +1,4 @@
-package main.java.com.connectfour.data;
+package com.connectfour.data;
 
 import java.io.IOException;
 import java.io.InputStream;

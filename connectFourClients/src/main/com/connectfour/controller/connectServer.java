@@ -1,31 +1,19 @@
-package main.java.com.connectfour.controller;
+package com.connectfour.controller;
+
+import com.connectfour.data.Board;
+import com.connectfour.data.Connect4Connector;
+import com.connectfour.data.PacketInfo;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.DataInputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.InetAddress;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.net.SocketException;
-import java.net.UnknownHostException;
 
 import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.fxml.FXML;
+import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
-import javafx.scene.input.KeyCode;
-import javafx.scene.input.KeyEvent;
 import javafx.stage.Stage;
-import javafx.stage.WindowEvent;
-import main.java.com.connectfour.data.Board;
-import main.java.com.connectfour.data.Connect4Connector;
-import main.java.com.connectfour.data.PacketInfo;
 
 public class connectServer {
 

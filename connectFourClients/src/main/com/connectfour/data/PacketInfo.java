@@ -1,4 +1,4 @@
-package main.java.com.connectfour.data;
+package com.connectfour.data;
 
 public class PacketInfo {
 

@@ -1,4 +1,4 @@
-package main.java.com.connectfour.app;
+package com.connectfour.app;
 
 import sun.applet.Main;
 
@@ -20,7 +20,7 @@ public class MainApp extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        Parent root = FXMLLoader.load(getClass().getResource("../../../../resources/fxml/main.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/fxml/main.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setScene(scene);
         primaryStage.setTitle("Connect Four Client");
