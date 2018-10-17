@@ -6,6 +6,8 @@ import java.net.Socket;
 public class GameSession {
     private Connect4Connector connection;
     private Board game;
+    private char playerPiece = 'X';
+    private char computerPiece = 'O';
     private boolean playGame;
 
     public GameSession(Socket player1) {
@@ -15,7 +17,6 @@ public class GameSession {
             game = new Board();
             playGame = true;
             do {
-                serverMove();
                 byte[] data = connection.receiveData();
                 System.out.println(data[2]);
             } while (playGame);
@@ -24,8 +25,30 @@ public class GameSession {
         }
     }
 
-    private void serverMove() throws IOException {
-        connection.sendData(PacketInfo.MOVE, PacketInfo.PLAYER_TWO, (byte) 1);
+    private void serverMove(int line) throws IOException {
+        String results;
+        if (game.checkIfPossibleWin(line, playerPiece))
+        {      
+            game.addMove(line, playerPiece);
+            results = "win";         
+        }
+        else if (game.isComplete())
+        {
+            game.addMove(line, playerPiece);
+            results = "tie";
+        }
+        else
+        {
+            
+            game.addMove(line, playerPiece);
+            int decision = game.computerMove();
+            if (game.checkIfPossibleWin(decision, computerPiece))
+            {
+                results = "computerWin";
+            }        
+        }
+       
+            
         playGame = false;
     }
 
