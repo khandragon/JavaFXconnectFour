@@ -70,8 +70,10 @@ public class connectServer {
 
     private void displayGame() {
         int col = 1;
-        int row = 43;
+        int lastIndex = 41;
         ObservableList<Node> girdData = gameGrid.getChildren();
+        char[][] board = game.getBoard();
+
     }
 
     private boolean validInput(String address, String port) {

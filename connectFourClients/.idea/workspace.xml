@@ -73,10 +73,10 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.33639398">
+    <splitter split-orientation="horizontal" split-proportion="0.35976627">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="364">
@@ -85,12 +85,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="gameScreen.fxml" pinned="false" current-in-tab="true">
+          <file leaf-file-name="gameScreen.fxml" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/gameScreen.fxml">
               <provider editor-type-id="JavaFX-Scene-Builder" />
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="537">
-                  <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
+                <state relative-caret-position="58">
+                  <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
                 </state>
               </provider>
             </entry>
@@ -99,11 +99,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="connectServer.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="connectServer.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/controller/connectServer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="386">
-                  <caret line="73" column="63" selection-start-line="73" selection-start-column="63" selection-end-line="73" selection-end-column="63" />
+                <state relative-caret-position="302">
+                  <caret line="75" selection-start-line="75" selection-end-line="75" />
                 </state>
               </provider>
             </entry>
@@ -126,11 +126,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="364">
-                  <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+                <state relative-caret-position="203">
+                  <caret line="156" column="26" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="26" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#578#579#0" expanded="true" />
@@ -154,6 +154,13 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>circle</find>
+      <find>char</find>
+      <find>move</find>
+    </findStrings>
+  </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
@@ -176,8 +183,8 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/controller/mainController.java" />
-        <option value="$PROJECT_DIR$/src/main/com/connectfour/controller/connectServer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/gameScreen.fxml" />
+        <option value="$PROJECT_DIR$/src/main/com/connectfour/controller/connectServer.java" />
       </list>
     </option>
   </component>
@@ -243,6 +250,21 @@
               <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
               <item name="src" type="cbb8eebc:String" user="src" />
               <item name="main" type="cbb8eebc:String" user="main" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="com/connectfour" type="cbb8eebc:String" user="com/connectfour" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="com/connectfour" type="cbb8eebc:String" user="com/connectfour" />
+              <item name="data" type="cbb8eebc:String" user="data" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
@@ -522,16 +544,15 @@
       <workItem from="1539714178625" duration="699000" />
       <workItem from="1539739158897" duration="4663000" />
       <workItem from="1539803713943" duration="139000" />
-      <workItem from="1539803863578" duration="2658000" />
+      <workItem from="1539803863578" duration="4722000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39542000" />
+    <option name="totallyTimeSpent" value="41606000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -921,20 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#578#579#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#4129#4130#0" expanded="true" />
-            <element signature="e#4177#4178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/PacketInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
@@ -956,10 +963,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/gameScreen.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="58">
+          <caret line="32" column="36" lean-forward="true" selection-start-line="32" selection-start-column="36" selection-end-line="32" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/controller/connectServer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="386">
-          <caret line="73" column="63" selection-start-line="73" selection-start-column="63" selection-end-line="73" selection-end-column="63" />
+        <state relative-caret-position="302">
+          <caret line="75" selection-start-line="75" selection-end-line="75" />
         </state>
       </provider>
     </entry>
@@ -970,11 +985,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/fxml/gameScreen.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
+        <state relative-caret-position="203">
+          <caret line="156" column="26" selection-start-line="156" selection-start-column="19" selection-end-line="156" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#578#579#0" expanded="true" />
+            <element signature="e#618#619#0" expanded="true" />
+            <element signature="e#4129#4130#0" expanded="true" />
+            <element signature="e#4177#4178#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
