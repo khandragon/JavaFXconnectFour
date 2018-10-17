@@ -45,8 +45,12 @@ public class Board {
      * Checks if a player has connected four pieces on the board
      *
      * @return true if valid connect four
-     */
-    public boolean checkIfWin(){
+     * */
+    public boolean checkIfWin(int line, char piece){
+        return checkIfPossibleWin(line, piece);
+        /**
+         * Commented out for the reason that checkIfPossibleMove before addition
+         * does the same function
         LOG.debug("--- Testing Horizontal ---");
         char player;
         int counter;
@@ -111,13 +115,18 @@ public class Board {
             }
         }
         return false;
+        * */
     }
 
+    
     /**
+     * This is commented out for the reason that isComplete after a check if won
+     * serves the same purpose.
      * Returns true if the game has ended in a tie (no possible moves, no win)
      *
      * @return true if board is a tie
-     */
+     * 
+     
     public boolean checkIfTie(){
         for(int i=0; i < 7; i++){
             if(checkIfPossibleMove(i) == true || this.checkIfWin()){
@@ -126,6 +135,7 @@ public class Board {
         }
         return true;
     }
+    * */
 
     /**
      * Verifies if a move can be made for the selected line
@@ -142,16 +152,18 @@ public class Board {
      *
      * @param line of the board
      * @param player representing the player
+     * @return boolean showing if it succeded or not
      */
-    public void addMove(int line, char player){
+    public boolean addMove(int line, char player){
         if(checkIfPossibleMove(line)){
             for(int j=0; j<board[1].length; j++){
                 if(board[j][line] == '\0'){
                     board[j][line] = player;
-                    return;
+                    return true;
                 }
             }
         }
+        return false;
     }
 
     /**

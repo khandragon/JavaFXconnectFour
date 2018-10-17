@@ -1,39 +1,38 @@
 package com.connectfour.data;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * This class will deal with the game logic of connect four.
- * 
+ *
  * @author Seb and Anthony Whitebean
  */
 public class Board {
     private final static Logger LOG = LoggerFactory.getLogger(Board.class);
-    
+
     private char[][] board = new char[6][7];
     public Board(){}
-       
+
     /**
      * Return a deep copy of the board
-     * 
+     *
      * @return  board
      */
     public char[][] getBoard(){
         return deepCopy2D(board);
     }
-    
+
     /**
      * Return true if the board is full
-     * 
-     * @return true if board is complete 
+     *
+     * @return true if board is complete
      */
-    public boolean isComplete(){ 
+    public boolean isComplete(){
         for(int i = 0; i < board.length; i++){
             if(this.checkIfPossibleMove(i)){
                 return false;
@@ -41,13 +40,17 @@ public class Board {
         }
         return true;
     }
-            
+
     /**
      * Checks if a player has connected four pieces on the board
-     * 
+     *
      * @return true if valid connect four
-     */
-    public boolean checkIfWin(){ 
+     * */
+    public boolean checkIfWin(int line, char piece){
+        return checkIfPossibleWin(line, piece);
+        /**
+         * Commented out for the reason that checkIfPossibleMove before addition
+         * does the same function
         LOG.debug("--- Testing Horizontal ---");
         char player;
         int counter;
@@ -67,7 +70,7 @@ public class Board {
                 }
             }
         }
-        
+
         LOG.debug("--- Testing Vertical ---");
         for(int j=0; j<board[1].length; j++){
             player = board[0][j];
@@ -85,7 +88,7 @@ public class Board {
                 }
             }
         }
-        
+
         LOG.debug("--- Testing Diagonal Up ---");
         for(int i=0; i<3; i++){
             for(int j=0; j<4; j++){
@@ -98,7 +101,7 @@ public class Board {
                 }
             }
         }
-        
+
         LOG.debug("--- Testing Diagonal Down ---");
         for(int i=5; i>2; i--){
             for(int j=0; j<4; j++){
@@ -112,14 +115,19 @@ public class Board {
             }
         }
         return false;
+        * */
     }
+
     
     /**
+     * This is commented out for the reason that isComplete after a check if won
+     * serves the same purpose.
      * Returns true if the game has ended in a tie (no possible moves, no win)
-     * 
+     *
      * @return true if board is a tie
-     */
-    public boolean checkIfTie(){ 
+     * 
+     
+    public boolean checkIfTie(){
         for(int i=0; i < 7; i++){
             if(checkIfPossibleMove(i) == true || this.checkIfWin()){
                 return false;
@@ -127,50 +135,53 @@ public class Board {
         }
         return true;
     }
-    
+    * */
+
     /**
      * Verifies if a move can be made for the selected line
-     * 
+     *
      * @param line of the board
      * @return true the column is not full
      */
     public boolean checkIfPossibleMove(int line){
         return (board[5][line]  == '\0');
     }
-    
+
     /**
      * Add a piece to the board
-     * 
-     * @param line of the board 
+     *
+     * @param line of the board
      * @param player representing the player
+     * @return boolean showing if it succeded or not
      */
-    public void addMove(int line, char player){ 
+    public boolean addMove(int line, char player){
         if(checkIfPossibleMove(line)){
             for(int j=0; j<board[1].length; j++){
                 if(board[j][line] == '\0'){
                     board[j][line] = player;
-                    return;
+                    return true;
                 }
             }
         }
+        return false;
     }
-    
+
     /**
      * This will let the computer decide what is the best possible move for
      * itself is.
-     * 
+     *
      * @return an int representing what would be the best move for it.
      */
     public int computerMove(){
         int[] points = new int[7];
         int line = 0;
-        
+
         while (line < 7)
         {
             points[line] = evaluatePoints(line);
             line++;
         }
-        
+
         List<Integer> choice = new ArrayList<>();
         choice.add(0);
         line = 1;
@@ -186,7 +197,7 @@ public class Board {
             }
             line++;
         }
-        
+
         int best = 0;
         if (choice.size() == 1)
         {
@@ -197,13 +208,13 @@ public class Board {
             Random rand = new Random();
             best = choice.get(rand.nextInt(choice.size() - 1));
         }
-        
+
         return best;
     }
-    
+
     /**
      * Makes a deep copy of a 2D array
-     * 
+     *
      * @param original array
      * @return copy of array
      */
@@ -217,8 +228,8 @@ public class Board {
     }
         return result;
     }
-    
-    
+
+
     //test method
     private void printBoard(){
         for(int i = board.length-1; i>=0; i--){
@@ -231,12 +242,12 @@ public class Board {
     /**
      * This will check if the board has a possible win
      * @param line representing the line that is to be checked.
-     * 
+     *
      * @return a boolean representing if it is possible to win or not.
      */
     private boolean checkIfPossibleWin(int line, char player) {
         int YAxis = getAvailableYAxis(line);
-        
+
         /**
          * The first possibility is that the piece is the final piece of the      
          * connect, so this part will deal with finishing lines. 
@@ -307,7 +318,7 @@ public class Board {
                 }
             }
         }
-        
+
         /**
          * This second portion deals with the case that the piece falls in
          * between to be a line.
@@ -371,11 +382,11 @@ public class Board {
 
     /**
      * This will check if the computer can block an opponent.
-     * 
+     *
      * @param line representing if it is possible to block an opponent or not
      * @return a boolean representing if it is possible to block or not.
      */
-    private boolean checkIfPossibleBlock(int line, char opponent) { 
+    private boolean checkIfPossibleBlock(int line, char opponent) {
         /**
          * By checking if the opponent can win, we can easily save time
          * by blocking that possibility.
@@ -385,7 +396,7 @@ public class Board {
 
     /**
      * This will return the point amount of a given position
-     * 
+     *
      * @param line representing the line that is to be evaluated
      * @return an int representing how many points a line has
      */
@@ -404,28 +415,28 @@ public class Board {
         }
         if (checkIfPossibleBlock(line,'P'))
         {
-            return 50;                
+            return 50;
         }
         int YAxis = getAvailableYAxis(line);
-        
+
         if (YAxis == -1)
         {
             throw new IllegalArgumentException("Somehow a line that was said to"
                     + " be able to have an available space does not have an"
                     + "available space");
         }
-        
+
         int points = 0;
-        
+
         //for ()
         //throw new UnsupportedOperationException("Not supported yet.");
         // To change body of generated methods, choose Tools | Templates.
         return YAxis;
     }
-    
+
     /**
      * This will check to see what is the next empty Y axis of a given line is
-     * 
+     *
      * @param line representing the X axis to check
      * @return an int representing the line to chose.
      */
