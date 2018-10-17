@@ -1,19 +1,18 @@
 package com.connectfour.controller;
 
+import com.connectfour.data.GameSession;
+
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.fxml.FXML;
 import javafx.stage.Stage;
-import com.connectfour.data.GameSession;
 
 public class DisplayAddress {
 
