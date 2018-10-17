@@ -10,6 +10,11 @@ public class GameSession {
     private char computerPiece = 'O';
     private boolean playGame;
 
+    /**
+     * This will run one game within the code.
+     * 
+     * @param player1 representing the player who made the move. 
+     */
     public GameSession(Socket player1) {
         this.connection = new Connect4Connector(player1);
         System.out.println("game session created");
@@ -96,10 +101,10 @@ public class GameSession {
                 third = (byte) decision;
             }
             
+            game.addMove(line, computerPiece);
             System.out.println("Computer is returning his move to client: " 
                     + decision); 
-        }
-        
+        }       
         connection.sendData(first,second,third);
     }
 

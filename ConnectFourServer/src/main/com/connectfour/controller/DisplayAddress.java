@@ -52,7 +52,6 @@ public class DisplayAddress {
                     //out.write(byteBuffer, 0, recvMsgSize);
                 //}
                 player1.close();
-                break;
             }
         } catch (IOException e) {
             e.printStackTrace();
