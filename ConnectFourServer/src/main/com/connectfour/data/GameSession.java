@@ -13,25 +13,29 @@ public class GameSession {
     public GameSession(Socket player1) {
         this.connection = new Connect4Connector(player1);
         System.out.println("game session created");
-        try {
-            game = new Board();
-            playGame = true;
-            do {
-                byte[] data = connection.receiveData();
-                if (data[0] == PacketInfo.QUIT)
+        game = new Board();
+        playGame = true;
+        do {
+            byte[] data = connection.receiveData();
+            if (data[0] == PacketInfo.QUIT)
+            {
+                System.out.println("Quitting game...");
+                playGame = false;
+            }
+            else
+            {
+                int number = (int) data[2];  
+                System.out.println("Adding move at line " + number + " for player.");
+                try
                 {
-                
-                }
-                else
-                {
-                    int number = (int) data[2];  
                     serverMove(number);
                 }
-            } while (playGame);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
+                catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        } while (playGame);
+    }     
     
     /**
      * This method will send the client the results of his movement.
@@ -46,6 +50,7 @@ public class GameSession {
         
         if (game.checkIfPossibleWin(line, playerPiece))
         {      
+            System.out.println("Player is making a victory move.");
             game.addMove(line, playerPiece);   
             first = PacketInfo.WIN;
             second = PacketInfo.PLAYER_ONE;
@@ -54,6 +59,7 @@ public class GameSession {
         }
         else if (game.isComplete())
         {
+            System.out.println("Player has made the game a tie.");
             game.addMove(line, playerPiece);
             first = PacketInfo.TIE;
             second = PacketInfo.PLAYER_ONE;
@@ -61,11 +67,13 @@ public class GameSession {
             playGame = false;
         }
         else
-        {            
+        {  
             game.addMove(line, playerPiece);
             int decision = game.computerMove();
+            System.out.println("Adding move at line " + decision + " for computer.");
             if (game.checkIfPossibleWin(decision, computerPiece))
             {
+                System.out.println("Computer is making a victory move.");
                 first = PacketInfo.WIN;
                 second = PacketInfo.PLAYER_TWO;
                 third = (byte) decision;
@@ -73,6 +81,7 @@ public class GameSession {
             }     
             else if (game.isComplete())
             {
+                System.out.println("Computer has made the game a tie.");
                 first = PacketInfo.TIE;
                 second = PacketInfo.PLAYER_TWO;
                 third = (byte) decision;
@@ -80,10 +89,15 @@ public class GameSession {
             }
             else
             {
+                System.out.println("Computer has not made "
+                        + "a victory or tie move.");
                 first = PacketInfo.PLAY;
                 second = PacketInfo.PLAYER_TWO;
                 third = (byte) decision;
             }
+            
+            System.out.println("Computer is returning his move to client: " 
+                    + decision); 
         }
         
         connection.sendData(first,second,third);
