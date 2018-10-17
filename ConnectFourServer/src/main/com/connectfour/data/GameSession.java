@@ -18,15 +18,14 @@ public class GameSession {
             playGame = true;
             do {
                 byte[] data = connection.receiveData();
-                String info = new String(data);
-                try
+                if (data[0] == PacketInfo.QUIT)
                 {
-                    //Fixed based on movement
-                    int number = Integer.getInteger(info);          
+                
                 }
-                catch(NumberFormatException | NullPointerException e)
+                else
                 {
-                        
+                    int number = (int) data[2];  
+                    serverMove(number);
                 }
             } while (playGame);
         } catch (IOException e) {
@@ -34,31 +33,60 @@ public class GameSession {
         }
     }
     
+    /**
+     * This method will send the client the results of his movement.
+     * 
+     * @param line reperesenting the line that player has chosen
+     * @throws IOException
+     */
     private void serverMove(int line) throws IOException {
-        String results;
+        byte first;
+        byte second;
+        byte third;
+        
         if (game.checkIfPossibleWin(line, playerPiece))
         {      
-            game.addMove(line, playerPiece);
-            results = "win";         
+            game.addMove(line, playerPiece);   
+            first = PacketInfo.WIN;
+            second = PacketInfo.PLAYER_ONE;
+            third = PacketInfo.SPACE;
+            playGame = false;
         }
         else if (game.isComplete())
         {
             game.addMove(line, playerPiece);
-            results = "tie";
+            first = PacketInfo.TIE;
+            second = PacketInfo.PLAYER_ONE;
+            third = PacketInfo.SPACE;
+            playGame = false;
         }
         else
-        {
-            
+        {            
             game.addMove(line, playerPiece);
             int decision = game.computerMove();
             if (game.checkIfPossibleWin(decision, computerPiece))
             {
-                results = "computerWin";
-            }        
+                first = PacketInfo.WIN;
+                second = PacketInfo.PLAYER_TWO;
+                third = (byte) decision;
+                playGame = false;
+            }     
+            else if (game.isComplete())
+            {
+                first = PacketInfo.TIE;
+                second = PacketInfo.PLAYER_TWO;
+                third = (byte) decision;
+                playGame = false;
+            }
+            else
+            {
+                first = PacketInfo.PLAY;
+                second = PacketInfo.PLAYER_TWO;
+                third = (byte) decision;
+            }
         }
-       
-            
-        playGame = false;
+        
+        connection.sendData(first,second,third);
     }
 
 
