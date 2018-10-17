@@ -223,63 +223,6 @@
               <item name="ConnectFourServer" type="b2602c69:ProjectViewProjectNode" />
               <item name="ConnectFourServer" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ConnectFourServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConnectFourServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConnectFourServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConnectFourServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConnectFourServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConnectFourServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="connectfour" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConnectFourServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConnectFourServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="connectfour" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConnectFourServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConnectFourServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="connectfour" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConnectFourServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConnectFourServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="connectfour" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConnectFourServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConnectFourServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConnectFourServer" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConnectFourServer" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="fxml" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -483,12 +426,12 @@
       <workItem from="1539278339243" duration="412000" />
       <workItem from="1539709895980" duration="1120000" />
       <workItem from="1539715164981" duration="477000" />
-      <workItem from="1539731190055" duration="2491000" />
+      <workItem from="1539731190055" duration="3458000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54119000" />
+    <option name="totallyTimeSpent" value="55086000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
