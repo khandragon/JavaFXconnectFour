@@ -11,14 +11,22 @@ import java.io.IOException;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class connectServer {
 
     private final static Logger LOG = LoggerFactory.getLogger(Board.class);
+    Board game;
+    Connect4Connector connection;
 
+    @FXML
+    private GridPane gameGrid;
     @FXML
     private TextField inputAddress;
     @FXML
@@ -36,15 +44,30 @@ public class connectServer {
     }
 
     private void connectToServer(String server, String servPort) {
-        Connect4Connector connection = new Connect4Connector(server, Integer.parseInt(servPort));
+        this.connection = new Connect4Connector(server, Integer.parseInt(servPort));
         try {
-        byte[] data = connection.receiveData();
-            System.out.println(data[2]);
-            connection.sendData(PacketInfo.MOVE, PacketInfo.PLAYER_ONE, (byte) 2);
+            Parent root = FXMLLoader.load(getClass().getResource("/fxml/gameScreen.fxml"));
+            Stage stage = (Stage) closeButton.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+            startGame();
+
+//            byte[] data = connection.receiveData();
+//            System.out.println(data[2]);
+//            connection.sendData(PacketInfo.MOVE, PacketInfo.PLAYER_ONE, (byte) 2);
         } catch (IOException e) {
             e.printStackTrace();
         }
 
+    }
+
+    private void startGame() {
+        this.game = new Board();
+        displayGame();
+    }
+
+    private void displayGame() {
+        gameGrid.
     }
 
     private boolean validInput(String address, String port) {
