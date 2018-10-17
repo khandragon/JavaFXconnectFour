@@ -18,13 +18,22 @@ public class GameSession {
             playGame = true;
             do {
                 byte[] data = connection.receiveData();
-                System.out.println(data[2]);
+                String info = new String(data);
+                try
+                {
+                    //Fixed based on movement
+                    int number = Integer.getInteger(info);          
+                }
+                catch(NumberFormatException | NullPointerException e)
+                {
+                        
+                }
             } while (playGame);
         } catch (IOException e) {
             e.printStackTrace();
         }
     }
-
+    
     private void serverMove(int line) throws IOException {
         String results;
         if (game.checkIfPossibleWin(line, playerPiece))
