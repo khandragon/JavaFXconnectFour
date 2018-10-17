@@ -9,9 +9,11 @@ import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -67,7 +69,9 @@ public class connectServer {
     }
 
     private void displayGame() {
-        gameGrid.
+        int col = 1;
+        int row = 43;
+        ObservableList<Node> girdData = gameGrid.getChildren();
     }
 
     private boolean validInput(String address, String port) {
