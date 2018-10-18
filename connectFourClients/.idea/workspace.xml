@@ -77,8 +77,8 @@
       <file leaf-file-name="GameScreenController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/controller/GameScreenController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
+            <state relative-caret-position="376">
+              <caret line="73" column="57" lean-forward="true" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#564#565#0" expanded="true" />
@@ -549,16 +549,15 @@
       <workItem from="1539803713943" duration="139000" />
       <workItem from="1539803863578" duration="4722000" />
       <workItem from="1539822513758" duration="8480000" />
-      <workItem from="1539866345292" duration="10516000" />
+      <workItem from="1539866345292" duration="11234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60602000" />
+    <option name="totallyTimeSpent" value="61320000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -570,7 +569,7 @@
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.18322147" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.519943" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.519943" />
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
@@ -995,8 +994,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/controller/GameScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="71" column="55" selection-start-line="71" selection-start-column="55" selection-end-line="71" selection-end-column="55" />
+        <state relative-caret-position="376">
+          <caret line="73" column="57" lean-forward="true" selection-start-line="73" selection-start-column="57" selection-end-line="73" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#564#565#0" expanded="true" />
