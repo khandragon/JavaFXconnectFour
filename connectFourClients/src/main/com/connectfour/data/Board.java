@@ -231,7 +231,7 @@ public class Board {
 
 
     //test method
-    private void printBoard(){
+    public void printBoard(){
         for(int i = board.length-1; i>=0; i--){
             for(int j = 0; j<board[1].length; j++){
                 LOG.info(board[i][j] + "-");
