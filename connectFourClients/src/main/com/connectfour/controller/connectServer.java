@@ -19,6 +19,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class connectServer {
@@ -46,13 +47,18 @@ public class connectServer {
     }
 
     private void connectToServer(String server, String servPort) {
-        this.connection = new Connect4Connector(server, Integer.parseInt(servPort));
         try {
-            Parent root = FXMLLoader.load(getClass().getResource("/fxml/gameScreen.fxml"));
-            Stage stage = (Stage) closeButton.getScene().getWindow();
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/fxml/gameScreen.fxml"));
+            loader.load();
+            GameScreenController gsc = loader.getController();
+            gsc.setConnector(server, Integer.parseInt(servPort));
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setTitle("Connect Four Server: Connector");
+            stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(new Scene(root));
             stage.show();
-            startGame();
 
 //            byte[] data = connection.receiveData();
 //            System.out.println(data[2]);
@@ -60,19 +66,6 @@ public class connectServer {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-    }
-
-    private void startGame() {
-        this.game = new Board();
-        displayGame();
-    }
-
-    private void displayGame() {
-        int col = 1;
-        int lastIndex = 41;
-        ObservableList<Node> girdData = gameGrid.getChildren();
-        char[][] board = game.getBoard();
 
     }
 

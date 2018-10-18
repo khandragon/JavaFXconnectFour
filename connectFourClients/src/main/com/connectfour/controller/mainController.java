@@ -13,6 +13,7 @@ import javafx.stage.Stage;
 
 public class mainController {
 
+    @FXML
     private Button closeButton;
 
     public void closeWindow(ActionEvent actionEvent) {
