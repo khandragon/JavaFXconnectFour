@@ -9,8 +9,8 @@ import java.util.Arrays;
 
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.scene.input.MouseEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
@@ -36,28 +36,26 @@ public class GameScreenController {
     }
 
     private void displayGame() {
-        int col = 1;
-        int lastIndex = 41;
-        game.addMove(0, '1');
-        char[][] board = game.getBoard();
+        byte[][] board = game.getBoard();
         game.printBoard();
-        for (Node child : gameGrid.getChildren()) {
-            if (child instanceof Circle) {
-                Circle circ = (Circle) child;
-                // for (char c : chars) {
-//                        if (c == '1') {
-//                            System.out.println("red");
-//                            circ.setFill(Color.RED);
-//                        } else if (c == '2') {
-//                            System.out.println("yello");
-//                            circ.setFill(Color.YELLOW);
-//                        } else {
-//                            circ.setFill(Color.BLACK);
-//                    }
 
-
+        for (int i = board.length - 1; i >= 0; i--) {
+            for (int j = 0; j < board[1].length; j++) {
+                Circle circ = (Circle) gameGrid.getChildren().get(41 - (i * 7 + Math.abs(j - 6)));
+                if (board[i][j] == PacketInfo.PLAYER_ONE) {
+                    System.out.print("|red|");
+                    circ.setFill(Color.RED);
+                } else if (board[i][j] == PacketInfo.PLAYER_TWO) {
+                    System.out.print("|yello|");
+                    circ.setFill(Color.YELLOW);
+                } else {
+                    System.out.print("|black|");
+                    circ.setFill(Color.BLACK);
+                }
             }
+            System.out.println();
         }
+        //}
     }
 
     public void setConnector(String server, int port) {
@@ -67,5 +65,13 @@ public class GameScreenController {
     public void closeWindow(ActionEvent actionEvent) {
         Stage stage = (Stage) closeButton.getScene().getWindow();
         stage.close();
+    }
+
+    public void dropPiece(MouseEvent mouseEvent) {
+        String s = mouseEvent.getPickResult().getIntersectedNode().getId();
+        int spot = Integer.parseInt(s.charAt(3) + "")-1;
+        System.out.println(spot);
+        game.addMove((byte) spot, PacketInfo.PLAYER_ONE);
+        displayGame();
     }
 }
