@@ -15,7 +15,7 @@ import org.slf4j.LoggerFactory;
 public class Board {
     private final static Logger LOG = LoggerFactory.getLogger(Board.class);
 
-    private char[][] board = new char[6][7];
+    private byte[][] board = new byte[6][7];
     public Board(){}
 
     /**
@@ -23,7 +23,7 @@ public class Board {
      *
      * @return  board
      */
-    public char[][] getBoard(){
+    public byte[][] getBoard(){
         return deepCopy2D(board);
     }
 
@@ -34,7 +34,7 @@ public class Board {
      */
     public boolean isComplete(){
         for(int i = 0; i < board.length; i++){
-            if(this.checkIfPossibleMove(i)){
+            if(this.checkIfPossibleMove((byte)i)){
                 return false;
             }
         }
@@ -46,19 +46,16 @@ public class Board {
      *
      * @return true if valid connect four
      * */
-    public boolean checkIfWin(int line, char piece){
-        return checkIfPossibleWin(line, piece);
-        /**
-         * Commented out for the reason that checkIfPossibleMove before addition
-         * does the same function
+    public boolean checkIfWin(){
+        
         LOG.debug("--- Testing Horizontal ---");
-        char player;
+        byte player;
         int counter;
         for(int i=0; i<board.length; i++){
             player = board[i][0];
             counter = 0;
             for(int j=0; j<board[1].length; j++){
-                if(board[i][j] == player && player != '\0'){
+                if(board[i][j] == player && player != (byte)0){
                     counter++;
                     if (counter == 4){
                         LOG.info("Found a horizontal win");
@@ -76,7 +73,7 @@ public class Board {
             player = board[0][j];
             counter = 0;
             for(int i=0; i<board.length; i++){
-                if(board[i][j] == player && player != '\0'){
+                if(board[i][j] == player && player != (byte)0){
                    counter++;
                    if (counter == 4){
                        LOG.info("Found a vertical win");
@@ -95,7 +92,8 @@ public class Board {
                 player = board[i][j];
                 if(player == board[i+1][j+1]
                         && player == board[i+2][j+2]
-                        && player == board[i+3][j+3]){
+                        && player == board[i+3][j+3]
+                        && player != (byte) 0){
                    LOG.info("Found a diagonal win");
                    return true;
                 }
@@ -108,14 +106,14 @@ public class Board {
                 player = board[i][j];
                 if(player == board[i-1][j+1]
                         && player == board[i-2][j+2]
-                        && player == board[i-3][j+3]){
+                        && player == board[i-3][j+3]
+                        && player != (byte) 0){
                     LOG.info("Found a diagonal win");
                     return true;
                 }
             }
         }
         return false;
-        * */
     }
 
     
@@ -144,7 +142,7 @@ public class Board {
      * @return true the column is not full
      */
     public boolean checkIfPossibleMove(int line){
-        return (board[5][line]  == '\0');
+        return (board[5][line]  == (byte)0);
     }
 
     /**
@@ -154,10 +152,10 @@ public class Board {
      * @param player representing the player
      * @return boolean showing if it succeded or not
      */
-    public boolean addMove(int line, char player){
+    public boolean addMove(byte line, byte player){
         if(checkIfPossibleMove(line)){
             for(int j=0; j<board[1].length; j++){
-                if(board[j][line] == '\0'){
+                if(board[j][line] == (byte)0){
                     board[j][line] = player;
                     return true;
                 }
@@ -172,9 +170,9 @@ public class Board {
      *
      * @return an int representing what would be the best move for it.
      */
-    public int computerMove(){
+    public byte computerMove(){
         int[] points = new int[7];
-        int line = 0;
+        byte line = 0;
 
         while (line < 7)
         {
@@ -193,7 +191,7 @@ public class Board {
                 {
                     choice.clear();
                 }
-                choice.add(line);
+                choice.add((int)line);
             }
             line++;
         }
@@ -209,7 +207,7 @@ public class Board {
             best = choice.get(rand.nextInt(choice.size() - 1));
         }
 
-        return best;
+        return (byte)best;
     }
 
     /**
@@ -218,11 +216,11 @@ public class Board {
      * @param original array
      * @return copy of array
      */
-    private char[][] deepCopy2D(char[][] original) {
+    private byte[][] deepCopy2D(byte[][] original) {
     if (original == null) {
         return null;
     }
-    char[][] result = new char[original.length][];
+    byte[][] result = new byte[original.length][];
     for (int i = 0; i < original.length; i++) {
         result[i] = Arrays.copyOf(original[i], original[i].length);
     }
@@ -245,8 +243,8 @@ public class Board {
      *
      * @return a boolean representing if it is possible to win or not.
      */
-    private boolean checkIfPossibleWin(int line, char player) {
-        int YAxis = getAvailableYAxis(line);
+    private boolean checkIfPossibleWin(byte line, byte player) {
+        byte YAxis = getAvailableYAxis(line);
 
         /**
          * The first possibility is that the piece is the final piece of the      
@@ -386,7 +384,7 @@ public class Board {
      * @param line representing if it is possible to block an opponent or not
      * @return a boolean representing if it is possible to block or not.
      */
-    private boolean checkIfPossibleBlock(int line, char opponent) {
+    private boolean checkIfPossibleBlock(byte line, byte opponent) {
         /**
          * By checking if the opponent can win, we can easily save time
          * by blocking that possibility.
@@ -400,7 +398,7 @@ public class Board {
      * @param line representing the line that is to be evaluated
      * @return an int representing how many points a line has
      */
-    private int evaluatePoints(int line) {
+    private int evaluatePoints(byte line) {
         /**
          * C is a place holder for computer until resolved later.
          * P is a place holder for player until resolved later
@@ -409,11 +407,11 @@ public class Board {
         {
             return -1;
         }
-        if (checkIfPossibleWin(line,'C'))
+        if (checkIfPossibleWin(line,(byte)'X'))
         {
             return 100;
         }
-        if (checkIfPossibleBlock(line,'P'))
+        if (checkIfPossibleBlock(line,(byte)'O'))
         {
             return 50;
         }
@@ -440,7 +438,7 @@ public class Board {
      * @param line representing the X axis to check
      * @return an int representing the line to chose.
      */
-    private int getAvailableYAxis(int line)
+    private byte getAvailableYAxis(byte line)
     {
         int YAxis = 0;
         while (true)
@@ -456,6 +454,6 @@ public class Board {
                 break;
             }
         }
-        return YAxis;
+        return (byte) YAxis;
     }
 }

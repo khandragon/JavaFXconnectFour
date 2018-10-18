@@ -29,7 +29,7 @@ public class GameSession {
             }
             else
             {
-                int number = (int) data[2];  
+                byte number = data[2];  
                 System.out.println("Adding move at line " + number + " for player.");
                 try
                 {
@@ -48,15 +48,16 @@ public class GameSession {
      * @param line reperesenting the line that player has chosen
      * @throws IOException
      */
-    private void serverMove(int line) throws IOException {
+    private void serverMove(byte line) throws IOException {
         byte first;
         byte second;
         byte third;
         
-        if (game.checkIfPossibleWin(line, playerPiece))
+        game.addMove(line, playerPiece);
+        
+        if (game.checkIfWin())
         {      
-            System.out.println("Player is making a victory move.");
-            game.addMove(line, playerPiece);   
+            System.out.println("Player is making a victory move.");   
             first = PacketInfo.WIN;
             second = PacketInfo.PLAYER_ONE;
             third = PacketInfo.SPACE;
@@ -65,18 +66,17 @@ public class GameSession {
         else if (game.isComplete())
         {
             System.out.println("Player has made the game a tie.");
-            game.addMove(line, playerPiece);
             first = PacketInfo.TIE;
             second = PacketInfo.PLAYER_ONE;
             third = PacketInfo.SPACE;
             playGame = false;
         }
         else
-        {  
-            game.addMove(line, playerPiece);
+        {                       
+            game.addMove(line, computerPiece);
             int decision = game.computerMove();
             System.out.println("Adding move at line " + decision + " for computer.");
-            if (game.checkIfPossibleWin(decision, computerPiece))
+            if (game.checkIfWin())
             {
                 System.out.println("Computer is making a victory move.");
                 first = PacketInfo.WIN;
@@ -100,9 +100,7 @@ public class GameSession {
                 second = PacketInfo.PLAYER_TWO;
                 third = (byte) decision;
             }
-            
-            game.addMove(line, computerPiece);
-            System.out.println("Computer is returning his move to client: " 
+            System.out.println("Computer is returning his move to client at line: " 
                     + decision); 
         }       
         connection.sendData(first,second,third);
