@@ -150,32 +150,32 @@ public class Board {
      * @return an int representing what would be the best move for it.
      */
     public byte computerMove() {
-//        int[] points = new int[7];
-//        byte line = 0;
-//        while (line < 7) {
-//            points[line] = evaluatePoints(line);
-//            line++;
-//        }
-//        List<Integer> choice = new ArrayList<>();
-//        choice.add(0);
-//        line = 1;
-//        while (line < 7) {
-//            if (points[choice.get(0)] <= points[line]) {
-//                if (points[choice.get(0)] < points[line]) {
-//                    choice.clear();
-//                }
-//                choice.add((int) line);
-//            }
-//            line++;
-//        }
-//        int best = 0;
-//        if (choice.size() == 1) {
-//            best = choice.get(0);
-//        } else {
-//            Random rand = new Random();
-//            best = choice.get(rand.nextInt(choice.size() - 1));
-//        }
-        return (byte) 1;//best;
+       int[] points = new int[7];
+       byte line = 0;
+       while (line < 7) {
+           points[line] = evaluatePoints(line);
+           line++;
+       }
+       List<Integer> choice = new ArrayList<>();
+       choice.add(0);
+       line = 1;
+       while (line < 7) {
+           if (points[choice.get(0)] <= points[line]) {
+               if (points[choice.get(0)] < points[line]) {
+                   choice.clear();
+               }
+               choice.add((int) line);
+           }
+           line++;
+       }
+       int best = 0;
+       if (choice.size() == 1) {
+           best = choice.get(0);
+       } else {
+           Random rand = new Random();
+           best = choice.get(rand.nextInt(choice.size()));
+       }
+        return (byte) best;
     }
 
     /**

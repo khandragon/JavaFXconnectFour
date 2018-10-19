@@ -8,127 +8,125 @@ import org.junit.Test;
  * @author Seb
  */
 public class BoardTest {
- /*   private Board board;
+    private Board board;
 
     @Before
-    public void init(){
+    public void init() {
         board = new Board();
     }
 
     @Test
-    public void checkValidVerticalWin(){
+    public void checkValidVerticalWin() {
         // - - - - - - -
         // - - - - - - -
         // x - - - - - -
         // x - - - - - -
         // x - - - - - -
         // x - - - - - -
-        board.addMove((byte)0, (byte)4);
-        board.addMove((byte)0, (byte)4);
-        board.addMove((byte)0, (byte)4);
-        board.addMove((byte)0, (byte)4);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
 
-        board.printBoard();
         // Assert
         Assert.assertTrue(board.checkIfWin());
-
     }
 
     @Test
-    public void checkComplexValidVerticalWin(){
+    public void checkComplexValidVerticalWin() {
         // - - - - - - -
         // - - - - o - -
         // o - x - o - -
         // o - o - o - -
         // x x o x o o -
         // o o x x x o o
-        board.addMove((byte)0, (byte)5);
-        board.addMove((byte)0, (byte)4);
-        board.addMove((byte)0, (byte)5);
-        board.addMove((byte)0, (byte)5);
+        board.addMove((byte)0, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)0, PacketInfo.PLAYER_TWO);
 
-        board.addMove((byte)1, (byte)5);
-        board.addMove((byte)1, (byte)4);
+        board.addMove((byte)1, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)1, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)2, (byte)4);
-        board.addMove((byte)2, (byte)5);
-        board.addMove((byte)2, (byte)5);
-        board.addMove((byte)2, (byte)4);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)2, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)3, (byte)4);
-        board.addMove((byte)3, (byte)4);
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)4, (byte)4);
-        board.addMove((byte)4, (byte)5);
-        board.addMove((byte)4, (byte)5);
-        board.addMove((byte)4, (byte)5);
-        board.addMove((byte)4, (byte)5);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
 
-        board.addMove((byte)5, (byte)5);
-        board.addMove((byte)5, (byte)5);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
 
-        board.addMove((byte)6, (byte)5);
+        board.addMove((byte)6, PacketInfo.PLAYER_TWO);
 
         // Assert
         Assert.assertTrue(board.checkIfWin());
     }
 
     @Test
-    public void checkNoWinFullBoard(){
+    public void checkNoWinFullBoard() {
         // x o x x o x o
         // x x x o o x o
         // o o x x x o x
         // x o o o x x o
         // x x o x o o o
         // x o x x o o o
-        board.addMove((byte)0, (byte)4);
-        board.addMove((byte)0, (byte)4);
-        board.addMove((byte)0, (byte)4);
-        board.addMove((byte)0, (byte)5);
-        board.addMove((byte)0, (byte)4);
-        board.addMove((byte)0, (byte)4);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)1, (byte)5);
-        board.addMove((byte)1, (byte)4);
-        board.addMove((byte)1, (byte)5);
-        board.addMove((byte)1, (byte)5);
-        board.addMove((byte)1, (byte)4);
-        board.addMove((byte)1, (byte)5);
+        board.addMove((byte)1, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)1, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)1, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)1, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)1, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)1, PacketInfo.PLAYER_TWO);
 
-        board.addMove((byte)2, (byte)4);
-        board.addMove((byte)2, (byte)5);
-        board.addMove((byte)2, (byte)5);
-        board.addMove((byte)2, (byte)4);
-        board.addMove((byte)2, (byte)4);
-        board.addMove((byte)2, (byte)4);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)2, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)3, (byte)4);
-        board.addMove((byte)3, (byte)4);
-        board.addMove((byte)3, (byte)5);
-        board.addMove((byte)3, (byte)4);
-        board.addMove((byte)3, (byte)5);
-        board.addMove((byte)3, (byte)4);
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)4, (byte)5);
-        board.addMove((byte)4, (byte)5);
-        board.addMove((byte)4, (byte)4);
-        board.addMove((byte)4, (byte)4);
-        board.addMove((byte)4, (byte)5);
-        board.addMove((byte)4, (byte)5);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
 
-        board.addMove((byte)5, (byte)5);
-        board.addMove((byte)5, (byte)5);
-        board.addMove((byte)5, (byte)4);
-        board.addMove((byte)5, (byte)5);
-        board.addMove((byte)5, (byte)4);
-        board.addMove((byte)5, (byte)4);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)6, (byte)5);
-        board.addMove((byte)6, (byte)5);
-        board.addMove((byte)6, (byte)5);
-        board.addMove((byte)6, (byte)4);
-        board.addMove((byte)6, (byte)5);
-        board.addMove((byte)6, (byte)5);
+        board.addMove((byte)6, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)6, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)6, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)6, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)6, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)6, PacketInfo.PLAYER_TWO);
 
         // Assert
         Assert.assertFalse(board.checkIfWin());
@@ -136,58 +134,58 @@ public class BoardTest {
     }
 
     @Test
-    public void checkValidHorizontalWin(){
+    public void checkValidHorizontalWin() {
         // - - - o o o o
         // x x x o x x o
         // o o x x o x x
         // x o o o x o o
         // x x x o x o x
         // x o x x x o x
-        board.addMove((byte)0, (byte)4);
-        board.addMove((byte)0, (byte)4);
-        board.addMove((byte)0, (byte)4);
-        board.addMove((byte)0, (byte)5);
-        board.addMove((byte)0, (byte)4);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)1, (byte)5);
-        board.addMove((byte)1, (byte)4);
-        board.addMove((byte)1, (byte)5);
-        board.addMove((byte)1, (byte)5);
-        board.addMove((byte)1, (byte)4);
+        board.addMove((byte)1, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)1, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)1, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)1, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)1, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)2, (byte)4);
-        board.addMove((byte)2, (byte)4);
-        board.addMove((byte)2, (byte)5);
-        board.addMove((byte)2, (byte)4);
-        board.addMove((byte)2, (byte)4);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)3, (byte)4);
-        board.addMove((byte)3, (byte)5);
-        board.addMove((byte)3, (byte)5);
-        board.addMove((byte)3, (byte)4);
-        board.addMove((byte)3, (byte)5);
-        board.addMove((byte)3, (byte)5);
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
 
-        board.addMove((byte)4, (byte)4);
-        board.addMove((byte)4, (byte)4);
-        board.addMove((byte)4, (byte)4);
-        board.addMove((byte)4, (byte)5);
-        board.addMove((byte)4, (byte)4);
-        board.addMove((byte)4, (byte)5);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
 
-        board.addMove((byte)5, (byte)5);
-        board.addMove((byte)5, (byte)5);
-        board.addMove((byte)5, (byte)5);
-        board.addMove((byte)5, (byte)4);
-        board.addMove((byte)5, (byte)4);
-        board.addMove((byte)5, (byte)5);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
 
-        board.addMove((byte)6, (byte)4);
-        board.addMove((byte)6, (byte)4);
-        board.addMove((byte)6, (byte)5);
-        board.addMove((byte)6, (byte)4);
-        board.addMove((byte)6, (byte)5);
-        board.addMove((byte)6, (byte)5);
+        board.addMove((byte)6, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)6, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)6, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)6, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)6, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)6, PacketInfo.PLAYER_TWO);
 
         // Assert
         Assert.assertTrue(board.checkIfWin());
@@ -195,7 +193,7 @@ public class BoardTest {
     }
 
     @Test
-    public void checkValidAscendingDiagonalWin(){
+    public void checkValidAscendingDiagonalWin() {
         // - - - - - x -
         // - - - - x o -
         // - - - x o x -
@@ -203,36 +201,36 @@ public class BoardTest {
         // - - x x o o - /
         // - x x o x x - /
         // / / / /
-        board.addMove((byte)1, (byte)4);
+        board.addMove((byte)1, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)2, (byte)4);
-        board.addMove((byte)2, (byte)4);
-        board.addMove((byte)2, (byte)4);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)3, (byte)5);
-        board.addMove((byte)3, (byte)4);
-        board.addMove((byte)3, (byte)5);
-        board.addMove((byte)3, (byte)4);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)4, (byte)4);
-        board.addMove((byte)4, (byte)5);
-        board.addMove((byte)4, (byte)5);
-        board.addMove((byte)4, (byte)5);
-        board.addMove((byte)4, (byte)4);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)5, (byte)4);
-        board.addMove((byte)5, (byte)5);
-        board.addMove((byte)5, (byte)4);
-        board.addMove((byte)5, (byte)4);
-        board.addMove((byte)5, (byte)5);
-        board.addMove((byte)5, (byte)4);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
 
         // Assert
         Assert.assertTrue(board.checkIfWin());
     }
 
     @Test
-    public void checkValidDescendingDiagonalWin(){
+    public void checkValidDescendingDiagonalWin() {
         // - - x - - x - /
         // - - x - x o - /
         // - - o o o x - /
@@ -240,37 +238,165 @@ public class BoardTest {
         // - - x x o o -
         // - x x o x x o
         // / / / /
-        board.addMove((byte)1, (byte)4);
+        board.addMove((byte)1, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)2, (byte)4);
-        board.addMove((byte)2, (byte)4);
-        board.addMove((byte)2, (byte)4);
-        board.addMove((byte)2, (byte)5);
-        board.addMove((byte)2, (byte)4);
-        board.addMove((byte)2, (byte)4);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)3, (byte)5);
-        board.addMove((byte)3, (byte)4);
-        board.addMove((byte)3, (byte)5);
-        board.addMove((byte)3, (byte)5);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
 
-        board.addMove((byte)4, (byte)4);
-        board.addMove((byte)4, (byte)5);
-        board.addMove((byte)4, (byte)5);
-        board.addMove((byte)4, (byte)5);
-        board.addMove((byte)4, (byte)4);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)5, (byte)4);
-        board.addMove((byte)5, (byte)5);
-        board.addMove((byte)5, (byte)4);
-        board.addMove((byte)5, (byte)4);
-        board.addMove((byte)5, (byte)5);
-        board.addMove((byte)5, (byte)4);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
 
-        board.addMove((byte)6, (byte)5);
+        board.addMove((byte)6, PacketInfo.PLAYER_TWO);
 
         // Assert
         Assert.assertTrue(board.checkIfWin());
     }
-    */
+
+    @Test
+    public void checkFullBoardComputerMove() {
+        // x o o o o o o
+        // x x x o x x o
+        // o o x x o x x
+        // x o o o x o o
+        // x x x o x o x
+        // x o x x x o x
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+
+
+        board.addMove((byte)1, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)1, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)1, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)1, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)1, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)1, PacketInfo.PLAYER_TWO);
+
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)2, PacketInfo.PLAYER_TWO);
+
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)4, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)4, PacketInfo.PLAYER_TWO);
+
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+
+        board.addMove((byte)6, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)6, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)6, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)6, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)6, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)6, PacketInfo.PLAYER_TWO);
+
+        byte number = board.computerMove();
+
+        Assert.assertEquals((byte) -1, number);
+    }
+
+    @Test
+    public void pickWin() {
+        // - - - - - - -
+        // - - - - - - -
+        // - - - - - - -
+        // x - - - - - -
+        // x - - - - - -
+        // x o o o - - -
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+
+        board.addMove((byte)1, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)2, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+
+        byte number = board.computerMove();
+
+        Assert.assertEquals((byte) 4, number);
+    }
+
+    @Test
+    public void pickBlock() {
+        // - - - - - - -
+        // - - - - - - -
+        // - - - - - - -
+        // x - - - - - x
+        // x - - o - x o
+        // x - - x - o o
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+
+        board.addMove((byte)3, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+
+        byte number = board.computerMove();
+
+        Assert.assertEquals((byte) 0, number);
+    }
+
+    @Test
+    public void pickBestChoice() {
+        // - - - - - - -
+        // - - - - - - -
+        // - - - - - - -
+        // - - - - - - -
+        // - - - - - - -
+        // x x - o - x -
+        board.addMove((byte)0, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)1, PacketInfo.PLAYER_ONE);
+        board.addMove((byte)3, PacketInfo.PLAYER_TWO);
+        board.addMove((byte)5, PacketInfo.PLAYER_ONE);
+
+        byte number = board.computerMove();
+
+        Assert.assertEquals((byte) 2, number);
+    }
 }
