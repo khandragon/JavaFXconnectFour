@@ -1,4 +1,4 @@
-package test.java.com.connectfour.data;
+package com.connectfour.data;
 
 import org.junit.Assert;
 import org.junit.Before;
