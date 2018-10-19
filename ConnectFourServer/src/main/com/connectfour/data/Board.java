@@ -407,11 +407,11 @@ public class Board {
         {
             return -1;
         }
-        if (checkIfPossibleWin(line,(byte)'X'))
+        if (checkIfPossibleWin(line,PacketInfo.PLAYER_TWO))
         {
             return 100;
         }
-        if (checkIfPossibleBlock(line,(byte)'O'))
+        if (checkIfPossibleBlock(line,PacketInfo.PLAYER_ONE))
         {
             return 50;
         }
