@@ -6,8 +6,6 @@ import java.net.Socket;
 public class GameSession {
     private Connect4Connector connection;
     private Board game;
-    private char playerPiece = 'X';
-    private char computerPiece = 'O';
     private boolean playGame;
 
     /**
@@ -53,7 +51,7 @@ public class GameSession {
         byte second;
         byte third;
         
-        game.addMove(line, playerPiece);
+        game.addMove(line, PacketInfo.PLAYER_ONE);
         
         if (game.checkIfWin())
         {      
@@ -73,7 +71,7 @@ public class GameSession {
         }
         else
         {                       
-            game.addMove(line, computerPiece);
+            game.addMove(line, PacketInfo.PLAYER_TWO);
             int decision = game.computerMove();
             System.out.println("Adding move at line " + decision + " for computer.");
             if (game.checkIfWin())

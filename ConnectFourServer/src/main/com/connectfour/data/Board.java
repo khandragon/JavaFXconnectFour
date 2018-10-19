@@ -425,11 +425,110 @@ public class Board {
         }
 
         int points = 0;
-
-        //for ()
-        //throw new UnsupportedOperationException("Not supported yet.");
-        // To change body of generated methods, choose Tools | Templates.
-        return YAxis;
+        
+        if (YAxis > 0)
+        {
+            if (board[YAxis - 1][line] == PacketInfo.PLAYER_ONE || board[YAxis - 1][line] == PacketInfo.PLAYER_TWO)
+            {
+                points++;
+            }
+            if (YAxis > 1)
+            {
+                if (board[YAxis - 2][line] == PacketInfo.PLAYER_ONE || board[YAxis - 2][line] == PacketInfo.PLAYER_TWO)
+                {
+                    points++;
+                }
+            }
+        }
+        //Checking the right side
+        if (line < 6)
+        {
+            if (board[YAxis][line + 1] == PacketInfo.PLAYER_ONE || board[YAxis][line + 1] == PacketInfo.PLAYER_TWO)
+            {
+                points++;
+            }
+            if (line < 5)
+            {
+                if (board[YAxis][line + 2] == PacketInfo.PLAYER_ONE || board[YAxis][line + 2] == PacketInfo.PLAYER_TWO)
+                {   
+                    points++;
+                }
+            }
+            if (YAxis > 0)
+            {
+                if (board[YAxis - 1][line + 1] == PacketInfo.PLAYER_ONE || board[YAxis - 1][line + 1] == PacketInfo.PLAYER_TWO)
+                {
+                    points++;
+                }
+                if (YAxis > 1 && line < 5)
+                {
+                    if (board[YAxis - 2][line + 2] == PacketInfo.PLAYER_ONE || board[YAxis - 2][line + 2] == PacketInfo.PLAYER_TWO)
+                    {
+                        points++;
+                    }
+                }
+            }           
+            if (YAxis < 5)
+            {
+                if (board[YAxis + 1][line + 1] == PacketInfo.PLAYER_ONE || board[YAxis + 1][line + 1] == PacketInfo.PLAYER_TWO)
+                {
+                    points++;
+                }
+                if (YAxis < 4 && line < 5)
+                {
+                    if (board[YAxis + 2][line + 2] == PacketInfo.PLAYER_ONE || board[YAxis + 2][line + 2] == PacketInfo.PLAYER_TWO)
+                    {
+                        points++;
+                    }
+                }
+            }
+        }
+        
+        //Checking left side
+        if (line > 0)
+        {
+            if (board[YAxis][line - 1] == PacketInfo.PLAYER_ONE || board[YAxis][line - 1] == PacketInfo.PLAYER_TWO)
+            {
+                points++;
+            }
+            if (line > 1)
+            {
+                if (board[YAxis][line - 2] == PacketInfo.PLAYER_ONE || board[YAxis][line - 2] == PacketInfo.PLAYER_TWO)
+                {   
+                    points++;
+                }
+            }
+            if (YAxis > 0)
+            {
+                if (board[YAxis - 1][line - 1] == PacketInfo.PLAYER_ONE || board[YAxis - 1][line - 1] == PacketInfo.PLAYER_TWO)
+                {
+                    points++;
+                }
+                if (YAxis > 1 && line > 1)
+                {
+                    if (board[YAxis - 2][line - 2] == PacketInfo.PLAYER_ONE || board[YAxis - 2][line - 2] == PacketInfo.PLAYER_TWO)
+                    {
+                        points++;
+                    }
+                }
+            }           
+            if (YAxis < 5)
+            {
+                if (board[YAxis + 1][line - 1] == PacketInfo.PLAYER_ONE || board[YAxis + 1][line - 1] == PacketInfo.PLAYER_TWO)
+                {
+                    points++;
+                }
+                if (YAxis < 4 && line > 1)
+                {
+                    if (board[YAxis + 2][line - 2] == PacketInfo.PLAYER_ONE || board[YAxis + 2][line - 2] == PacketInfo.PLAYER_TWO)
+                    {
+                        points++;
+                    }
+                }
+            }
+        }
+        LOG.info("Calculated points = " + points);
+        return points;
     }
 
     /**
