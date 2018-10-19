@@ -58,8 +58,8 @@ public class GameSession {
             third = PacketInfo.SPACE;
             playGame = false;
         } else {
-            game.addMove(line, PacketInfo.PLAYER_TWO);
             int decision = game.computerMove();
+            game.addMove((byte) decision, PacketInfo.PLAYER_TWO);
             System.out.println("Adding move at line " + decision + " for computer.");
             if (game.checkIfWin()) {
                 System.out.println("Computer is making a victory move.");
