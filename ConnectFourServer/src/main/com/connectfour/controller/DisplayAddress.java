@@ -37,28 +37,16 @@ public class DisplayAddress {
         try {
             int servPort = Integer.parseInt(getPortNumber());
             ServerSocket servSock = new ServerSocket(servPort);
-
-            int recvMsgSize;
-            byte[] byteBuffer = new byte[3];
             while (true) {
                 Socket player1 = servSock.accept();
                 System.out.println("player found...");
-
                 GameSession gs = new GameSession(player1);
-                //InputStream in = player1.getInputStream();
-                //OutputStream out = player1.getOutputStream();
-
-               // while ((recvMsgSize = in.read(byteBuffer)) != -1) {
-                    //out.write(byteBuffer, 0, recvMsgSize);
-                //}
                 player1.close();
                 break;
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 
     private String getPortNumber() {

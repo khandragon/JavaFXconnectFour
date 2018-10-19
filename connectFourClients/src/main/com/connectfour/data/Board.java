@@ -105,18 +105,22 @@ public class Board {
      * This is commented out for the reason that isComplete after a check if won
      * serves the same purpose.
      * Returns true if the game has ended in a tie (no possible moves, no win)
-     * @return true if board is a tie      *
+     * @return true if board is a tie
+     *
      * public boolean checkIfTie(){
-     * for(int i=0; i < 7; i++){
-     * if(checkIfPossibleMove(i) == true || this.checkIfWin()){
-     * return false;
-     * }
+     *  for(int i=0; i < 7; i++){
+     *   if(checkIfPossibleMove(i) == true || this.checkIfWin()){
+     *      return false;
+     *   }
      * }
      * return true;
      * }
      * * */
+
     /**
-     * Verifies if a move can be made for the selected line      *      * @param line of the board      * @return true the column is not full
+     * Verifies if a move can be made for the selected line
+     * @param line of the board
+     * @return true the column is not full
      */
     public boolean checkIfPossibleMove(int line) {
         return (board[5][line] == (byte) 0);
@@ -142,7 +146,8 @@ public class Board {
     }
 
     /**
-     * This will let the computer decide what is the best possible move for      * itself is.      *      * @return an int representing what would be the best move for it.
+     * This will let the computer decide what is the best possible move for itself is.
+     * @return an int representing what would be the best move for it.
      */
     public byte computerMove() {
         int[] points = new int[7];
@@ -175,7 +180,8 @@ public class Board {
 
     /**
      * Makes a deep copy of a 2D array
-     * *      * @param original array      * @return copy of array
+     * @param original array
+     * @return copy of array
      */
     private byte[][] deepCopy2D(byte[][] original) {
         if (original == null) {

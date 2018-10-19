@@ -44,26 +44,6 @@ public class Connect4Connector {
         return receivedData;
     }
 
-    //data[0] move message type
-    //data[1] who's move
-    //data[2] where is move
-    public void processReceivedData() throws IOException {
-        byte[] data = receiveData();
-        switch (data[0]) {
-            case PacketInfo.MOVE:
-                //makeAMove(data[1],data[2]);
-                break;
-            case PacketInfo.PLAY:
-                //playagain or reset board
-                break;
-            case PacketInfo.QUIT:
-                closeSocket();
-                break;
-            default:
-                System.out.println("this should never occured in data processing");
-        }
-    }
-
     public void closeSocket() throws IOException {
         servSocket.close();
     }

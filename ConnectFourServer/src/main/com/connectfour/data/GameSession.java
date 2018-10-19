@@ -8,22 +8,21 @@ import java.net.Socket;
 public class GameSession {
     private Connect4Connector connection;
     private Board game;
-    private char playerPiece = 'X';
-    private char computerPiece = 'O';
     private boolean playGame;
 
     /**
-     * This will run one game within the code.      *      * @param player1 representing the player who made the move.
+     * This will run one game within the code.
+     *
+     * @param player1 representing the player who made the move.
      */
     public GameSession(Socket player1) {
         this.connection = new Connect4Connector(player1);
         System.out.println("game session created");
         game = new Board();
         playGame = true;
-        do {
-            try {
-                byte[] data = new byte[0];
-                data = connection.receiveData();
+        try {
+            do {
+                byte[] data = connection.receiveData();
                 if (data[0] == PacketInfo.QUIT) {
                     System.out.println("Quitting game...");
                     playGame = false;
@@ -32,22 +31,20 @@ public class GameSession {
                     System.out.println("Adding move at line " + number + " for player.");
                     serverMove(number);
                 }
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-    } while(playGame);
-}
+            } while (playGame);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
     /**
-     * This method will send the client the results of his movement.
-     *
-     * @param line reperesenting the line that player has chosen
+     * This method will send the client the results of his movement.      *      * @param line reperesenting the line that player has chosen      * @throws IOException
      */
     private void serverMove(byte line) throws IOException {
         byte first;
         byte second;
         byte third;
-        game.addMove(line, PacketInfo.PLAYER_TWO);
+        game.addMove(line, PacketInfo.PLAYER_ONE);
         if (game.checkIfWin()) {
             System.out.println("Player is making a victory move.");
             first = PacketInfo.WIN;
@@ -78,7 +75,7 @@ public class GameSession {
                 playGame = false;
             } else {
                 System.out.println("Computer has not made " + "a victory or tie move.");
-                first = PacketInfo.PLAY;
+                first = PacketInfo.MOVE;
                 second = PacketInfo.PLAYER_TWO;
                 third = (byte) decision;
             }
