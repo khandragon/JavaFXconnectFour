@@ -1,3 +1,5 @@
+
+
 package com.connectfour.data;
 
 import java.io.IOException;
@@ -10,56 +12,79 @@ public class GameSession {
     private char computerPiece = 'O';
     private boolean playGame;
 
+    /**
+     * This will run one game within the code.      *      * @param player1 representing the player who made the move.
+     */
     public GameSession(Socket player1) {
         this.connection = new Connect4Connector(player1);
         System.out.println("game session created");
-        try {
-            game = new Board();
-            playGame = true;
-            do {
-                byte[] data = connection.receiveData();
-                String info = new String(data);
-                try
-                {
-                    //Fixed based on movement
-                    int number = Integer.getInteger(info);          
+        game = new Board();
+        playGame = true;
+        do {
+            try {
+                byte[] data = new byte[0];
+                data = connection.receiveData();
+                if (data[0] == PacketInfo.QUIT) {
+                    System.out.println("Quitting game...");
+                    playGame = false;
+                } else {
+                    byte number = data[2];
+                    System.out.println("Adding move at line " + number + " for player.");
+                    serverMove(number);
                 }
-                catch(NumberFormatException | NullPointerException e)
-                {
-                        
-                }
-            } while (playGame);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-    
-    private void serverMove(int line) throws IOException {
-        String results;
-        if (game.checkIfPossibleWin(line, playerPiece))
-        {      
-            game.addMove(line, playerPiece);
-            results = "win";         
-        }
-        else if (game.isComplete())
-        {
-            game.addMove(line, playerPiece);
-            results = "tie";
-        }
-        else
-        {
-            
-            game.addMove(line, playerPiece);
-            int decision = game.computerMove();
-            if (game.checkIfPossibleWin(decision, computerPiece))
-            {
-                results = "computerWin";
-            }        
-        }
-       
-            
-        playGame = false;
-    }
-
-
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+    } while(playGame);
 }
+
+    /**
+     * This method will send the client the results of his movement.
+     *
+     * @param line reperesenting the line that player has chosen
+     */
+    private void serverMove(byte line) throws IOException {
+        byte first;
+        byte second;
+        byte third;
+        game.addMove(line, PacketInfo.PLAYER_TWO);
+        if (game.checkIfWin()) {
+            System.out.println("Player is making a victory move.");
+            first = PacketInfo.WIN;
+            second = PacketInfo.PLAYER_ONE;
+            third = PacketInfo.SPACE;
+            playGame = false;
+        } else if (game.isComplete()) {
+            System.out.println("Player has made the game a tie.");
+            first = PacketInfo.TIE;
+            second = PacketInfo.PLAYER_ONE;
+            third = PacketInfo.SPACE;
+            playGame = false;
+        } else {
+            game.addMove(line, PacketInfo.PLAYER_TWO);
+            int decision = game.computerMove();
+            System.out.println("Adding move at line " + decision + " for computer.");
+            if (game.checkIfWin()) {
+                System.out.println("Computer is making a victory move.");
+                first = PacketInfo.WIN;
+                second = PacketInfo.PLAYER_TWO;
+                third = (byte) decision;
+                playGame = false;
+            } else if (game.isComplete()) {
+                System.out.println("Computer has made the game a tie.");
+                first = PacketInfo.TIE;
+                second = PacketInfo.PLAYER_TWO;
+                third = (byte) decision;
+                playGame = false;
+            } else {
+                System.out.println("Computer has not made " + "a victory or tie move.");
+                first = PacketInfo.PLAY;
+                second = PacketInfo.PLAYER_TWO;
+                third = (byte) decision;
+            }
+            System.out.println("Computer is returning his move to client at line: " + decision);
+        }
+        connection.sendData(first, second, third);
+    }
+}
+

@@ -73,11 +73,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="343">
-              <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
+            <state relative-caret-position="203">
+              <caret line="128" column="32" lean-forward="true" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+                <element signature="e#628#629#0" expanded="true" />
+                <element signature="e#3987#3988#0" expanded="true" />
+                <element signature="e#4038#4039#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,7 +101,7 @@
       <file leaf-file-name="DisplayAddress.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/controller/DisplayAddress.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-701">
+            <state relative-caret-position="416">
               <caret line="28" column="18" selection-start-line="28" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -113,11 +120,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GameSession.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="GameSession.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/GameSession.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1171">
-              <caret line="50" column="12" lean-forward="true" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+            <state relative-caret-position="344">
+              <caret line="57" column="66" lean-forward="true" selection-start-line="57" selection-start-column="66" selection-end-line="57" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -142,6 +149,7 @@
       <find>controller</find>
       <find>Log</find>
       <find>ca</find>
+      <find>computer</find>
     </findStrings>
     <replaceStrings>
       <replace>// LOG</replace>
@@ -176,6 +184,7 @@
         <option value="$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/controller/DisplayAddress.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/data/Board.java" />
+        <option value="$PROJECT_DIR$/src/main/com/connectfour/data/GameSession.java" />
       </list>
     </option>
   </component>
@@ -200,10 +209,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="325" />
-    <option name="y" value="-35" />
-    <option name="width" value="980" />
-    <option name="height" value="935" />
+    <option name="x" value="-10" />
+    <option name="y" value="-10" />
+    <option name="width" value="1940" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
@@ -213,6 +222,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <expand>
@@ -250,6 +260,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -318,8 +329,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -490,11 +499,13 @@
       <workItem from="1539731190055" duration="5081000" />
       <workItem from="1539837237461" duration="659000" />
       <workItem from="1539866316272" duration="3958000" />
+      <workItem from="1539887931899" duration="800000" />
+      <workItem from="1539890147169" duration="1390000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="62665000" />
+    <option name="totallyTimeSpent" value="64855000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -502,7 +513,6 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="15" visible="true" weight="0.32896653" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
@@ -514,7 +524,7 @@
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5704918" visible="true" weight="0.17785235" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5704918" visible="true" weight="0.18322147" />
       <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" sideWeight="0.4295082" side_tool="true" weight="0.15671642" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -523,6 +533,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.51384276" />
       <window_info anchor="right" id="JetGradle" order="6" />
+      <window_info anchor="bottom" id="Messages" order="15" visible="true" weight="0.32896653" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -819,7 +830,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/controller/DisplayAddress.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-701">
+        <state relative-caret-position="416">
           <caret line="28" column="18" selection-start-line="28" selection-end-line="29" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -828,33 +839,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="185" lean-forward="true" selection-start-line="185" selection-end-line="185" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/BoardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="3" lean-forward="true" selection-end-line="275" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Temp/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="11" column="4" lean-forward="true" selection-end-line="185" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/BoardTest.java" />
+    <entry file="file://$USER_HOME$/AppData/Local/Temp/Board.java" />
     <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/GameSession.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1171">
-          <caret line="50" column="12" lean-forward="true" selection-start-line="50" selection-start-column="12" selection-end-line="50" selection-end-column="12" />
+        <state relative-caret-position="344">
+          <caret line="57" column="66" lean-forward="true" selection-start-line="57" selection-start-column="66" selection-end-line="57" selection-end-column="66" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="128" column="32" lean-forward="true" selection-start-line="128" selection-start-column="32" selection-end-line="128" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+            <element signature="e#3987#3988#0" expanded="true" />
+            <element signature="e#4038#4039#0" expanded="true" />
           </folding>
         </state>
       </provider>
