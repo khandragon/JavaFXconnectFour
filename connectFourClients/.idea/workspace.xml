@@ -76,10 +76,19 @@
     <splitter split-orientation="horizontal" split-proportion="0.37168813">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Connect4Connector.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Connect4Connector.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="187">
+                  <caret line="81" selection-start-line="81" selection-end-line="81" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="GameScreenController.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/controller/GameScreenController.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="261">
+                <state relative-caret-position="2496">
                   <caret line="112" selection-start-line="112" selection-end-line="112" />
                   <folding>
                     <element signature="imports" expanded="true" />
@@ -88,11 +97,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="PacketInfo.java" pinned="false" current-in-tab="true">
+          <file leaf-file-name="PacketInfo.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/PacketInfo.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="166">
-                  <caret line="19" selection-start-line="19" selection-end-line="19" />
+                <state relative-caret-position="153">
+                  <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
                 </state>
               </provider>
             </entry>
@@ -100,7 +109,7 @@
           <file leaf-file-name="connectServer.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/controller/connectServer.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="858">
+                <state relative-caret-position="262">
                   <caret line="53" column="32" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="32" />
                 </state>
               </provider>
@@ -110,40 +119,15 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="Connect4Connector.java" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Connect4Connector.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-84">
-                  <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/test/java/com/connectfour/data/BoardTest.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="215">
-                  <caret line="333" column="44" selection-start-line="333" selection-start-column="44" selection-end-line="333" selection-end-column="44" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#224#225#0" expanded="true" />
-                    <element signature="e#259#260#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="Board.java" pinned="false" current-in-tab="false">
+          <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="140">
-                  <caret line="174" column="25" lean-forward="true" selection-end-line="431" />
+                <state relative-caret-position="-1745">
+                  <caret line="177" column="25" selection-start-line="177" selection-start-column="25" selection-end-line="177" selection-end-column="25" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#588#589#0" expanded="true" />
                     <element signature="e#628#629#0" expanded="true" />
-                    <element signature="e#3962#3963#0" expanded="true" />
-                    <element signature="e#4013#4014#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -152,8 +136,12 @@
           <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="52">
-                  <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+                <state relative-caret-position="78">
+                  <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#304#305#0" expanded="true" />
+                    <element signature="e#332#333#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -207,15 +195,15 @@
         <option value="$PROJECT_DIR$/src/main/resources/fxml/connectServer.fxml" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/main.fxml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/controller/mainController.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/controller/connectServer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/fxml/gameScreen.fxml" />
-        <option value="$PROJECT_DIR$/src/main/com/connectfour/data/Connect4Connector.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/data/PacketInfo.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/controller/GameScreenController.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/data/Board.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/connectfour/data/BoardTest.java" />
+        <option value="$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java" />
+        <option value="$PROJECT_DIR$/src/main/com/connectfour/data/Connect4Connector.java" />
       </list>
     </option>
   </component>
@@ -263,56 +251,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <expand>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="main" type="cbb8eebc:String" user="main" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="main" type="cbb8eebc:String" user="main" />
-              <item name="com/connectfour" type="cbb8eebc:String" user="com/connectfour" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="main" type="cbb8eebc:String" user="main" />
-              <item name="com/connectfour" type="cbb8eebc:String" user="com/connectfour" />
-              <item name="app" type="cbb8eebc:String" user="app" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="test/java" type="cbb8eebc:String" user="test/java" />
-            </path>
-            <path>
-              <item name="Root" type="cbb8eebc:String" user="Root" />
-              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
-              <item name="src" type="cbb8eebc:String" user="src" />
-              <item name="test/java" type="cbb8eebc:String" user="test/java" />
-              <item name="com/connectfour/data" type="cbb8eebc:String" user="com/connectfour/data" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -366,7 +304,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
       <pane id="PackagesPane">
         <subPane>
           <expand>
@@ -383,6 +320,65 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="com/connectfour" type="cbb8eebc:String" user="com/connectfour" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="com/connectfour" type="cbb8eebc:String" user="com/connectfour" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="com/connectfour" type="cbb8eebc:String" user="com/connectfour" />
+              <item name="data" type="cbb8eebc:String" user="data" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="test/java" type="cbb8eebc:String" user="test/java" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="test/java" type="cbb8eebc:String" user="test/java" />
+              <item name="com/connectfour/data" type="cbb8eebc:String" user="com/connectfour/data" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -635,7 +631,8 @@
       <workItem from="1539958353842" duration="2022000" />
       <workItem from="1539968418353" duration="31000" />
       <workItem from="1539968464209" duration="4643000" />
-      <workItem from="1539980121501" duration="6207000" />
+      <workItem from="1539980121501" duration="6821000" />
+      <workItem from="1539990653651" duration="1803000" />
     </task>
     <servers />
   </component>
@@ -672,7 +669,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76301000" />
+    <option name="totallyTimeSpent" value="78718000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -688,11 +685,11 @@
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.18322147" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44729346" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.44687045" />
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.11935953" visible="true" weight="0.11342282" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.11935953" visible="true" weight="0.16107382" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info id="Structure" order="1" sideWeight="0.88064045" side_tool="true" weight="0.1852349" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -718,8 +715,6 @@
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.517094" />
       <window_info anchor="right" id="JetGradle" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="3" />
       <window_info anchor="bottom" id="Profiler" order="9" />
@@ -729,10 +724,11 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Messages" order="15" weight="0.32763532" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Problems" order="10" />
-      <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.18322147" />
@@ -740,11 +736,12 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.11935953" visible="true" weight="0.11342282" />
       <window_info anchor="right" id="Database" order="5" weight="0.32995737" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info id="Image Layers" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Structure" order="1" sideWeight="0.88064045" side_tool="true" weight="0.1852349" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3973799" />
     </layout-to-restore>
   </component>
@@ -1053,21 +1050,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/controller/connectServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="858">
-          <caret line="53" column="32" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="113">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="e#870#1063#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1092,42 +1078,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/connectfour/data/BoardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="333" column="44" selection-start-line="333" selection-start-column="44" selection-end-line="333" selection-end-column="44" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="174" column="25" lean-forward="true" selection-end-line="431" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#3962#3963#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/controller/GameScreenController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
+        <state relative-caret-position="2496">
           <caret line="112" selection-start-line="112" selection-end-line="112" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1135,17 +1088,57 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Connect4Connector.java">
+    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/PacketInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-84">
-          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
+        <state relative-caret-position="153">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/PacketInfo.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/connectfour/data/BoardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
+        <state relative-caret-position="26">
+          <caret line="333" column="44" selection-start-line="333" selection-start-column="44" selection-end-line="333" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="17" column="6" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
+          <folding>
+            <element signature="e#304#305#0" expanded="true" />
+            <element signature="e#332#333#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1745">
+          <caret line="177" column="25" selection-start-line="177" selection-start-column="25" selection-end-line="177" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#628#629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/controller/connectServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="53" column="32" selection-start-line="53" selection-start-column="12" selection-end-line="53" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Connect4Connector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="81" selection-start-line="81" selection-end-line="81" />
         </state>
       </provider>
     </entry>

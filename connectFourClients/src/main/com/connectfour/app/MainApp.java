@@ -14,6 +14,11 @@ public class MainApp extends Application {
         launch(args);
     }
 
+    /**
+     *
+     * @param primaryStage
+     * @throws IOException
+     */
     @Override
     public void start(Stage primaryStage) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/main.fxml"));
