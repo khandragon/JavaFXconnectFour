@@ -331,7 +331,7 @@ public class BoardTest {
 
         byte number = board.computerMove();
 
-        Assert.assertEquals((byte) -1, number);
+        Assert.assertTrue(board.isComplete());
     }
 
     @Test

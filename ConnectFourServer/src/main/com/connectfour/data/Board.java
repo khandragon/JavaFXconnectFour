@@ -119,6 +119,7 @@ public class Board {
 
     /**
      * Verifies if a move can be made for the selected line
+     *
      * @param line of the board
      * @return true the column is not full
      */
@@ -147,39 +148,41 @@ public class Board {
 
     /**
      * This will let the computer decide what is the best possible move for itself is.
+     *
      * @return an int representing what would be the best move for it.
      */
     public byte computerMove() {
-       int[] points = new int[7];
-       byte line = 0;
-       while (line < 7) {
-           points[line] = evaluatePoints(line);
-           line++;
-       }
-       List<Integer> choice = new ArrayList<>();
-       choice.add(0);
-       line = 1;
-       while (line < 7) {
-           if (points[choice.get(0)] <= points[line]) {
-               if (points[choice.get(0)] < points[line]) {
-                   choice.clear();
-               }
-               choice.add((int) line);
-           }
-           line++;
-       }
-       int best = 0;
-       if (choice.size() == 1) {
-           best = choice.get(0);
-       } else {
-           Random rand = new Random();
-           best = choice.get(rand.nextInt(choice.size()));
-       }
+        int[] points = new int[7];
+        byte line = 0;
+        while (line < 7) {
+            points[line] = evaluatePoints(line);
+            line++;
+        }
+        List<Integer> choice = new ArrayList<>();
+        choice.add(0);
+        line = 1;
+        while (line < 7) {
+            if (points[choice.get(0)] <= points[line]) {
+                if (points[choice.get(0)] < points[line]) {
+                    choice.clear();
+                }
+                choice.add((int) line);
+            }
+            line++;
+        }
+        int best = 0;
+        if (choice.size() == 1) {
+            best = choice.get(0);
+        } else {
+            Random rand = new Random();
+            best = choice.get(rand.nextInt(choice.size() - 1));
+        }
         return (byte) best;
     }
 
     /**
      * Makes a deep copy of a 2D array
+     *
      * @param original array
      * @return copy of array
      */
@@ -413,7 +416,7 @@ public class Board {
     private byte getAvailableYAxis(byte line) {
         int YAxis = 0;
         while (true) {
-            if (board[YAxis][line] == ' ') {
+            if (board[YAxis][line] == (byte) 0) {
                 break;
             }
             YAxis++;

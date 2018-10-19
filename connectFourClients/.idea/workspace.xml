@@ -122,8 +122,8 @@
           <file leaf-file-name="BoardTest.java" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/connectfour/data/BoardTest.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="155">
-                  <caret line="377" selection-start-line="377" selection-end-line="377" />
+                <state relative-caret-position="215">
+                  <caret line="333" column="44" selection-start-line="333" selection-start-column="44" selection-end-line="333" selection-end-column="44" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#224#225#0" expanded="true" />
@@ -136,8 +136,8 @@
           <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="163">
-                  <caret line="418" column="47" selection-start-line="418" selection-start-column="47" selection-end-line="418" selection-end-column="47" />
+                <state relative-caret-position="140">
+                  <caret line="174" column="25" lean-forward="true" selection-end-line="431" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#588#589#0" expanded="true" />
@@ -145,6 +145,15 @@
                     <element signature="e#3962#3963#0" expanded="true" />
                     <element signature="e#4013#4014#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MainApp.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="52">
+                  <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
                 </state>
               </provider>
             </entry>
@@ -205,8 +214,8 @@
         <option value="$PROJECT_DIR$/src/main/com/connectfour/data/Connect4Connector.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/data/PacketInfo.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/controller/GameScreenController.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/connectfour/data/BoardTest.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/data/Board.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/connectfour/data/BoardTest.java" />
       </list>
     </option>
   </component>
@@ -265,6 +274,27 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
               <item name="src" type="cbb8eebc:String" user="src" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="com/connectfour" type="cbb8eebc:String" user="com/connectfour" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="connectFourClients" type="cbb8eebc:String" user="connectFourClients" />
+              <item name="src" type="cbb8eebc:String" user="src" />
+              <item name="main" type="cbb8eebc:String" user="main" />
+              <item name="com/connectfour" type="cbb8eebc:String" user="com/connectfour" />
+              <item name="app" type="cbb8eebc:String" user="app" />
             </path>
             <path>
               <item name="Root" type="cbb8eebc:String" user="Root" />
@@ -391,7 +421,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BoardTest">
+  <component name="RunManager" selected="Application.MainApp (1)">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -562,9 +592,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MainApp (1)" />
         <item itemvalue="JUnit.BoardTest" />
         <item itemvalue="JUnit.BoardTest.pickBlock" />
-        <item itemvalue="Application.MainApp (1)" />
         <item itemvalue="Application.MainApp" />
       </list>
     </recent_temporary>
@@ -605,26 +635,11 @@
       <workItem from="1539958353842" duration="2022000" />
       <workItem from="1539968418353" duration="31000" />
       <workItem from="1539968464209" duration="4643000" />
-      <workItem from="1539980121501" duration="3585000" />
+      <workItem from="1539980121501" duration="4081000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BoardTest - 2018.10.19 at 17h 22m 27s.xml">
-      <configuration name="BoardTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoardTest - 2018.10.19 at 17h 32m 09s.xml">
-      <configuration name="BoardTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoardTest_pickBlock - 2018.10.19 at 17h 40m 30s.xml">
-      <configuration name="BoardTest.pickBlock" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoardTest_pickBlock - 2018.10.19 at 17h 42m 42s.xml">
-      <configuration name="BoardTest.pickBlock" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BoardTest_pickBlock - 2018.10.19 at 17h 43m 20s.xml">
-      <configuration name="BoardTest.pickBlock" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="BoardTest_pickBlock - 2018.10.19 at 17h 44m 03s.xml">
       <configuration name="BoardTest.pickBlock" configurationId="JUnit" />
     </history-entry>
@@ -637,9 +652,27 @@
     <history-entry file="BoardTest_pickBlock - 2018.10.19 at 17h 46m 29s.xml">
       <configuration name="BoardTest.pickBlock" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="BoardTest_pickBlock - 2018.10.19 at 17h 51m 21s.xml">
+      <configuration name="BoardTest.pickBlock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoardTest_pickBlock - 2018.10.19 at 17h 51m 25s.xml">
+      <configuration name="BoardTest.pickBlock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoardTest - 2018.10.19 at 17h 51m 40s.xml">
+      <configuration name="BoardTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoardTest - 2018.10.19 at 17h 52m 52s.xml">
+      <configuration name="BoardTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoardTest - 2018.10.19 at 17h 54m 02s.xml">
+      <configuration name="BoardTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="BoardTest - 2018.10.19 at 17h 58m 12s.xml">
+      <configuration name="BoardTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73679000" />
+    <option name="totallyTimeSpent" value="74175000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -655,7 +688,7 @@
       <window_info anchor="right" id="Maven Projects" order="4" weight="0.18322147" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3945869" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.44729346" />
       <window_info anchor="bottom" id="Terminal" order="14" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="2" />
@@ -666,7 +699,7 @@
       <window_info id="UI Designer" order="3" />
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.45584047" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.45584047" />
       <window_info anchor="right" id="JetGradle" order="6" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -747,16 +780,16 @@
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java</url>
-          <line>319</line>
+          <url>file://$PROJECT_DIR$/src/test/java/com/connectfour/data/BoardTest.java</url>
+          <line>331</line>
           <properties />
-          <option name="timeStamp" value="11" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="12" />
+      <option name="time" value="13" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -985,13 +1018,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/javafx-src.zip!/com/sun/javafx/event/CompositeEventHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
@@ -1076,18 +1102,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/connectfour/data/BoardTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="377" selection-start-line="377" selection-end-line="377" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#224#225#0" expanded="true" />
-            <element signature="e#259#260#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1102,10 +1116,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/connectfour/data/BoardTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="333" column="44" selection-start-line="333" selection-start-column="44" selection-end-line="333" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#224#225#0" expanded="true" />
+            <element signature="e#259#260#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/app/MainApp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="418" column="47" selection-start-line="418" selection-start-column="47" selection-end-line="418" selection-end-column="47" />
+        <state relative-caret-position="140">
+          <caret line="174" column="25" lean-forward="true" selection-end-line="431" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#588#589#0" expanded="true" />

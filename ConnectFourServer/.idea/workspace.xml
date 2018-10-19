@@ -76,14 +76,14 @@
       <file leaf-file-name="Board.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="177" column="27" selection-start-line="177" selection-start-column="27" selection-end-line="177" selection-end-column="27" />
+            <state relative-caret-position="189">
+              <caret line="431" lean-forward="true" selection-start-line="431" selection-end-line="431" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#588#589#0" expanded="true" />
                 <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#3962#3963#0" expanded="true" />
-                <element signature="e#4013#4014#0" expanded="true" />
+                <element signature="e#3969#3970#0" expanded="true" />
+                <element signature="e#4020#4021#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -185,8 +185,8 @@
         <option value="$PROJECT_DIR$/src/main/com/connectfour/data/GameSession.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/controller/DisplayAddress.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/data/PacketInfo.java" />
-        <option value="$PROJECT_DIR$/src/main/com/connectfour/data/Board.java" />
         <option value="$PROJECT_DIR$/src/main/com/connectfour/data/BoardTest.java" />
+        <option value="$PROJECT_DIR$/src/main/com/connectfour/data/Board.java" />
       </list>
     </option>
   </component>
@@ -505,12 +505,12 @@
       <workItem from="1539887931899" duration="800000" />
       <workItem from="1539890147169" duration="1390000" />
       <workItem from="1539968451944" duration="3966000" />
-      <workItem from="1539979997653" duration="3549000" />
+      <workItem from="1539979997653" duration="3574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72370000" />
+    <option name="totallyTimeSpent" value="72395000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -563,20 +563,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java</url>
-          <line>152</line>
-          <properties />
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java</url>
-          <line>174</line>
-          <properties />
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="19" />
     </breakpoint-manager>
   </component>
@@ -808,6 +794,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="1772" selection-start-line="1772" selection-end-line="1772" />
+          <folding>
+            <element signature="e#66921#66922#0" expanded="true" />
+            <element signature="e#66966#66967#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -872,14 +862,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/com/connectfour/data/Board.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="177" column="27" selection-start-line="177" selection-start-column="27" selection-end-line="177" selection-end-column="27" />
+        <state relative-caret-position="189">
+          <caret line="431" lean-forward="true" selection-start-line="431" selection-end-line="431" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#588#589#0" expanded="true" />
             <element signature="e#628#629#0" expanded="true" />
-            <element signature="e#3962#3963#0" expanded="true" />
-            <element signature="e#4013#4014#0" expanded="true" />
+            <element signature="e#3969#3970#0" expanded="true" />
+            <element signature="e#4020#4021#0" expanded="true" />
           </folding>
         </state>
       </provider>
