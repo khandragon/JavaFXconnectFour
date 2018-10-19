@@ -443,7 +443,7 @@ public class Board {
         int YAxis = 0;
         while (true)
         {
-            if (board[YAxis][line] == ' ')
+            if (board[YAxis][line] == (byte)0)
             {
                 break;
             }
