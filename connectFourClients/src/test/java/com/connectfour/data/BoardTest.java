@@ -12,7 +12,7 @@ public class BoardTest {
     
     @Before
     public void init(){
-        board = new Board(PacketInfo.PLAYER_ONE,PacketInfo.PLAYER_TWO);
+        board = new Board();
     }
     
     @Test
