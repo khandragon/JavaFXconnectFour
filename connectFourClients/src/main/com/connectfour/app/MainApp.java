@@ -8,6 +8,11 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
+/**
+ * Main application to commence the GUI
+ *
+ * @author Saad
+ */
 public class MainApp extends Application {
 
     public static void main(String[] args) {
@@ -15,9 +20,8 @@ public class MainApp extends Application {
     }
 
     /**
-     *
-     * @param primaryStage
-     * @throws IOException
+     * Starting application to start the GUI
+     * @author Saad
      */
     @Override
     public void start(Stage primaryStage) throws IOException {

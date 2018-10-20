@@ -16,6 +16,9 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 
+/**
+ * class that controls the game screen
+ */
 public class GameScreenController {
     private Connect4Connector connection;
     private Board game;
@@ -27,15 +30,27 @@ public class GameScreenController {
     @FXML
     private Label gameStatus;
 
+    /**
+     * intialize by starting a game and drawing a board
+     * @author Saad
+     */
     public void initialize() {
         startGame();
     }
 
+    /**
+     * start game
+     * @author Saad
+     */
     private void startGame() {
         this.game = new Board();
         displayGame();
     }
 
+    /**
+     * draw the board on grid plane
+     * @author Saad
+     */
     private void displayGame() {
         byte[][] board = game.getBoard();
         game.printBoard();
@@ -58,10 +73,21 @@ public class GameScreenController {
         }
     }
 
+    /**
+     * create a connect4connector using a server and port
+     * @param server
+     * @param port
+     * @author Saad
+     */
     public void setConnector(String server, int port) {
         this.connection = new Connect4Connector(server, port);
     }
 
+    /**
+     * close window
+     * @param actionEvent
+     * @author Saad
+     */
     public void closeWindow(ActionEvent actionEvent) {
         try {
             Stage stage = (Stage) closeButton.getScene().getWindow();
@@ -72,6 +98,11 @@ public class GameScreenController {
         }
     }
 
+    /**
+     * on click of button place piece on that part of the line
+     * @param mouseEvent
+     * @author Saad
+     */
     public void dropPiece(MouseEvent mouseEvent) {
         String s = mouseEvent.getPickResult().getIntersectedNode().getId();
         int spot = Integer.parseInt(s.charAt(3) + "") - 1;
@@ -95,6 +126,12 @@ public class GameScreenController {
     //data[0] move message type
     //data[1] who's move
     //data[2] where is move
+
+    /**
+     * proccess the data that was received and do the proper commands
+     * @throws IOException
+     * @author Saad
+     */
     public void processReceivedData() throws IOException {
         byte[] data = connection.receiveData();
         switch (data[0]) {
