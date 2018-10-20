@@ -32,7 +32,16 @@ public class GameSession {
                 if (data[0] == PacketInfo.QUIT) {
                     System.out.println("Quitting game...");
                     playGame = false;
-                } else {
+                } 
+                else if (data[0] == PacketInfo.PLAY)
+                {
+                    game = new Board();
+                    if (data[1] == PacketInfo.PLAYER_TWO)
+                    {
+                        firstMove();
+                    }
+                }
+                else {
                     byte number = data[2];
                     System.out.println("Adding move at line " + number + " for player.");
                     serverMove(number);
@@ -91,6 +100,16 @@ public class GameSession {
             System.out.println("Computer is returning his move to client at line: " + decision);
         }
         connection.sendData(first, second, third);
+    }
+    
+    /**
+     * This will run when the computer goes first
+     */
+    private void firstMove() throws IOException{
+        int decision = game.computerMove();
+        game.addMove((byte) decision, PacketInfo.PLAYER_TWO);
+        System.out.println("Computer is first : " + decision + " for computer.");
+        connection.sendData(PacketInfo.MOVE,PacketInfo.PLAYER_TWO, (byte) decision);
     }
 }
 
