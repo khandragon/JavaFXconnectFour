@@ -5,6 +5,11 @@ package com.connectfour.data;
 import java.io.IOException;
 import java.net.Socket;
 
+/**
+ * class that handles the game logic
+ *
+ * @author Saad
+ */
 public class GameSession {
     private Connect4Connector connection;
     private Board game;
@@ -14,6 +19,7 @@ public class GameSession {
      * This will run one game within the code.
      *
      * @param player1 representing the player who made the move.
+     * @author Saad
      */
     public GameSession(Socket player1) {
         this.connection = new Connect4Connector(player1);
@@ -38,7 +44,10 @@ public class GameSession {
     }
 
     /**
-     * This method will send the client the results of his movement.      *      * @param line reperesenting the line that player has chosen      * @throws IOException
+     * This method will send the client the results of his movement.
+     *
+     * @param line reperesenting the line that player has chosen
+     * @author Saad & Anthony
      */
     private void serverMove(byte line) throws IOException {
         byte first;
