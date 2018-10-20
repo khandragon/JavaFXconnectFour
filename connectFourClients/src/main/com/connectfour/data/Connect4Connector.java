@@ -7,6 +7,7 @@ import java.net.Socket;
 
 /**
  * class handles all methods relating to sending and reciving from a connection
+ *
  * @author Saad
  */
 public class Connect4Connector {
@@ -17,8 +18,9 @@ public class Connect4Connector {
     /**
      * Primary Constructor for this class which takes an string and int in case of only having those
      * two available specificlly in the client
+     *
      * @param server takes a string representing the ip address of the server
-     * @param port takes an int that represents the port number
+     * @param port   takes an int that represents the port number
      * @author Saad
      */
     public Connect4Connector(String server, int port) {
@@ -34,7 +36,7 @@ public class Connect4Connector {
     /**
      * Secoundary constructor for this class used in the case of already having socket specifically
      * in the Server
-     * @param player1
+     *
      * @author Saad
      */
     public Connect4Connector(Socket player1) {
@@ -48,11 +50,11 @@ public class Connect4Connector {
     }
 
     /**
-     *Method used to send data from one end to the other
-     * @param first byte that represents the category of the send (Move, Quit, Play, Win, Tie)
+     * Method used to send data from one end to the other
+     *
+     * @param first   byte that represents the category of the send (Move, Quit, Play, Win, Tie)
      * @param secound byte that represents the player that is doing the command
-     * @param third byte that represents the line to place piece or space by default
-     * @throws IOException
+     * @param third   byte that represents the line to place piece or space by default
      * @author Saad
      */
     public void sendData(byte first, byte secound, byte third) throws IOException {
@@ -62,8 +64,8 @@ public class Connect4Connector {
 
     /**
      * waits to receive data from one end of the connection
+     *
      * @return byte[] of the data recieved
-     * @throws IOException
      * @author Saad
      */
     public byte[] receiveData() throws IOException {
@@ -77,7 +79,7 @@ public class Connect4Connector {
 
     /**
      * close the connection
-     * @throws IOException
+     *
      * @author Saad
      */
     public void closeSocket() throws IOException {

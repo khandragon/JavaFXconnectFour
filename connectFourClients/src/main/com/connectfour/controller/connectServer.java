@@ -80,6 +80,7 @@ public class connectServer {
 
     /**
      * validates ip address and port number
+     *
      * @author Saad
      */
     private boolean validInput(String address, String port) {
@@ -88,6 +89,7 @@ public class connectServer {
 
     /**
      * close window on btn click
+     *
      * @author Saad
      */
     public void closeWindow(ActionEvent actionEvent) {

@@ -6,6 +6,7 @@ import com.connectfour.data.PacketInfo;
 
 
 import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
@@ -18,6 +19,8 @@ import javafx.stage.Stage;
 
 /**
  * class that controls the game screen
+ *
+ * @author Saad
  */
 public class GameScreenController {
     private Connect4Connector connection;
@@ -32,6 +35,7 @@ public class GameScreenController {
 
     /**
      * intialize by starting a game and drawing a board
+     *
      * @author Saad
      */
     public void initialize() {
@@ -40,6 +44,7 @@ public class GameScreenController {
 
     /**
      * start game
+     *
      * @author Saad
      */
     private void startGame() {
@@ -49,6 +54,7 @@ public class GameScreenController {
 
     /**
      * draw the board on grid plane
+     *
      * @author Saad
      */
     private void displayGame() {
@@ -75,8 +81,7 @@ public class GameScreenController {
 
     /**
      * create a connect4connector using a server and port
-     * @param server
-     * @param port
+     *
      * @author Saad
      */
     public void setConnector(String server, int port) {
@@ -85,7 +90,7 @@ public class GameScreenController {
 
     /**
      * close window
-     * @param actionEvent
+     *
      * @author Saad
      */
     public void closeWindow(ActionEvent actionEvent) {
@@ -100,7 +105,7 @@ public class GameScreenController {
 
     /**
      * on click of button place piece on that part of the line
-     * @param mouseEvent
+     *
      * @author Saad
      */
     public void dropPiece(MouseEvent mouseEvent) {
@@ -115,7 +120,7 @@ public class GameScreenController {
                 processReceivedData();
 
             } else {
-                connection.sendData(PacketInfo.WIN,PacketInfo.PLAYER_ONE,PacketInfo.SPACE);
+                connection.sendData(PacketInfo.WIN, PacketInfo.PLAYER_ONE, PacketInfo.SPACE);
                 gameStatus.setText("You Win");
             }
         } catch (IOException e) {
@@ -129,7 +134,7 @@ public class GameScreenController {
 
     /**
      * proccess the data that was received and do the proper commands
-     * @throws IOException
+     *
      * @author Saad
      */
     public void processReceivedData() throws IOException {
