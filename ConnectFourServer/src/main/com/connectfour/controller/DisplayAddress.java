@@ -1,0 +1,70 @@
+package com.connectfour.controller;
+
+import com.connectfour.data.GameSession;
+
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
+import java.net.UnknownHostException;
+
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.stage.Stage;
+
+public class DisplayAddress {
+
+    @FXML
+    private Label address;
+    @FXML
+    private Label port;
+    @FXML
+    private Button closeButton;
+    @FXML
+    private Button connectButton;
+
+
+    public void initialize() {
+        address.setText("IP Address: " + getIPAddress());
+        port.setText("Port#: " + getPortNumber());
+    }
+
+    @FXML
+    private void beginConnectionSearch() {
+        connectButton.setDisable(true);
+        try {
+            int servPort = Integer.parseInt(getPortNumber());
+            ServerSocket servSock = new ServerSocket(servPort);
+            while (true) {
+                Socket player1 = servSock.accept();
+                System.out.println("player found...");
+                GameSession gs = new GameSession(player1);
+                player1.close();
+                break;
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private String getPortNumber() {
+        return "5000";
+    }
+
+    //192.168.10.1
+    private String getIPAddress() {
+        try {
+            return InetAddress.getLocalHost().getHostAddress();
+        } catch (UnknownHostException e) {
+            e.printStackTrace();
+            return "falure to get address";
+        }
+    }
+
+    public void closeWindow(ActionEvent actionEvent) {
+        Stage stage = (Stage) closeButton.getScene().getWindow();
+        stage.close();
+    }
+}
