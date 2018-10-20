@@ -1,5 +1,10 @@
 package com.connectfour.data;
 
+/**
+ * class containing byte constants to use for certain situations
+ *
+ * @author Saad & Anthony
+ */
 public class PacketInfo {
 
 
@@ -9,7 +14,7 @@ public class PacketInfo {
     public static final byte PLAY = 3;
     public static final byte WIN = 4;
     public static final byte TIE = 5;
-    
+
     //specifies which player just moved
     public static final byte PLAYER_ONE = 6;
     public static final byte PLAYER_TWO = 7;

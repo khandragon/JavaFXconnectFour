@@ -1,5 +1,10 @@
 package com.connectfour.data;
 
+/**
+ * class containing byte constants to use for certain situations
+ *
+ * @author Saad & Anthony
+ */
 public class PacketInfo {
 
 
