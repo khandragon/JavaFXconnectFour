@@ -3,9 +3,13 @@ package com.connectfour.controller;
 import com.connectfour.data.Board;
 import com.connectfour.data.Connect4Connector;
 import com.connectfour.data.PacketInfo;
+import static com.connectfour.data.PacketInfo.LOCK_BUTTONS;
+import static com.connectfour.data.PacketInfo.UNLOCK_BUTTONS;
 
 
 import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
@@ -32,9 +36,29 @@ public class GameScreenController {
     private GridPane gameGrid;
     @FXML
     private Label gameStatus;
+    @FXML
+    private Button col6;
+
+    @FXML
+    private Button col7;
+
+    @FXML
+    private Button col4;
+
+    @FXML
+    private Button col5;
+
+    @FXML
+    private Button col2;
+
+    @FXML
+    private Button col3;
+
+    @FXML
+    private Button col1;
 
     /**
-     * intialize by starting a game and drawing a board
+     * initialize by starting a game and drawing a board
      *
      * @author Saad
      */
@@ -48,7 +72,23 @@ public class GameScreenController {
      * @author Saad
      */
     private void startGame() {
+        gameStatus.setText("A Game Has Begun!");
         this.game = new Board();
+        changePlayButtonsState(UNLOCK_BUTTONS);
+        displayGame();
+    }
+    
+    @FXML
+    private void restartGame(){
+        gameStatus.setText("A New Game Has Begun!");
+        this.game = new Board();
+        changePlayButtonsState(UNLOCK_BUTTONS);
+        
+        try {
+            connection.sendData(PacketInfo.PLAY, PacketInfo.PLAYER_ONE, PacketInfo.SPACE);
+        } catch (IOException ex) {
+            System.out.println(ex.getMessage());
+        }
         displayGame();
     }
 
@@ -111,58 +151,83 @@ public class GameScreenController {
     public void dropPiece(MouseEvent mouseEvent) {
         String s = mouseEvent.getPickResult().getIntersectedNode().getId();
         int spot = Integer.parseInt(s.charAt(3) + "") - 1;
-        //System.out.println(spot);
-        // Check if the user has made a valid move
-        System.out.println();
-        this.game.printBoard();
-        //System.out.println(game.addMove((byte) spot, PacketInfo.PLAYER_ONE));
-        //game.addMove((byte) spot, PacketInfo.PLAYER_ONE);
-            
-        if(game.addMove((byte) spot, PacketInfo.PLAYER_ONE)){
-            this.game.printBoard();
-            //game.addMove((byte) spot, PacketInfo.PLAYER_ONE);
+        // Check if the user has made a valid move and if a move can be made
+        if(!checkEndGame() && game.addMove((byte) spot, PacketInfo.PLAYER_ONE)){
             displayGame();
             try {
-                if (!game.checkIfWin()) {
+                if (!checkEndGame()) {
                     connection.sendData(PacketInfo.MOVE, PacketInfo.PLAYER_ONE, (byte) spot);
                     processReceivedData();
-
                 } else {
                     connection.sendData(PacketInfo.WIN, PacketInfo.PLAYER_ONE, PacketInfo.SPACE);
-                    gameStatus.setText("You Win");
+                    checkEndGame();
                 }
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            
-            this.game.printBoard();
-        }
-        
+        } 
     }
 
-    //data[0] move message type
-    //data[1] who's move
-    //data[2] where is move
-
+    private boolean checkEndGame(){
+        if (game.checkIfWin()){
+            gameStatus.setText("You Win! Press 'New Game' to play again!");
+            changePlayButtonsState(LOCK_BUTTONS);
+            return true;
+        } else if(game.checkIfTie()){
+            gameStatus.setText("Tie! Press 'New Game' to play again!");
+            changePlayButtonsState(LOCK_BUTTONS);
+            return true;
+        }
+        return false;
+    }
+    
+    private void computerWin(){
+        gameStatus.setText("You Lost! Press 'New Game' to play again!");
+        changePlayButtonsState(LOCK_BUTTONS);
+    }
+    
+    private void changePlayButtonsState(boolean state){
+        // Change all the buttons to the given state
+        col1.setDisable(state);
+        col2.setDisable(state);
+        col3.setDisable(state);
+        col4.setDisable(state);
+        col5.setDisable(state);
+        col6.setDisable(state);
+        col7.setDisable(state);
+    }
+    
     /**
-     * proccess the data that was received and do the proper commands
+     * process the data that was received and do the proper commands
      *
      * @author Saad
      * @throws java.io.IOException
      */
     public void processReceivedData() throws IOException {
         byte[] data = connection.receiveData();
+        //data[0]: move message type
+        //data[1]: player's turn
+        //data[2]: move location
         switch (data[0]) {
             case PacketInfo.MOVE:
                 game.addMove(data[2], data[1]);
                 displayGame();
-                //makeAMove(data[1],data[2]);
                 break;
             case PacketInfo.PLAY:
-                //playagain or reset board
+                restartGame();
                 break;
             case PacketInfo.QUIT:
                 connection.closeSocket();
+                break;
+            case PacketInfo.WIN:
+                game.addMove(data[2], data[1]);
+                displayGame();
+                computerWin();
+                break;
+            case PacketInfo.TIE:
+                game.addMove(data[2], data[1]);
+                displayGame();
+                checkEndGame();
                 break;
             default:
                 System.out.println("No received data");

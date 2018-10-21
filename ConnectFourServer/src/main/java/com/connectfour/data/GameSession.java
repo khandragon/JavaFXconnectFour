@@ -40,6 +40,8 @@ public class GameSession {
                     {
                         firstMove();
                     }
+                }else if(data[0] == PacketInfo.WIN){
+                    game = new Board();
                 }
                 else {
                     byte number = data[2];
@@ -55,8 +57,9 @@ public class GameSession {
     /**
      * This method will send the client the results of his movement.
      *
-     * @param line reperesenting the line that player has chosen
-     * @author Saad & Anthony
+     * @param line representing the line that player has chosen
+     * @author Saad 
+     * @author Anthony
      */
     private void serverMove(byte line) throws IOException {
         byte first;
@@ -68,13 +71,14 @@ public class GameSession {
             first = PacketInfo.WIN;
             second = PacketInfo.PLAYER_ONE;
             third = PacketInfo.SPACE;
-            playGame = false;
+//            playGame = false;
+
         } else if (game.isComplete()) {
             System.out.println("Player has made the game a tie.");
             first = PacketInfo.TIE;
             second = PacketInfo.PLAYER_ONE;
             third = PacketInfo.SPACE;
-            playGame = false;
+//            playGame = false;
         } else {
             int decision = game.computerMove();
             game.addMove((byte) decision, PacketInfo.PLAYER_TWO);
@@ -84,13 +88,13 @@ public class GameSession {
                 first = PacketInfo.WIN;
                 second = PacketInfo.PLAYER_TWO;
                 third = (byte) decision;
-                playGame = false;
+//                playGame = false;
             } else if (game.isComplete()) {
                 System.out.println("Computer has made the game a tie.");
                 first = PacketInfo.TIE;
                 second = PacketInfo.PLAYER_TWO;
                 third = (byte) decision;
-                playGame = false;
+//                playGame = false;
             } else {
                 System.out.println("Computer has not made " + "a victory or tie move.");
                 first = PacketInfo.MOVE;

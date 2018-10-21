@@ -21,4 +21,8 @@ public class PacketInfo {
 
     //used as place holder
     public static final byte SPACE = 99;
+    
+    //board button states
+    public static final boolean LOCK_BUTTONS = true;
+    public static final boolean UNLOCK_BUTTONS = false;
 }

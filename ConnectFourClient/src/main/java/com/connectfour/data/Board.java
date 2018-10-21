@@ -111,16 +111,16 @@ public class Board {
      * serves the same purpose.
      * Returns true if the game has ended in a tie (no possible moves, no win)
      * @return true if board is a tie
-     *
-     * public boolean checkIfTie(){
-     *  for(int i=0; i < 7; i++){
-     *   if(checkIfPossibleMove(i) == true || this.checkIfWin()){
-     *      return false;
-     *   }
-     * }
-     * return true;
-     * }
-     * * */
+     * */
+     public boolean checkIfTie(){
+        for(int i=0; i < 7; i++){
+            if(checkIfPossibleMove(i) == true || this.checkIfWin()){
+                return false;
+            }
+        }
+        return true;
+     }
+     
 
     /**
      * Verifies if a move can be made for the selected line
