@@ -135,6 +135,7 @@ public class GameScreenController {
     public void closeWindow(ActionEvent actionEvent) {
         try {
             Stage stage = (Stage) closeButton.getScene().getWindow();
+            connection.sendData(PacketInfo.QUIT, PacketInfo.PLAYER_ONE, PacketInfo.SPACE);
             connection.closeSocket();
             stage.close();
         } catch (IOException e) {

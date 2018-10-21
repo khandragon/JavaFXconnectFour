@@ -55,7 +55,6 @@ public class DisplayAddress {
                 System.out.println("player found...");
                 GameSession gs = new GameSession(player1);
                 player1.close();
-                break;
             }
         } catch (IOException e) {
             e.printStackTrace();
