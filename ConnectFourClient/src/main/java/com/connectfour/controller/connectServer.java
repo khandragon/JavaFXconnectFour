@@ -2,18 +2,15 @@ package com.connectfour.controller;
 
 import com.connectfour.data.Board;
 import com.connectfour.data.Connect4Connector;
-import com.connectfour.data.PacketInfo;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 
-import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -23,10 +20,9 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
- * class that handles the connector HUI
+ * Class that handles the connector GUI
  */
 public class connectServer {
-
     private final static Logger LOG = LoggerFactory.getLogger(Board.class);
     Board game;
     Connect4Connector connection;
@@ -43,7 +39,11 @@ public class connectServer {
     private Button connectButton;
 
     /**
-     * take the ip address and port number inputted, validate and then make connection to the server
+     * Take the ip address and port number inputted, 
+     * validate and then make connection to the server
+     * 
+     * @author Saad
+     * @param actionEvent
      */
     public void establishConnection(ActionEvent actionEvent) {
         String address = inputAddress.getText();
@@ -53,7 +53,7 @@ public class connectServer {
     }
 
     /**
-     * establish connection to server and display gui
+     * Establish connection to server and display gui
      *
      * @param server   ip address of server
      * @param servPort port number of server
@@ -73,7 +73,7 @@ public class connectServer {
             stage.setScene(new Scene(root));
             stage.show();
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.error(e.getMessage());
         }
 
     }
@@ -88,9 +88,10 @@ public class connectServer {
     }
 
     /**
-     * close window on btn click
+     * close window on button click
      *
      * @author Saad
+     * @param actionEvent
      */
     public void closeWindow(ActionEvent actionEvent) {
         Stage stage = (Stage) closeButton.getScene().getWindow();

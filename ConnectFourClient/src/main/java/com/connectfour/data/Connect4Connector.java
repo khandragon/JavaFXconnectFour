@@ -4,13 +4,17 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
- * class handles all methods relating to sending and receiving from a connection
+ * Class handles all methods relating to sending and receiving from a connection
  *
  * @author Saad
  */
 public class Connect4Connector {
+    
+    private final static Logger LOG = LoggerFactory.getLogger(Connect4Connector.class);
     private Socket servSocket;
     private InputStream in;
     private OutputStream out;
@@ -29,7 +33,7 @@ public class Connect4Connector {
             in = servSocket.getInputStream();
             out = servSocket.getOutputStream();
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.error(e.getMessage());
         }
     }
 
@@ -38,6 +42,7 @@ public class Connect4Connector {
      * in the Server
      *
      * @author Saad
+     * @param player1
      */
     public Connect4Connector(Socket player1) {
         this.servSocket = player1;
@@ -45,7 +50,7 @@ public class Connect4Connector {
             in = servSocket.getInputStream();
             out = servSocket.getOutputStream();
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.error(e.getMessage());
         }
     }
 
@@ -56,6 +61,7 @@ public class Connect4Connector {
      * @param secound byte that represents the player that is doing the command
      * @param third   byte that represents the line to place piece or space by default
      * @author Saad
+     * @throws java.io.IOException
      */
     public void sendData(byte first, byte secound, byte third) throws IOException {
         byte[] messages = {first, secound, third};
@@ -63,10 +69,11 @@ public class Connect4Connector {
     }
 
     /**
-     * waits to receive data from one end of the connection
+     * Waits to receive data from one end of the connection
      *
-     * @return byte[] of the data recieved
+     * @return byte[] of the data received
      * @author Saad
+     * @throws java.io.IOException
      */
     public byte[] receiveData() throws IOException {
         byte[] receivedData = new byte[3];
@@ -78,9 +85,10 @@ public class Connect4Connector {
     }
 
     /**
-     * close the connection
+     * Close the connection
      *
      * @author Saad
+     * @throws java.io.IOException
      */
     public void closeSocket() throws IOException {
         servSocket.close();

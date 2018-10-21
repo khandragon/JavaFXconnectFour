@@ -12,7 +12,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
- * class that controlls GUI for main controller
+ * Class that controls GUI for main controller
  *
  * @author Saad
  */
@@ -22,9 +22,10 @@ public class mainController {
     private Button closeButton;
 
     /**
-     * close window on btn click
+     * Close window on button click
      *
      * @author Saad
+     * @param actionEvent
      */
     public void closeWindow(ActionEvent actionEvent) {
         Stage stage = (Stage) closeButton.getScene().getWindow();
@@ -32,9 +33,11 @@ public class mainController {
     }
 
     /**
-     * display the connector screen on btn click
+     * Display the connector screen on button click
      *
      * @author Saad
+     * @param actionEvent
+     * @throws java.io.IOException
      */
     public void displayConnector(ActionEvent actionEvent) throws IOException {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/connectServer.fxml"));

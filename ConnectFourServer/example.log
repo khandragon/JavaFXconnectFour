@@ -136,3 +136,33 @@
 2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:65) - --- Testing Vertical ---
 2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:82) - --- Testing Diagonal Up ---
 2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Down ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:46) - --- Testing Horizontal ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:65) - --- Testing Vertical ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:82) - --- Testing Diagonal Up ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Down ---
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 1
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 1
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 1
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 0
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 0
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 0
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 0
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:46) - --- Testing Horizontal ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:65) - --- Testing Vertical ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:82) - --- Testing Diagonal Up ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Down ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:46) - --- Testing Horizontal ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:65) - --- Testing Vertical ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:82) - --- Testing Diagonal Up ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Down ---
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 3
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 3
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 2
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 1
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 1
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 0
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:406) - Calculated points = 0
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:46) - --- Testing Horizontal ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:65) - --- Testing Vertical ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:82) - --- Testing Diagonal Up ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Down ---

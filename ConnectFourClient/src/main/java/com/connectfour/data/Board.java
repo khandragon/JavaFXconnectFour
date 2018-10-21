@@ -12,19 +12,20 @@ import org.slf4j.LoggerFactory;
 
 /**
  * This class will deal with the game logic of connect four.  
- * @author Sebastian Paiva 
- * @author Anthony Whitebean
+ * @author Seb
+ * @author Anthony
  */
 public class Board {
     private final static Logger LOG = LoggerFactory.getLogger(Board.class);
-    private byte[][] board = new byte[6][7];
+    private final byte[][] board = new byte[6][7];
 
-    public Board() {
-    }
+    public Board() {}
 
     /**
-     * Return a deep copy of the board  
-     * @return 
+     * Return a deep copy of the board
+     * 
+     * @return board copy   
+     * @author Seb
      */
     public byte[][] getBoard() {
         return deepCopy2D(board);
@@ -32,6 +33,8 @@ public class Board {
 
     /**
      * Return true if the board is full   
+     *    
+     * @author Seb
      * @return true if board is complete
      */
     public boolean isComplete() {
@@ -45,7 +48,9 @@ public class Board {
 
     /**
      * Checks if a player has connected four pieces on the board   
-     * @return true if valid connect four      
+     *    
+     * @author Seb
+     * @return true if valid win condition
      */
     public boolean checkIfWin() {
         LOG.debug("--- Testing Horizontal ---");
@@ -104,13 +109,16 @@ public class Board {
                 }
             }
         }
+        LOG.info("--- No Win Conditions Found ---");
         return false;
     }
     /**
      * This is commented out for the reason that isComplete after a check if won
      * serves the same purpose.
      * Returns true if the game has ended in a tie (no possible moves, no win)
-     * @return true if board is a tie
+     * 
+     * @return true if board is a tie   
+     * @author Seb
      * */
      public boolean checkIfTie(){
         for(int i=0; i < 7; i++){
@@ -126,7 +134,8 @@ public class Board {
      * Verifies if a move can be made for the selected line
      *
      * @param line of the board
-     * @return true the column is not full
+     * @return true the column is not full   
+     * @author Seb
      */
     public boolean checkIfPossibleMove(int line) {
         return (board[5][line] == (byte) 0);
@@ -137,7 +146,8 @@ public class Board {
      *
      * @param line   of the board
      * @param player representing the player
-     * @return boolean showing if it succeded or not
+     * @return boolean showing if it succeeded or not   
+     * @author Seb
      */
     public boolean addMove(byte line, byte player) {
         if (checkIfPossibleMove(line)) {
@@ -153,9 +163,10 @@ public class Board {
     }
 
     /**
-     * This will let the computer decide what is the best possible move for itself is.
+     * This will let the computer decide what is the best possible move for itself is
      *
-     * @return an int representing what would be the best move for it.
+     * @return int representing what would be the best move for it
+     * @author Seb
      */
     public byte computerMove() {
         int[] points = new int[7];
@@ -190,7 +201,8 @@ public class Board {
      * Makes a deep copy of a 2D array
      *
      * @param original array
-     * @return copy of array
+     * @return copy of array   
+     * @author Seb
      */
     private byte[][] deepCopy2D(byte[][] original) {
         if (original == null) {
@@ -203,27 +215,18 @@ public class Board {
         return result;
     }
 
-    //test method
-    public void printBoard() {
-        for (int i = board.length - 1; i >= 0; i--) {
-            for (int j = 0; j < board[1].length; j++) {
-                System.out.print(board[i][j] + "-");
-            }
-            System.out.println();
-        }
-    }
-
     /**
      * This will check if the board has a possible win
      *
-     * @param line representing the line that is to be checked.
-     * @return a boolean representing if it is possible to win or not.
+     * @param line representing the line that is to be checked
+     * @return a boolean representing if it is possible to win or not 
+     * @author Anthony
      */
     private boolean checkIfPossibleWin(byte line, byte player) {
         byte YAxis = getAvailableYAxis(line);
         /**
          * The first possibility is that the piece is the final piece of the
-         * connect, so this part will deal with finishing lines.
+         * connect, so this part will deal with finishing lines
          **/
         if (line <= 3) {
             if (board[YAxis][line + 1] == player && board[YAxis][line + 2] == player && board[YAxis][line + 3] == player) {
@@ -304,9 +307,10 @@ public class Board {
      *
      * @param line representing if it is possible to block an opponent or not
      * @return a boolean representing if it is possible to block or not.
+     * @author Anthony
      */
     private boolean checkIfPossibleBlock(byte line, byte opponent) {
-        /**          *
+        /**          
          * By checking if the opponent can win, we can easily save time
          * by blocking that possibility.
          * */
@@ -314,16 +318,13 @@ public class Board {
     }
 
     /**
-     * This will return the point amount of a given position      *      *
+     * This will return the point amount of a given position            
      *
-     * @param line representing the line that is to be evaluated      *
+     * @param line representing the line that is to be evaluated      
      * @return an int representing how many points a line has
+     * @author Anthony
      */
     private int evaluatePoints(byte line) {
-        /**
-         * C is a place holder for computer until resolved later.
-         * P is a place holder for player until resolved later
-         * */
         if (!(checkIfPossibleMove(line))) {
             return -1;
         }
@@ -417,8 +418,9 @@ public class Board {
     /**
      * This will check to see what is the next empty Y axis of a given line is
      *
-     * @param line representing the X axis to check      *
+     * @param line representing the X axis to check      
      * @return an int representing the line to chose.
+     * @author Anthony
      */
     private byte getAvailableYAxis(byte line) {
         int YAxis = 0;

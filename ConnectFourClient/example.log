@@ -877,3 +877,23 @@
 2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:70) - --- Testing Vertical ---
 2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:87) - --- Testing Diagonal Up ---
 2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:97) - --- Testing Diagonal Down ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:112) - --- No Win Conditions Found ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:112) - --- No Win Conditions Found ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:112) - --- No Win Conditions Found ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
+2018-10-20 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
+2018-10-20  INFO [JavaFX Application Thread] (Board.java:112) - --- No Win Conditions Found ---

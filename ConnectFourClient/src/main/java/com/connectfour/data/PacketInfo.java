@@ -3,10 +3,11 @@ package com.connectfour.data;
 /**
  * class containing byte constants to use for certain situations
  *
- * @author Saad & Anthony
+ * @author Saad
+ * @author Anthony
+ * @author Seb
  */
 public class PacketInfo {
-
 
     //specifies the game mode
     public static final byte MOVE = 1;

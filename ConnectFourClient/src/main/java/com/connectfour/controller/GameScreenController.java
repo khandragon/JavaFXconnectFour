@@ -6,11 +6,7 @@ import com.connectfour.data.PacketInfo;
 import static com.connectfour.data.PacketInfo.LOCK_BUTTONS;
 import static com.connectfour.data.PacketInfo.UNLOCK_BUTTONS;
 
-
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import javafx.event.ActionEvent;
 import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
@@ -20,45 +16,33 @@ import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
+import org.slf4j.LoggerFactory;
 
 /**
  * class that controls the game screen
  *
  * @author Saad
+ * @author Seb 
  */
 public class GameScreenController {
+    
+    private final static org.slf4j.Logger LOG = LoggerFactory.getLogger(GameScreenController.class);
     private Connect4Connector connection;
     private Board game;
 
-    @FXML
-    private Button closeButton;
-    @FXML
-    private GridPane gameGrid;
-    @FXML
-    private Label gameStatus;
-    @FXML
-    private Button col6;
-
-    @FXML
-    private Button col7;
-
-    @FXML
-    private Button col4;
-
-    @FXML
-    private Button col5;
-
-    @FXML
-    private Button col2;
-
-    @FXML
-    private Button col3;
-
-    @FXML
-    private Button col1;
+    @FXML private Button closeButton;
+    @FXML private GridPane gameGrid;
+    @FXML private Label gameStatus;
+    @FXML private Button col6;
+    @FXML private Button col7;
+    @FXML private Button col4;
+    @FXML private Button col5;
+    @FXML private Button col2;
+    @FXML private Button col3;
+    @FXML private Button col1;
 
     /**
-     * initialize by starting a game and drawing a board
+     * Initialize by starting a game and drawing a board
      *
      * @author Saad
      */
@@ -67,9 +51,10 @@ public class GameScreenController {
     }
 
     /**
-     * start game
+     * Start a new game
      *
      * @author Saad
+     * @author Seb
      */
     private void startGame() {
         gameStatus.setText("A Game Has Begun!");
@@ -78,16 +63,20 @@ public class GameScreenController {
         displayGame();
     }
     
+    /**
+     * Restart the boards for a reset game
+     * 
+     * @author Seb
+     */
     @FXML
     private void restartGame(){
         gameStatus.setText("A New Game Has Begun!");
         this.game = new Board();
         changePlayButtonsState(UNLOCK_BUTTONS);
-        
         try {
             connection.sendData(PacketInfo.PLAY, PacketInfo.PLAYER_ONE, PacketInfo.SPACE);
         } catch (IOException ex) {
-            System.out.println(ex.getMessage());
+            LOG.error(ex.getMessage());
         }
         displayGame();
     }
@@ -99,8 +88,6 @@ public class GameScreenController {
      */
     private void displayGame() {
         byte[][] board = game.getBoard();
-        //game.printBoard();
-
         for (int i = board.length - 1; i >= 0; i--) {
             for (int j = 0; j < board[1].length; j++) {
                 Circle circ = (Circle) gameGrid.getChildren().get(41 - (i * 7 + Math.abs(j - 6)));
@@ -138,13 +125,14 @@ public class GameScreenController {
             connection.closeSocket();
             stage.close();
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.error(e.getMessage());
         }
     }
 
     /**
      * on click of button place piece on that part of the line
      *
+     * @author Seb
      * @author Saad
      * @param mouseEvent
      */
@@ -163,11 +151,17 @@ public class GameScreenController {
                     checkEndGame();
                 }
             } catch (IOException e) {
-                e.printStackTrace();
+                LOG.error(e.getMessage());
             }
         } 
     }
 
+    /**
+     * Checks if the player has achieved an endgame
+     * 
+     * @author Seb
+     * @return true if there is an endgame
+     */
     private boolean checkEndGame(){
         if (game.checkIfWin()){
             gameStatus.setText("You Win! Press 'New Game' to play again!");
@@ -181,11 +175,22 @@ public class GameScreenController {
         return false;
     }
     
+    /**
+     * Checks if the computer has achieved an endgame
+     * 
+     * @author Seb
+     */
     private void computerWin(){
         gameStatus.setText("You Lost! Press 'New Game' to play again!");
         changePlayButtonsState(LOCK_BUTTONS);
     }
     
+    /**
+     * Changes the clickable state of the buttons necessary to play the game
+     * 
+     * @author Seb
+     * @param deciding to enable or disable buttons
+     */
     private void changePlayButtonsState(boolean state){
         // Change all the buttons to the given state
         col1.setDisable(state);
@@ -200,6 +205,7 @@ public class GameScreenController {
     /**
      * process the data that was received and do the proper commands
      *
+     * @author Seb
      * @author Saad
      * @throws java.io.IOException
      */
@@ -230,7 +236,7 @@ public class GameScreenController {
                 checkEndGame();
                 break;
             default:
-                System.out.println("No received data");
+                LOG.info("No Data Received From Server");
         }
     }
 }
