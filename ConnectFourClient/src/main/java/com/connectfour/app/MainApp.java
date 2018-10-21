@@ -24,6 +24,7 @@ public class MainApp extends Application {
      * Starting application to start the GUI
      * 
      * @author Saad
+     * @throws java.io.IOException
      */
     @Override
     public void start(Stage primaryStage) throws IOException {

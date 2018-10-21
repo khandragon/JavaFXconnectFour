@@ -48,6 +48,7 @@ public class DisplayAddress {
      * When button is clicked open a socket and begin searching for a connection
      *
      * @author Saad
+     * @author Anthony
      */
     @FXML
     private void beginConnectionSearch() {
@@ -56,11 +57,10 @@ public class DisplayAddress {
             int servPort = Integer.parseInt(getPortNumber());
             ServerSocket servSock = new ServerSocket(servPort);
             while (true) {
-                Socket player1 = servSock.accept();
-                System.out.println("player found...");
-                GameSession gs = new GameSession(player1);
-                player1.close();
-                break;
+                try (Socket player1 = servSock.accept()) {
+                    LOG.info("Player found");
+                    GameSession gs = new GameSession(player1);
+                }
             }
         } catch (IOException e) {
             LOG.error(e.getMessage());
