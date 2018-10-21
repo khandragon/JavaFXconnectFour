@@ -1,9 +1,9 @@
-
-
 package com.connectfour.data;
 
 import java.io.IOException;
 import java.net.Socket;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * class that handles the game logic
@@ -11,6 +11,7 @@ import java.net.Socket;
  * @author Saad
  */
 public class GameSession {
+    private final static Logger LOG = LoggerFactory.getLogger(GameSession.class);
     private Connect4Connector connection;
     private Board game;
     private boolean playGame;
@@ -20,17 +21,18 @@ public class GameSession {
      *
      * @param player1 representing the player who made the move.
      * @author Saad
+     * @author Seb
      */
     public GameSession(Socket player1) {
         this.connection = new Connect4Connector(player1);
-        System.out.println("game session created");
+        LOG.info("Game session created");
         game = new Board();
         playGame = true;
         try {
             do {
                 byte[] data = connection.receiveData();
                 if (data[0] == PacketInfo.QUIT) {
-                    System.out.println("Quitting game...");
+                    LOG.info("Quitting game...");
                     playGame = false;
                 } 
                 else if (data[0] == PacketInfo.PLAY)
@@ -45,12 +47,12 @@ public class GameSession {
                 }
                 else {
                     byte number = data[2];
-                    System.out.println("Adding move at line " + number + " for player.");
+                    LOG.info("Adding move at line " + number + " for player.");
                     serverMove(number);
                 }
             } while (playGame);
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.error(e.getMessage());
         }
     }
 
@@ -60,6 +62,7 @@ public class GameSession {
      * @param line representing the line that player has chosen
      * @author Saad 
      * @author Anthony
+     * @author Seb
      */
     private void serverMove(byte line) throws IOException {
         byte first;
@@ -67,47 +70,45 @@ public class GameSession {
         byte third;
         game.addMove(line, PacketInfo.PLAYER_ONE);
         if (game.checkIfWin()) {
-            System.out.println("Player is making a victory move.");
+            LOG.info("Player is making a victory move.");
             first = PacketInfo.WIN;
             second = PacketInfo.PLAYER_ONE;
             third = PacketInfo.SPACE;
-//            playGame = false;
 
         } else if (game.isComplete()) {
-            System.out.println("Player has made the game a tie.");
+            LOG.info("Player has made the game a tie.");
             first = PacketInfo.TIE;
             second = PacketInfo.PLAYER_ONE;
             third = PacketInfo.SPACE;
-//            playGame = false;
         } else {
             int decision = game.computerMove();
             game.addMove((byte) decision, PacketInfo.PLAYER_TWO);
-            System.out.println("Adding move at line " + decision + " for computer.");
+            LOG.info("Adding move at line " + decision + " for computer.");
             if (game.checkIfWin()) {
-                System.out.println("Computer is making a victory move.");
+                LOG.info("Computer is making a victory move.");
                 first = PacketInfo.WIN;
                 second = PacketInfo.PLAYER_TWO;
                 third = (byte) decision;
-//                playGame = false;
             } else if (game.isComplete()) {
-                System.out.println("Computer has made the game a tie.");
+                LOG.info("Computer has made the game a tie.");
                 first = PacketInfo.TIE;
                 second = PacketInfo.PLAYER_TWO;
                 third = (byte) decision;
-//                playGame = false;
             } else {
-                System.out.println("Computer has not made " + "a victory or tie move.");
+                LOG.info("Computer has not made " + "a victory or tie move.");
                 first = PacketInfo.MOVE;
                 second = PacketInfo.PLAYER_TWO;
                 third = (byte) decision;
             }
-            System.out.println("Computer is returning his move to client at line: " + decision);
+            LOG.info("Computer is returning his move to client at line: " + decision);
         }
         connection.sendData(first, second, third);
     }
     
     /**
      * This will run when the computer goes first
+     * 
+     * @author Saad
      */
     private void firstMove() throws IOException{
         int decision = game.computerMove();

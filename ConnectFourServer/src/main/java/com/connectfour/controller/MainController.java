@@ -12,7 +12,7 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
- * controller for main application
+ * Controller for main application
  *
  * @author Saad
  */
@@ -21,7 +21,7 @@ public class MainController {
     private Button closeButton;
 
     /**
-     * when btn is clicked open new stage that contains the ip address and the port number
+     * When button is clicked open new stage that contains the ip address and the port number
      * as well as the button to start connection
      *
      * @param mouseEvent the mouse click
@@ -38,9 +38,9 @@ public class MainController {
     }
 
     /**
-     * close current window on btn click
+     * close current window on button click
      *
-     * @param actionEvent btn click
+     * @param actionEvent button click
      * @author Saad
      */
     public void closeWindow(ActionEvent actionEvent) {

@@ -1,5 +1,3 @@
-
-
 package com.connectfour.data;
 
 import java.util.ArrayList;

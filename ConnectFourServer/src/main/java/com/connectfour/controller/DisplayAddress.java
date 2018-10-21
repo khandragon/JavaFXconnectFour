@@ -13,11 +13,16 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
- * class that handles the display for the ip address and the port
+ * Class that handles the display for the ip address and the port
+ * 
+ * @author Saad
  */
 public class DisplayAddress {
+    private final static Logger LOG = LoggerFactory.getLogger(DisplayAddress.class);
 
     @FXML
     private Label address;
@@ -30,7 +35,7 @@ public class DisplayAddress {
 
 
     /**
-     * intial class to run, displays ip address and port number
+     * Initial class to run, displays ip address and port number
      *
      * @author Saad
      */
@@ -40,7 +45,7 @@ public class DisplayAddress {
     }
 
     /**
-     * when button is clicked open a socket and begin searching for a connection
+     * When button is clicked open a socket and begin searching for a connection
      *
      * @author Saad
      */
@@ -58,14 +63,14 @@ public class DisplayAddress {
                 break;
             }
         } catch (IOException e) {
-            e.printStackTrace();
+            LOG.error(e.getMessage());
         }
     }
 
     /**
      * return string representing the port number
      *
-     * @return string represnting port number
+     * @return string representing port number
      * @author Saad
      */
     private String getPortNumber() {
@@ -73,7 +78,7 @@ public class DisplayAddress {
     }
 
     /**
-     * retruns the ip address as a string
+     * Returns the ip address as a string
      *
      * @return the ip address
      * @author Saad
@@ -82,13 +87,13 @@ public class DisplayAddress {
         try {
             return InetAddress.getLocalHost().getHostAddress();
         } catch (UnknownHostException e) {
-            e.printStackTrace();
-            return "falure to get address";
+            LOG.error(e.getMessage());
+            return "Failed to get address";
         }
     }
 
     /**
-     * When close btn is clicked close the current window
+     * When close button is clicked close the current window
      *
      * @param actionEvent mouse clicking event
      * @author Saad

@@ -11,7 +11,7 @@ import javafx.stage.Stage;
 /**
  * Class to begin JavaFx
  * 
- * * @author Saad
+ * @author Saad
  */
 public class MainApp extends Application {
 
@@ -24,6 +24,7 @@ public class MainApp extends Application {
      * Class that begins display of GUI
      *
      * @param primaryStage default starter Stage
+     * @throws java.io.IOException
      */
     @Override
     public void start(Stage primaryStage) throws IOException {

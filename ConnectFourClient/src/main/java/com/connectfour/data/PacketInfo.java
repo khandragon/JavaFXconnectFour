@@ -1,7 +1,7 @@
 package com.connectfour.data;
 
 /**
- * class containing byte constants to use for certain situations
+ * Class containing byte constants to use for certain situations
  *
  * @author Saad
  * @author Anthony
