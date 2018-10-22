@@ -1,20 +1,12 @@
-2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:112) - No win conditions found
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 0
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 0
-2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:86) - Adding move at line 4 for computer.
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 1
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:86) - Adding move at line 2 for computer.
 2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
 2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
 2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
 2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
 2018-10-22  INFO [JavaFX Application Thread] (Board.java:112) - No win conditions found
 2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:98) - Computer has not made a victory or tie move.
-2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:103) - Computer is returning his move to client at line: 4
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:103) - Computer is returning his move to client at line: 2
 2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:50) - Adding move at line 4 for player.
 2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
 2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
@@ -22,39 +14,81 @@
 2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
 2018-10-22  INFO [JavaFX Application Thread] (Board.java:112) - No win conditions found
 2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 0
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 3
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 4
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 4
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 1
-2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:86) - Adding move at line 4 for computer.
-2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
-2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
-2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
-2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:112) - No win conditions found
-2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:98) - Computer has not made a victory or tie move.
-2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:103) - Computer is returning his move to client at line: 4
-2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:50) - Adding move at line 5 for player.
-2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
-2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
-2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
-2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:112) - No win conditions found
 2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 0
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 4
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 3
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 3
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 5
-2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 3
-2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:86) - Adding move at line 5 for computer.
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 1
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 1
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 1
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 1
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 1
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:86) - Adding move at line 2 for computer.
 2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
 2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
 2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
 2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
 2018-10-22  INFO [JavaFX Application Thread] (Board.java:112) - No win conditions found
 2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:98) - Computer has not made a victory or tie move.
-2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:103) - Computer is returning his move to client at line: 5
-2018-10-22 ERROR [JavaFX Application Thread] (GameSession.java:55) - Connection reset
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:103) - Computer is returning his move to client at line: 2
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:50) - Adding move at line 3 for player.
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:112) - No win conditions found
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 1
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 3
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 1
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:86) - Adding move at line 3 for computer.
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:112) - No win conditions found
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:98) - Computer has not made a victory or tie move.
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:103) - Computer is returning his move to client at line: 3
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:50) - Adding move at line 2 for player.
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:112) - No win conditions found
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 1
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 3
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 4
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 3
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 4
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 1
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:86) - Adding move at line 2 for computer.
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:112) - No win conditions found
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:98) - Computer has not made a victory or tie move.
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:103) - Computer is returning his move to client at line: 2
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:50) - Adding move at line 2 for player.
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:112) - No win conditions found
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 3
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 5
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 5
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 2
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:396) - Calculated points = 1
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:86) - Adding move at line 3 for computer.
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:56) - --- Testing Horizontal ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:75) - --- Testing Vertical ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:92) - --- Testing Diagonal Up ---
+2018-10-22 DEBUG [JavaFX Application Thread] (Board.java:102) - --- Testing Diagonal Down ---
+2018-10-22  INFO [JavaFX Application Thread] (Board.java:112) - No win conditions found
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:98) - Computer has not made a victory or tie move.
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:103) - Computer is returning his move to client at line: 3
+2018-10-22  INFO [JavaFX Application Thread] (GameSession.java:35) - Quitting game...

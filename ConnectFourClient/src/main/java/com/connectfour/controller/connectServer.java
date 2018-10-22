@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
+import java.util.regex.Pattern;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -53,9 +54,12 @@ public class connectServer {
         String port = inputPort.getText();
         try{
             if (validInput(address, port))
-                connectToServer(address, port);
-        } catch(Exception e){
-            connectionStatus.setText("Could not connect to the server.");
+                connectToServer(address, port);        
+            connectionStatus.setText("");
+        } catch(NumberFormatException e){
+            connectionStatus.setText("Invalid connection parameters.");
+        } catch(IOException e){
+            connectionStatus.setText("Could not connect to given address.");
         }
     }
 
@@ -65,12 +69,19 @@ public class connectServer {
      * @param server   ip address of server
      * @param servPort port number of server
      * @author Saad
+     * @author Seb
      */
-    private void connectToServer(String server, String servPort) {
+    private void connectToServer(String server, String servPort) throws IOException, NumberFormatException {
         try {
+            
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(getClass().getResource("/fxml/gameScreen.fxml"));
             loader.load();
+            Pattern ipPattern = Pattern.compile("^([0-9]{1,3}\\.){3}[0-9]{1,3}$");
+            Pattern portPattern = Pattern.compile("^[0-9]{1,5}$"); //
+            if(!ipPattern.matcher(server).matches() || !portPattern.matcher(servPort).matches()){
+                throw new NumberFormatException("Invalid input format"); 
+            }
             GameScreenController gsc = loader.getController();
             gsc.setConnector(server, Integer.parseInt(servPort));
             Parent root = loader.getRoot();
@@ -80,8 +91,9 @@ public class connectServer {
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(new Scene(root));
             stage.show();
-        } catch (IOException e) {
+        } catch (IOException | NumberFormatException e) {
             LOG.error(e.getMessage());
+            throw e;
         }
 
     }

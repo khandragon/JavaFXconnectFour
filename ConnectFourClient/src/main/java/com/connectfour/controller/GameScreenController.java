@@ -85,6 +85,7 @@ public class GameScreenController {
      * draw the board on grid plane
      *
      * @author Saad
+     * @author Seb
      */
     private void displayGame() {
         byte[][] board = game.getBoard();
@@ -108,8 +109,9 @@ public class GameScreenController {
      * @author Saad
      * @param server
      * @param port
+     * @throws java.io.IOException
      */
-    public void setConnector(String server, int port) {
+    public void setConnector(String server, int port) throws IOException{
         this.connection = new Connect4Connector(server, port);
     }
 
