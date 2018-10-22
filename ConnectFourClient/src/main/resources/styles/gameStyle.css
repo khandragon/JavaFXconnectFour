@@ -2,7 +2,7 @@
     Author     : Seb
 */
 .root{
-    -fx-background-image: url("../images/background.jpg");
+    -fx-background-image: url("../images/gameBackground.jpg");
     -fx-background-size: cover;
     -fx-font-family: "Calibri";
 }
@@ -10,3 +10,4 @@
 .button {
     -fx-font-weight: bold;
 }
+

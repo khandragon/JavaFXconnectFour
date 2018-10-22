@@ -14,7 +14,9 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.GridPane;
+import javafx.scene.text.Text;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -36,19 +38,25 @@ public class connectServer {
     private Button closeButton;
     @FXML
     private Button connectButton;
-
+    @FXML 
+    private Text connectionStatus;
     /**
      * Take the ip address and port number inputted, 
      * validate and then make connection to the server
      * 
      * @author Saad
+     * @author Seb
      * @param actionEvent
      */
     public void establishConnection(ActionEvent actionEvent) {
         String address = inputAddress.getText();
         String port = inputPort.getText();
-        if (validInput(address, port))
-            connectToServer(address, port);
+        try{
+            if (validInput(address, port))
+                connectToServer(address, port);
+        } catch(Exception e){
+            connectionStatus.setText("Could not connect to the server.");
+        }
     }
 
     /**
@@ -67,6 +75,7 @@ public class connectServer {
             gsc.setConnector(server, Integer.parseInt(servPort));
             Parent root = loader.getRoot();
             Stage stage = new Stage();
+            stage.getIcons().add(new Image("file:icon.png")); 
             stage.setTitle("Connect Four Server: Connector");
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(new Scene(root));

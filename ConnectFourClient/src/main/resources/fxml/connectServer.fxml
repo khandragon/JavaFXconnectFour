@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.connectfour.controller.connectServer">
+<AnchorPane prefHeight="200.0" prefWidth="400.0" styleClass="root" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.connectfour.controller.connectServer">
     <children>
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="14.0" prefHeight="51.0" prefWidth="265.0" text="Scrabble Server Connector">
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="14.0" prefHeight="51.0" prefWidth="265.0" text="Connect to Game Server">
             <font>
                 <Font name="Comic Sans MS" size="20.0" />
             </font>
