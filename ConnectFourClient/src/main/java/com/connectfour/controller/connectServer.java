@@ -59,7 +59,7 @@ public class connectServer {
         } catch(NumberFormatException e){
             connectionStatus.setText("Invalid connection parameters.");
         } catch(IOException e){
-            connectionStatus.setText("Could not connect to given address.");
+            connectionStatus.setText("Could not connect to address.");
         }
     }
 
