@@ -111,8 +111,6 @@ public class Board {
         return false;
     }
     /**
-     * This is commented out for the reason that isComplete after a check if won
-     * serves the same purpose.
      * Returns true if the game has ended in a tie (no possible moves, no win)
      * 
      * @return true if board is a tie   
@@ -164,11 +162,12 @@ public class Board {
      * This will let the computer decide what is the best possible move for itself is
      *
      * @return int representing what would be the best move for it
-     * @author Seb
+     * @author Anthony
      */
     public byte computerMove() {
         int[] points = new int[7];
         byte line = 0;
+        //Evaluating each line for points
         while (line < 7) {
             points[line] = evaluatePoints(line);
             line++;
@@ -176,6 +175,7 @@ public class Board {
         List<Integer> choice = new ArrayList<>();
         choice.add(0);
         line = 1;
+        //Iterating through each line to see which options are the best
         while (line < 7) {
             if (points[choice.get(0)] <= points[line]) {
                 if (points[choice.get(0)] < points[line]) {
@@ -185,7 +185,12 @@ public class Board {
             }
             line++;
         }
-        int best = 0;
+        int best;
+        /**
+         * If there is more than 1 option for the computer, then it randomly
+         * decides its move.
+         */
+        
         if (choice.size() == 1) {
             best = choice.get(0);
         } else {
@@ -265,7 +270,7 @@ public class Board {
         }
         /**
          * This second portion deals with the case that the piece falls in
-         * between to be a line.
+         * between to be a line. Ex O O X O
          */
         if (line >= 1 && line <= 4) {
             if (board[YAxis][line - 1] == player && board[YAxis][line + 1] == player && board[YAxis][line + 2] == player) {
@@ -323,6 +328,7 @@ public class Board {
      * @author Anthony
      */
     private int evaluatePoints(byte line) {
+        //Automatic assumptions get checked first
         if (!(checkIfPossibleMove(line))) {
             return -1;
         }
@@ -334,76 +340,100 @@ public class Board {
         }
         int YAxis = getAvailableYAxis(line);
         if (YAxis == -1) {
-            throw new IllegalArgumentException("Somehow a line that was said to" + " be able to have an available space does not have an" + "available space");
+            throw new IllegalArgumentException("Somehow a line that was said to" 
+                    + " be able to have an available space does not have an" 
+                    + "available space");
         }
+        /**
+         * If previous options don't get thrown, then the evaluated points is
+         * based on the amount of other pieces surrounding the location, such
+         * that there are possibilities to block or to get a better position for
+         * an automatic win. The point is known as the line given and the next
+         * available placement
+         */
         int points = 0;
+        //Checking downwards from point
         if (YAxis > 0) {
-            if (board[YAxis - 1][line] == PacketInfo.PLAYER_ONE || board[YAxis - 1][line] == PacketInfo.PLAYER_TWO) {
+            if (board[YAxis - 1][line] == PacketInfo.PLAYER_ONE 
+                    || board[YAxis - 1][line] == PacketInfo.PLAYER_TWO) {
                 points++;
             }
             if (YAxis > 1) {
-                if (board[YAxis - 2][line] == PacketInfo.PLAYER_ONE || board[YAxis - 2][line] == PacketInfo.PLAYER_TWO) {
+                if (board[YAxis - 2][line] == PacketInfo.PLAYER_ONE 
+                        || board[YAxis - 2][line] == PacketInfo.PLAYER_TWO) {
                     points++;
                 }
             }
         }
-        //Checking the right side
+        //Checking the right side of the given points (sideways, diagonal)
         if (line < 6) {
-            if (board[YAxis][line + 1] == PacketInfo.PLAYER_ONE || board[YAxis][line + 1] == PacketInfo.PLAYER_TWO) {
+            if (board[YAxis][line + 1] == PacketInfo.PLAYER_ONE 
+                    || board[YAxis][line + 1] == PacketInfo.PLAYER_TWO) {
                 points++;
             }
             if (line < 5) {
-                if (board[YAxis][line + 2] == PacketInfo.PLAYER_ONE || board[YAxis][line + 2] == PacketInfo.PLAYER_TWO) {
+                if (board[YAxis][line + 2] == PacketInfo.PLAYER_ONE 
+                        || board[YAxis][line + 2] == PacketInfo.PLAYER_TWO) {
                     points++;
                 }
             }
             if (YAxis > 0) {
-                if (board[YAxis - 1][line + 1] == PacketInfo.PLAYER_ONE || board[YAxis - 1][line + 1] == PacketInfo.PLAYER_TWO) {
+                if (board[YAxis - 1][line + 1] == PacketInfo.PLAYER_ONE 
+                        || board[YAxis - 1][line + 1] == PacketInfo.PLAYER_TWO) {
                     points++;
                 }
                 if (YAxis > 1 && line < 5) {
-                    if (board[YAxis - 2][line + 2] == PacketInfo.PLAYER_ONE || board[YAxis - 2][line + 2] == PacketInfo.PLAYER_TWO) {
+                    if (board[YAxis - 2][line + 2] == PacketInfo.PLAYER_ONE 
+                            || board[YAxis - 2][line + 2] == PacketInfo.PLAYER_TWO) {
                         points++;
                     }
                 }
             }
             if (YAxis < 5) {
-                if (board[YAxis + 1][line + 1] == PacketInfo.PLAYER_ONE || board[YAxis + 1][line + 1] == PacketInfo.PLAYER_TWO) {
+                if (board[YAxis + 1][line + 1] == PacketInfo.PLAYER_ONE 
+                        || board[YAxis + 1][line + 1] == PacketInfo.PLAYER_TWO) {
                     points++;
                 }
                 if (YAxis < 4 && line < 5) {
-                    if (board[YAxis + 2][line + 2] == PacketInfo.PLAYER_ONE || board[YAxis + 2][line + 2] == PacketInfo.PLAYER_TWO) {
+                    if (board[YAxis + 2][line + 2] == PacketInfo.PLAYER_ONE 
+                            || board[YAxis + 2][line + 2] == PacketInfo.PLAYER_TWO) {
                         points++;
                     }
                 }
             }
         }
-        //Checking left side
+        //Checking the left side of the given points (sideways, diagnol)
         if (line > 0) {
-            if (board[YAxis][line - 1] == PacketInfo.PLAYER_ONE || board[YAxis][line - 1] == PacketInfo.PLAYER_TWO) {
+            if (board[YAxis][line - 1] == PacketInfo.PLAYER_ONE 
+                    || board[YAxis][line - 1] == PacketInfo.PLAYER_TWO) {
                 points++;
             }
             if (line > 1) {
-                if (board[YAxis][line - 2] == PacketInfo.PLAYER_ONE || board[YAxis][line - 2] == PacketInfo.PLAYER_TWO) {
+                if (board[YAxis][line - 2] == PacketInfo.PLAYER_ONE 
+                        || board[YAxis][line - 2] == PacketInfo.PLAYER_TWO) {
                     points++;
                 }
             }
             if (YAxis > 0) {
-                if (board[YAxis - 1][line - 1] == PacketInfo.PLAYER_ONE || board[YAxis - 1][line - 1] == PacketInfo.PLAYER_TWO) {
+                if (board[YAxis - 1][line - 1] == PacketInfo.PLAYER_ONE 
+                        || board[YAxis - 1][line - 1] == PacketInfo.PLAYER_TWO) {
                     points++;
                 }
                 if (YAxis > 1 && line > 1) {
-                    if (board[YAxis - 2][line - 2] == PacketInfo.PLAYER_ONE || board[YAxis - 2][line - 2] == PacketInfo.PLAYER_TWO) {
+                    if (board[YAxis - 2][line - 2] == PacketInfo.PLAYER_ONE 
+                            || board[YAxis - 2][line - 2] == PacketInfo.PLAYER_TWO) {
                         points++;
                     }
                 }
             }
             if (YAxis < 5) {
-                if (board[YAxis + 1][line - 1] == PacketInfo.PLAYER_ONE || board[YAxis + 1][line - 1] == PacketInfo.PLAYER_TWO) {
+                if (board[YAxis + 1][line - 1] == PacketInfo.PLAYER_ONE 
+                        || board[YAxis + 1][line - 1] == PacketInfo.PLAYER_TWO) {
                     points++;
                 }
                 if (YAxis < 4 && line > 1) {
-                    if (board[YAxis + 2][line - 2] == PacketInfo.PLAYER_ONE || board[YAxis + 2][line - 2] == PacketInfo.PLAYER_TWO) {
+                    if (board[YAxis + 2][line - 2] == PacketInfo.PLAYER_ONE 
+                            || board[YAxis + 2][line - 2] == PacketInfo.PLAYER_TWO) {
                         points++;
                     }
                 }
