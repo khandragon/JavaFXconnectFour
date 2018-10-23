@@ -8,13 +8,13 @@ import static com.connectfour.data.PacketInfo.UNLOCK_BUTTONS;
 
 import java.io.IOException;
 import javafx.event.ActionEvent;
-import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 import org.slf4j.LoggerFactory;
 
@@ -32,7 +32,7 @@ public class GameScreenController {
 
     @FXML private Button closeButton;
     @FXML private GridPane gameGrid;
-    @FXML private Label gameStatus;
+    @FXML private Text gameStatus;
     @FXML private Button col6;
     @FXML private Button col7;
     @FXML private Button col4;
@@ -85,6 +85,7 @@ public class GameScreenController {
      * draw the board on grid plane
      *
      * @author Saad
+     * @author Seb
      */
     private void displayGame() {
         byte[][] board = game.getBoard();
@@ -96,7 +97,7 @@ public class GameScreenController {
                 } else if (board[i][j] == PacketInfo.PLAYER_TWO) {
                     circ.setFill(Color.YELLOW);
                 } else {
-                    circ.setFill(Color.BLACK);
+                    circ.setFill(Color.WHITE);
                 }
             }
         }
@@ -108,8 +109,9 @@ public class GameScreenController {
      * @author Saad
      * @param server
      * @param port
+     * @throws java.io.IOException
      */
-    public void setConnector(String server, int port) {
+    public void setConnector(String server, int port) throws IOException{
         this.connection = new Connect4Connector(server, port);
     }
 

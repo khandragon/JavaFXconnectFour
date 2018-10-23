@@ -1,22 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="200.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.connectfour.controller.connectServer">
+<AnchorPane maxHeight="250.0" maxWidth="420.0" minHeight="200.0" minWidth="400.0" prefHeight="220.0" prefWidth="400.0" styleClass="root" stylesheets="@../styles/Styles.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.connectfour.controller.connectServer">
     <children>
-        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="14.0" prefHeight="51.0" prefWidth="265.0" text="Scrabble Server Connector">
+        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="55.0" layoutY="14.0" prefHeight="51.0" prefWidth="265.0" text="Connect to Game Server">
             <font>
                 <Font name="Comic Sans MS" size="20.0" />
             </font>
         </Label>
-        <Button fx:id="closeButton" layoutX="255.0" layoutY="152.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="21.0" prefWidth="118.0" text="Quit" />
-      <Button fx:id="connectButton" layoutX="120.0" layoutY="152.0" mnemonicParsing="false" onAction="#establishConnection" prefHeight="21.0" prefWidth="118.0" text="Connect" />
+        <Button fx:id="closeButton" layoutX="247.0" layoutY="173.0" mnemonicParsing="false" onAction="#closeWindow" prefHeight="21.0" prefWidth="118.0" text="Quit" />
+      <Button fx:id="connectButton" layoutX="120.0" layoutY="173.0" mnemonicParsing="false" onAction="#establishConnection" prefHeight="21.0" prefWidth="118.0" text="Connect" />
       <TextField fx:id="inputAddress" layoutX="120.0" layoutY="65.0" prefHeight="31.0" prefWidth="253.0" />
       <TextField fx:id="inputPort" layoutX="120.0" layoutY="112.0" prefHeight="31.0" prefWidth="253.0" />
-      <Label layoutX="14.0" layoutY="70.0" text="IP Address:" />
-      <Label layoutX="14.0" layoutY="117.0" text="Port #" />
+      <Label layoutX="14.0" layoutY="74.0" text="IP Address:" />
+      <Label layoutX="14.0" layoutY="121.0" text="Port #" />
+      <Text fx:id="connectionStatus" fill="RED" layoutX="120.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="177.03515625" />
     </children>
 </AnchorPane>
