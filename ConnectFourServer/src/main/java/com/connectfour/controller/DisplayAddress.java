@@ -54,6 +54,7 @@ public class DisplayAddress {
     private void beginConnectionSearch() {
         connectButton.setDisable(true);
         try {
+            LOG.info("Looking for players!");
             int servPort = Integer.parseInt(getPortNumber());
             ServerSocket servSock = new ServerSocket(servPort);
             while (true) {

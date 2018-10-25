@@ -29,7 +29,7 @@ public class GameScreenController {
     private final static org.slf4j.Logger LOG = LoggerFactory.getLogger(GameScreenController.class);
     private Connect4Connector connection;
     private Board game;
-
+    private boolean canClick = true;
     @FXML private Button closeButton;
     @FXML private GridPane gameGrid;
     @FXML private Label gameStatus;
@@ -138,23 +138,28 @@ public class GameScreenController {
      * @param mouseEvent
      */
     public void dropPiece(MouseEvent mouseEvent) {
-        String s = mouseEvent.getPickResult().getIntersectedNode().getId();
-        int spot = Integer.parseInt(s.charAt(3) + "") - 1;
-        // Check if the user has made a valid move and if a move can be made
-        if(!checkEndGame() && game.addMove((byte) spot, PacketInfo.PLAYER_ONE)){
-            displayGame();
-            try {
-                if (!checkEndGame()) {
-                    connection.sendData(PacketInfo.MOVE, PacketInfo.PLAYER_ONE, (byte) spot);
-                    processReceivedData();
-                } else {
-                    connection.sendData(PacketInfo.WIN, PacketInfo.PLAYER_ONE, PacketInfo.SPACE);
-                    checkEndGame();
+        if (canClick)
+        {
+            canClick = false;
+            String s = mouseEvent.getPickResult().getIntersectedNode().getId();
+            int spot = Integer.parseInt(s.charAt(3) + "") - 1;
+            // Check if the user has made a valid move and if a move can be made
+            if(!checkEndGame() && game.addMove((byte) spot, PacketInfo.PLAYER_ONE)){
+                displayGame();
+                try {
+                    if (!checkEndGame()) {
+                        connection.sendData(PacketInfo.MOVE, PacketInfo.PLAYER_ONE, (byte) spot);
+                        processReceivedData();
+                    } else {
+                        connection.sendData(PacketInfo.WIN, PacketInfo.PLAYER_ONE, PacketInfo.SPACE);
+                        checkEndGame();
+                    }
+                } catch (IOException e) {
+                    LOG.error(e.getMessage());
                 }
-            } catch (IOException e) {
-                LOG.error(e.getMessage());
-            }
-        } 
+            } 
+            canClick = true;
+        }
     }
 
     /**
