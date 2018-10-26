@@ -8,6 +8,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 
@@ -43,6 +44,7 @@ public class mainController {
         Parent root = FXMLLoader.load(getClass().getResource("/fxml/connectServer.fxml"));
         Scene scene = new Scene(root);
         Stage addressDisplayStage = new Stage();
+        addressDisplayStage.getIcons().add(new Image("file:icon.png")); 
         addressDisplayStage.setTitle("Connect Four Server: Connector");
         addressDisplayStage.initModality(Modality.APPLICATION_MODAL);
         addressDisplayStage.setScene(scene);

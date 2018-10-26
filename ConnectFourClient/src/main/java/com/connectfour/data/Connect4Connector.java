@@ -26,14 +26,17 @@ public class Connect4Connector {
      * @param server takes a string representing the ip address of the server
      * @param port   takes an int that represents the port number
      * @author Saad
+     * @author Seb
+     * @throws java.io.IOException
      */
-    public Connect4Connector(String server, int port) {
+    public Connect4Connector(String server, int port) throws IOException {
         try {
             this.servSocket = new Socket(server, port);
             in = servSocket.getInputStream();
             out = servSocket.getOutputStream();
         } catch (IOException e) {
             LOG.error(e.getMessage());
+            throw e;
         }
     }
 
