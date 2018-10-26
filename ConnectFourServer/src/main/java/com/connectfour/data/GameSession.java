@@ -25,6 +25,7 @@ public class GameSession {
      */
     public GameSession(Socket player1) {
         this.connection = new Connect4Connector(player1);
+        LOG.info("Connected with user from : " + player1.getInetAddress().toString());
         LOG.info("Game session created");
         game = new Board();
         playGame = true;
