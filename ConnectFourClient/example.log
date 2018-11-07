@@ -656,3 +656,43 @@
 2018-11-05  INFO [main] (Board.java:442) - Calculated points = 2
 2018-11-05  INFO [main] (Board.java:442) - Calculated points = 1
 2018-11-05  INFO [main] (Board.java:442) - Calculated points = 1
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 3
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 4
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 5
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 4
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 2
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 2
+2018-11-06 DEBUG [main] (Board.java:54) - --- Testing Horizontal ---
+2018-11-06 DEBUG [main] (Board.java:73) - --- Testing Vertical ---
+2018-11-06  INFO [main] (Board.java:81) - Found a vertical win
+2018-11-06 DEBUG [main] (Board.java:54) - --- Testing Horizontal ---
+2018-11-06  INFO [main] (Board.java:64) - Found a horizontal win
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 5
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 4
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 2
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 1
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 0
+2018-11-06 DEBUG [main] (Board.java:54) - --- Testing Horizontal ---
+2018-11-06 DEBUG [main] (Board.java:73) - --- Testing Vertical ---
+2018-11-06 DEBUG [main] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-06 DEBUG [main] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-06  INFO [main] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-06 DEBUG [main] (Board.java:54) - --- Testing Horizontal ---
+2018-11-06 DEBUG [main] (Board.java:73) - --- Testing Vertical ---
+2018-11-06 DEBUG [main] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-06  INFO [main] (Board.java:95) - Found a diagonal win
+2018-11-06 DEBUG [main] (Board.java:54) - --- Testing Horizontal ---
+2018-11-06 DEBUG [main] (Board.java:73) - --- Testing Vertical ---
+2018-11-06  INFO [main] (Board.java:81) - Found a vertical win
+2018-11-06 DEBUG [main] (Board.java:54) - --- Testing Horizontal ---
+2018-11-06 DEBUG [main] (Board.java:73) - --- Testing Vertical ---
+2018-11-06 DEBUG [main] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-06 DEBUG [main] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-06  INFO [main] (Board.java:105) - Found a diagonal win
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 2
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 2
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 3
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 1
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 2
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 1
+2018-11-06  INFO [main] (Board.java:442) - Calculated points = 1
