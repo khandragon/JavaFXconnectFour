@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
  *
  * @author Saad
  */
-public class GameSession {
+public class GameSession implements Runnable {
     private final static Logger LOG = LoggerFactory.getLogger(GameSession.class);
     private Connect4Connector connection;
     private Board game;
@@ -26,35 +26,6 @@ public class GameSession {
     public GameSession(Socket player1) {
         this.connection = new Connect4Connector(player1);
         LOG.info("Connected with user from : " + player1.getInetAddress().toString());
-        LOG.info("Game session created");
-        game = new Board();
-        playGame = true;
-        try {
-            do {
-                byte[] data = connection.receiveData();
-                if (data[0] == PacketInfo.QUIT) {
-                    LOG.info("Quitting game...");
-                    playGame = false;
-                } 
-                else if (data[0] == PacketInfo.PLAY)
-                {
-                    game = new Board();
-                    if (data[1] == PacketInfo.PLAYER_TWO)
-                    {
-                        firstMove();
-                    }
-                }else if(data[0] == PacketInfo.WIN){
-                    game = new Board();
-                }
-                else {
-                    byte number = data[2];
-                    LOG.info("Adding move at line " + number + " for player.");
-                    serverMove(number);
-                }
-            } while (playGame);
-        } catch (IOException e) {
-            LOG.error(e.getMessage());
-        }
     }
 
     /**
@@ -116,6 +87,44 @@ public class GameSession {
         game.addMove((byte) decision, PacketInfo.PLAYER_TWO);
         System.out.println("Computer is first : " + decision + " for computer.");
         connection.sendData(PacketInfo.MOVE,PacketInfo.PLAYER_TWO, (byte) decision);
+    }
+
+    @Override
+    public void run() {
+        LOG.info("Game session created");
+        game = new Board();
+        playGame = true;
+        try {
+            do {
+                LOG.info("Trying to receive data");
+                if(this.connection == null){
+                    LOG.info("AFSDFASDFASDFASDFASDFASDFASDFASDF");
+                }
+                byte[] data = this.connection.receiveData();
+                LOG.info("Received data");
+                if (data[0] == PacketInfo.QUIT) {
+                    LOG.info("Quitting game...");
+                    playGame = false;
+                } 
+                else if (data[0] == PacketInfo.PLAY)
+                {
+                    game = new Board();
+                    if (data[1] == PacketInfo.PLAYER_TWO)
+                    {
+                        firstMove();
+                    }
+                }else if(data[0] == PacketInfo.WIN){
+                    game = new Board();
+                }
+                else {
+                    byte number = data[2];
+                    LOG.info("Adding move at line " + number + " for player.");
+                    serverMove(number);
+                }
+            } while (playGame);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
 

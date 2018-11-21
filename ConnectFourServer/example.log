@@ -491,3 +491,56 @@
 2018-10-24  INFO [JavaFX Application Thread] (GameSession.java:98) - Computer has not made a victory or tie move.
 2018-10-24  INFO [JavaFX Application Thread] (GameSession.java:103) - Computer is returning his move to client at line: 5
 2018-10-24  INFO [JavaFX Application Thread] (GameSession.java:35) - Quitting game...
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:57) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21 ERROR [Thread-4] (GameSession.java:121) - socket closed
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:57) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21 ERROR [Thread-4] (GameSession.java:122) - socket closed
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:57) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:100) - Trying to data
+2018-11-21 ERROR [Thread-4] (GameSession.java:124) - socket closed
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:57) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21 ERROR [Thread-4] (GameSession.java:126) - socket closed
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:57) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:57) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:58) - Looking for players!
+2018-11-21 ERROR [JavaFX Application Thread] (DisplayAddress.java:71) - Address already in use: JVM_Bind
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-5] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:58) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:63) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:58) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:63) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:58) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:63) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
