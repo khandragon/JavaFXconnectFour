@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab69e6c2-c30e-4ee5-b648-4b561015e2e1" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example.log" beforeDir="false" afterPath="$PROJECT_DIR$/example.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConnectFourServer/example.log" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectFourServer/example.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ConnectFourServer/src/main/java/com/connectfour/controller/DisplayAddress.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectFourServer/src/main/java/com/connectfour/controller/DisplayAddress.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ConnectFourServer/src/main/java/com/connectfour/data/GameSession.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ConnectFourServer/src/main/java/com/connectfour/data/GameSession.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -236,12 +233,12 @@
       <option name="presentableId" value="Default" />
       <updated>1540304941576</updated>
       <workItem from="1540304947546" duration="694000" />
-      <workItem from="1542824343035" duration="499000" />
+      <workItem from="1542824343035" duration="987000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1193000" />
+    <option name="totallyTimeSpent" value="1681000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />

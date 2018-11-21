@@ -2,6 +2,7 @@ package com.connectfour.data;
 
 import java.io.IOException;
 import java.net.Socket;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -15,6 +16,7 @@ public class GameSession implements Runnable {
     private Connect4Connector connection;
     private Board game;
     private boolean playGame;
+    private String playerName;
 
     /**
      * This will run one game within the code.
@@ -25,14 +27,15 @@ public class GameSession implements Runnable {
      */
     public GameSession(Socket player1) {
         this.connection = new Connect4Connector(player1);
-        LOG.info("Connected with user from : " + player1.getInetAddress().toString());
+        this.playerName = player1.getInetAddress().toString();
+        LOG.info("Connected with user from : " + playerName);
     }
 
     /**
      * This method will send the client the results of his movement.
      *
      * @param line representing the line that player has chosen
-     * @author Saad 
+     * @author Saad
      * @author Anthony
      * @author Seb
      */
@@ -42,13 +45,13 @@ public class GameSession implements Runnable {
         byte third;
         game.addMove(line, PacketInfo.PLAYER_ONE);
         if (game.checkIfWin()) {
-            LOG.info("Player is making a victory move.");
+            LOG.info(playerName + " is making a victory move.");
             first = PacketInfo.WIN;
             second = PacketInfo.PLAYER_ONE;
             third = PacketInfo.SPACE;
 
         } else if (game.isComplete()) {
-            LOG.info("Player has made the game a tie.");
+            LOG.info(playerName + " has made the game a tie.");
             first = PacketInfo.TIE;
             second = PacketInfo.PLAYER_ONE;
             third = PacketInfo.SPACE;
@@ -76,17 +79,17 @@ public class GameSession implements Runnable {
         }
         connection.sendData(first, second, third);
     }
-    
+
     /**
      * This will run when the computer goes first
-     * 
+     *
      * @author Saad
      */
-    private void firstMove() throws IOException{
+    private void firstMove() throws IOException {
         int decision = game.computerMove();
         game.addMove((byte) decision, PacketInfo.PLAYER_TWO);
         System.out.println("Computer is first : " + decision + " for computer.");
-        connection.sendData(PacketInfo.MOVE,PacketInfo.PLAYER_TWO, (byte) decision);
+        connection.sendData(PacketInfo.MOVE, PacketInfo.PLAYER_TWO, (byte) decision);
     }
 
     @Override
@@ -97,26 +100,22 @@ public class GameSession implements Runnable {
         try {
             do {
                 LOG.info("Trying to receive data");
-                if(this.connection == null){
+                if (this.connection == null) {
                     LOG.info("AFSDFASDFASDFASDFASDFASDFASDFASDF");
                 }
                 byte[] data = this.connection.receiveData();
-                LOG.info("Received data");
+                LOG.info("Received data from " + playerName);
                 if (data[0] == PacketInfo.QUIT) {
                     LOG.info("Quitting game...");
                     playGame = false;
-                } 
-                else if (data[0] == PacketInfo.PLAY)
-                {
+                } else if (data[0] == PacketInfo.PLAY) {
                     game = new Board();
-                    if (data[1] == PacketInfo.PLAYER_TWO)
-                    {
+                    if (data[1] == PacketInfo.PLAYER_TWO) {
                         firstMove();
                     }
-                }else if(data[0] == PacketInfo.WIN){
+                } else if (data[0] == PacketInfo.WIN) {
                     game = new Board();
-                }
-                else {
+                } else {
                     byte number = data[2];
                     LOG.info("Adding move at line " + number + " for player.");
                     serverMove(number);
