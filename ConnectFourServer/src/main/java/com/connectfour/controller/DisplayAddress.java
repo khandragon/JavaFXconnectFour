@@ -49,6 +49,7 @@ public class DisplayAddress {
      *
      * @author Saad
      * @author Anthony
+     * @author Seb
      */
     @FXML
     private void beginConnectionSearch() {
@@ -58,9 +59,16 @@ public class DisplayAddress {
             int servPort = Integer.parseInt(getPortNumber());
             ServerSocket servSock = new ServerSocket(servPort);
             while (true) {
-                try (Socket player1 = servSock.accept()) {
+                try {
+                    Socket player1 = servSock.accept();
                     LOG.info("Player found");
-                    GameSession gs = new GameSession(player1);
+                    // Create a new thread
+                    GameSession gameSession = new GameSession(player1);
+                    Thread gameThread = new Thread(gameSession);
+                    gameThread.start();
+                    //player1.close();
+                }catch (Exception e){
+                    LOG.info(e.getMessage());
                 }
             }
         } catch (IOException e) {
@@ -75,7 +83,7 @@ public class DisplayAddress {
      * @author Saad
      */
     private String getPortNumber() {
-        return "5000";
+        return "55000";
     }
 
     /**

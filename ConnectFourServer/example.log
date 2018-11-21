@@ -491,3 +491,716 @@
 2018-10-24  INFO [JavaFX Application Thread] (GameSession.java:98) - Computer has not made a victory or tie move.
 2018-10-24  INFO [JavaFX Application Thread] (GameSession.java:103) - Computer is returning his move to client at line: 5
 2018-10-24  INFO [JavaFX Application Thread] (GameSession.java:35) - Quitting game...
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:57) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21 ERROR [Thread-4] (GameSession.java:121) - socket closed
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:57) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21 ERROR [Thread-4] (GameSession.java:122) - socket closed
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:57) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:100) - Trying to data
+2018-11-21 ERROR [Thread-4] (GameSession.java:124) - socket closed
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:57) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21 ERROR [Thread-4] (GameSession.java:126) - socket closed
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:57) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:57) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:58) - Looking for players!
+2018-11-21 ERROR [JavaFX Application Thread] (DisplayAddress.java:71) - Address already in use: JVM_Bind
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:62) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-5] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:58) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:63) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:58) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:63) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:58) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:63) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /10.172.15.111
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:58) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:63) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /192.168.10.1
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:58) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:64) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /192.168.10.1
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:58) - Looking for players!
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:64) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /192.168.10.1
+2018-11-21  INFO [Thread-4] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 0 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 1 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 1
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 1 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 0 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 0
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [JavaFX Application Thread] (DisplayAddress.java:64) - Player found
+2018-11-21  INFO [JavaFX Application Thread] (GameSession.java:28) - Connected with user from : /192.168.10.1
+2018-11-21  INFO [Thread-5] (GameSession.java:94) - Game session created
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 0 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 0 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 0
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 1 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 1 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 1
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 5 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 1 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 1
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 4 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 2 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 2
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 2 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 2 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 2
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 3 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 6
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 6
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 1 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 1
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 2 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 6
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 6
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 0 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 0
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 5 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 6
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 6 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 6
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 4 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 7
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 3 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 3
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 2 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 0 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 0
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 2 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 6
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 2 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 2
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 3 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 4 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 4
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 3 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 3 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21  INFO [Thread-4] (Board.java:66) - Found a horizontal win
+2018-11-21  INFO [Thread-4] (GameSession.java:60) - Computer is making a victory move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 3
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 6 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 4 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 4
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 5 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 5 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 5
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 6 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 4 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 4
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 6 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 5 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 5
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 6 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 5 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 5
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 6 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 6 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 6
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 6 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 6 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 6
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 5 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 6
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 4 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 4
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 4 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 4 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 4
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 2 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 6
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 6
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 4 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 4
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 0 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 4
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 7
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 5 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (GameSession.java:70) - Computer has not made a victory or tie move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 5
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:121) - Adding move at line 1 for player.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-4] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-4] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 2
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-4] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-4] (GameSession.java:58) - Adding move at line 3 for computer.
+2018-11-21 DEBUG [Thread-4] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-4] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-4] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21  INFO [Thread-4] (Board.java:97) - Found a diagonal win
+2018-11-21  INFO [Thread-4] (GameSession.java:60) - Computer is making a victory move.
+2018-11-21  INFO [Thread-4] (GameSession.java:75) - Computer is returning his move to client at line: 3
+2018-11-21  INFO [Thread-4] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-4] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-4] (GameSession.java:106) - Quitting game...
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:121) - Adding move at line 3 for player.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21 DEBUG [Thread-5] (Board.java:92) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [Thread-5] (Board.java:102) - --- Testing Diagonal Down ---
+2018-11-21  INFO [Thread-5] (Board.java:112) - No win conditions found
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 0
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 1
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 5
+2018-11-21  INFO [Thread-5] (Board.java:411) - Calculated points = 3
+2018-11-21  INFO [Thread-5] (GameSession.java:58) - Adding move at line 4 for computer.
+2018-11-21 DEBUG [Thread-5] (Board.java:56) - --- Testing Horizontal ---
+2018-11-21 DEBUG [Thread-5] (Board.java:75) - --- Testing Vertical ---
+2018-11-21  INFO [Thread-5] (Board.java:83) - Found a vertical win
+2018-11-21  INFO [Thread-5] (GameSession.java:60) - Computer is making a victory move.
+2018-11-21  INFO [Thread-5] (GameSession.java:75) - Computer is returning his move to client at line: 4
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:99) - Trying to receive data
+2018-11-21  INFO [Thread-5] (GameSession.java:104) - Received data
+2018-11-21  INFO [Thread-5] (GameSession.java:106) - Quitting game...
