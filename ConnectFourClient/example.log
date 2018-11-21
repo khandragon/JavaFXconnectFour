@@ -730,3 +730,309 @@
 2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
 2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
 2018-11-21 ERROR [JavaFX Application Thread] (GameScreenController.java:160) - Software caused connection abort: recv failed
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 ERROR [JavaFX Application Thread] (GameScreenController.java:160) - Software caused connection abort: recv failed
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:105) - Found a diagonal win
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:105) - Found a diagonal win
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:54) - --- Testing Horizontal ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:73) - --- Testing Vertical ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:90) - --- Testing Diagonal Up ---
+2018-11-21 DEBUG [JavaFX Application Thread] (Board.java:100) - --- Testing Diagonal Down ---
+2018-11-21  INFO [JavaFX Application Thread] (Board.java:110) - --- No Win Conditions Found ---
